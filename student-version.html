@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11+ Vocabulary Flashcards - Practice Mode</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .controls {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeIn 1s ease;
+        }
+
+        .progress-section {
+            margin-bottom: 20px;
+        }
+
+        .progress-bar-container {
+            background: #e9ecef;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(102,126,234,0.3);
+        }
+
+        .stat-box .number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .stat-box .label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn {
+            flex: 1;
+            min-width: 120px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(108,117,125,0.4);
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .flashcard-container {
+            perspective: 1000px;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease 0.3s both;
+        }
+
+        .flashcard {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .card-front {
+            background: white;
+        }
+
+        .card-back {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .card-number {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #6c757d;
+        }
+
+        .card-back .card-number {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .word {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 20px;
+            text-align: center;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .meaning {
+            font-size: 2em;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .hint {
+            font-size: 1.2em;
+            color: #6c757d;
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .card-back .hint {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .navigation {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .nav-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background: white;
+            color: #667eea;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .nav-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(102,126,234,0.4);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .nav-btn:disabled:hover {
+            transform: none;
+        }
+
+        .mode-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .mode-btn {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .mode-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .mode-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102,126,234,0.3);
+        }
+
+        .quiz-section {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            display: none;
+        }
+
+        .quiz-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .quiz-options {
+            display: grid;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .quiz-option {
+            padding: 20px;
+            border: 2px solid #dee2e6;
+            border-radius: 15px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.1em;
+        }
+
+        .quiz-option:hover {
+            border-color: #667eea;
+            background: #f8f9fa;
+            transform: translateX(5px);
+        }
+
+        .quiz-option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+        }
+
+        .quiz-option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: #667eea;
+            position: absolute;
+            animation: confetti-fall 3s linear;
+        }
+
+        @keyframes confetti-fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .flashcard {
+                height: 350px;
+            }
+
+            .word {
+                font-size: 2.5em;
+            }
+
+            .meaning {
+                font-size: 1.5em;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>11+ Vocabulary Practice</h1>
+            <p>Interactive Flashcard Learning</p>
+        </div>
+
+        <div class="controls">
+            <div class="mode-selector">
+                <button class="mode-btn active" onclick="switchMode('flashcard')">Flashcard Mode</button>
+                <button class="mode-btn" onclick="switchMode('quiz')">Quiz Mode</button>
+                <button class="mode-btn" onclick="switchMode('teacher')">Teacher Mode</button>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar">0%</div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="number" id="currentCard">1</div>
+                    <div class="label">Current Card</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number" id="totalCards">276</div>
+                    <div class="label">Total Words</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number" id="reviewedCards">0</div>
+                    <div class="label">Reviewed</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number" id="quizScore">0%</div>
+                    <div class="label">Quiz Score</div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="shuffleCards()">Shuffle Cards</button>
+                <button class="btn btn-secondary" onclick="resetProgress()">Reset Progress</button>
+                <button class="btn btn-success" onclick="markAsKnown()">Mark as Known</button>
+            </div>
+        </div>
+
+        <div id="flashcardMode">
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard" onclick="flipCard()">
+                    <div class="card-face card-front">
+                        <div class="card-number" id="cardNumberFront">1 / 276</div>
+                        <div class="word" id="wordDisplay">Click to start!</div>
+                        <div class="hint">Click the card to reveal the meaning</div>
+                    </div>
+                    <div class="card-face card-back">
+                        <div class="card-number" id="cardNumberBack">1 / 276</div>
+                        <div class="meaning" id="meaningDisplay">Let's learn together!</div>
+                        <div class="hint">Click again to see the word</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn" id="prevBtn" onclick="previousCard()">◀</button>
+                <button class="nav-btn" onclick="flipCard()">⟲</button>
+                <button class="nav-btn" id="nextBtn" onclick="nextCard()">▶</button>
+            </div>
+        </div>
+
+        <div class="quiz-section" id="quizMode">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 20px;" id="quizWord">Word</h2>
+            <p style="text-align: center; color: #6c757d; margin-bottom: 30px;">Select the correct meaning:</p>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="button-group" style="margin-top: 30px;">
+                <button class="btn btn-primary" onclick="nextQuiz()">Next Question</button>
+                <button class="btn btn-secondary" onclick="switchMode('flashcard')">Back to Flashcards</button>
+            </div>
+        </div>
+
+        <div id="teacherMode" style="display: none;">
+            <div class="flashcard-container">
+                <div class="card-face card-front" style="position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.3); border-radius: 20px; height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px;">
+                    <div class="card-number" id="teacherCardNumber" style="position: absolute; top: 20px; left: 30px; font-size: 1.2em; font-weight: bold; color: #6c757d;">1 / 276</div>
+                    <div class="word" id="teacherWordDisplay" style="font-size: 3.5em; font-weight: bold; color: #667eea; text-align: center; animation: pulse 2s ease-in-out infinite;">Word</div>
+                    <div class="hint" style="font-size: 1.2em; color: #6c757d; margin-top: 20px; text-align: center; font-style: italic;">Ask your teacher for the meaning!</div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn" id="teacherPrevBtn" onclick="previousTeacherCard()">◀</button>
+                <button class="nav-btn" id="teacherNextBtn" onclick="nextTeacherCard()">▶</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const vocabData = [
+{"number": "1", "word": "abandon", "meaning": "give up; leave behind"},
+{"number": "2", "word": "Abbreviate", "meaning": "shorten"},
+{"number": "3", "word": "Abduct", "meaning": "kidnap"},
+{"number": "4", "word": "Aberration", "meaning": "deviation from normal"},
+{"number": "5", "word": "Abhorrent", "meaning": "disgusting; hateful"},
+{"number": "6", "word": "abode", "meaning": "home; dwelling"},
+{"number": "7", "word": "Abrasive", "meaning": "rough; harsh"},
+{"number": "8", "word": "absence", "meaning": "being away"},
+{"number": "9", "word": "Absent", "meaning": "not present"},
+{"number": "10", "word": "Abstract", "meaning": "theoretical; not concrete"},
+{"number": "11", "word": "absurd", "meaning": "ridiculous"},
+{"number": "12", "word": "Abundance", "meaning": "plenty; large quantity"},
+{"number": "13", "word": "abundant", "meaning": "plentiful"},
+{"number": "14", "word": "Abysmal", "meaning": "extremely bad"},
+{"number": "15", "word": "Abyss", "meaning": "deep pit"},
+{"number": "16", "word": "Acclaim", "meaning": "praise"},
+{"number": "17", "word": "accuse", "meaning": "blame"},
+{"number": "18", "word": "accustom", "meaning": "make familiar"},
+{"number": "19", "word": "Acknowledge", "meaning": "admit; recognize"},
+{"number": "20", "word": "acquainted", "meaning": "familiar with"},
+{"number": "21", "word": "Adamant", "meaning": "firm"},
+{"number": "22", "word": "Adhere", "meaning": "stick to"},
+{"number": "23", "word": "Adorn", "meaning": "decorate"},
+{"number": "24", "word": "affable", "meaning": "friendly"},
+{"number": "25", "word": "Affluent", "meaning": "wealthy"},
+{"number": "26", "word": "alert", "meaning": "watchful"},
+{"number": "27", "word": "ally", "meaning": "friend; supporter"},
+{"number": "28", "word": "Aloof", "meaning": "distant"},
+{"number": "29", "word": "altitude", "meaning": "height"},
+{"number": "30", "word": "Ambiguous", "meaning": "unclear"},
+{"number": "31", "word": "ambition", "meaning": "strong desire"},
+{"number": "32", "word": "Amicable", "meaning": "friendly"},
+{"number": "33", "word": "ample", "meaning": "plenty"},
+{"number": "34", "word": "Anecdote", "meaning": "short story"},
+{"number": "35", "word": "Anguish", "meaning": "great suffering"},
+{"number": "36", "word": "Apex", "meaning": "highest point"},
+{"number": "37", "word": "Appeal", "meaning": "request; attract"},
+{"number": "38", "word": "apprehensive", "meaning": "anxious"},
+{"number": "39", "word": "Apprentice", "meaning": "trainee"},
+{"number": "40", "word": "approve", "meaning": "accept"},
+{"number": "41", "word": "Apt", "meaning": "suitable; likely"},
+{"number": "42", "word": "Archaic", "meaning": "old-fashioned"},
+{"number": "43", "word": "arduous", "meaning": "difficult"},
+{"number": "44", "word": "arouse", "meaning": "awaken"},
+{"number": "45", "word": "Array", "meaning": "display"},
+{"number": "46", "word": "Articulate", "meaning": "express clearly"},
+{"number": "47", "word": "Artificial", "meaning": "man-made"},
+{"number": "48", "word": "Ascend", "meaning": "rise"},
+{"number": "49", "word": "assemble", "meaning": "gather"},
+{"number": "50", "word": "Asset", "meaning": "valuable thing"},
+{"number": "51", "word": "Astute", "meaning": "shrewd"},
+{"number": "52", "word": "attempt", "meaning": "try"},
+{"number": "53", "word": "Attribute", "meaning": "quality"},
+{"number": "54", "word": "available", "meaning": "obtainable"},
+{"number": "55", "word": "Avenge", "meaning": "take revenge"},
+{"number": "56", "word": "banish", "meaning": "exile"},
+{"number": "57", "word": "Barbaric", "meaning": "savage"},
+{"number": "58", "word": "bargain", "meaning": "deal"},
+{"number": "59", "word": "barren", "meaning": "empty; infertile"},
+{"number": "60", "word": "Bashful", "meaning": "shy"},
+{"number": "61", "word": "believe", "meaning": "accept as true"},
+{"number": "62", "word": "Belligerent", "meaning": "hostile"},
+{"number": "63", "word": "bemused", "meaning": "confused"},
+{"number": "64", "word": "Beneficial", "meaning": "helpful"},
+{"number": "65", "word": "benefit", "meaning": "advantage"},
+{"number": "66", "word": "Benevolent", "meaning": "kind"},
+{"number": "67", "word": "betray", "meaning": "be disloyal"},
+{"number": "68", "word": "Beverage", "meaning": "drink"},
+{"number": "69", "word": "Bewilder", "meaning": "confuse"},
+{"number": "70", "word": "Bias", "meaning": "prejudice"},
+{"number": "71", "word": "Blatant", "meaning": "obvious"},
+{"number": "72", "word": "Boisterous", "meaning": "noisy"},
+{"number": "73", "word": "Bold", "meaning": "brave"},
+{"number": "74", "word": "Bolster", "meaning": "support"},
+{"number": "75", "word": "Brandish", "meaning": "wave"},
+{"number": "76", "word": "brief", "meaning": "short"},
+{"number": "77", "word": "broad", "meaning": "wide"},
+{"number": "78", "word": "bruise", "meaning": "injury"},
+{"number": "79", "word": "brusque", "meaning": "abrupt"},
+{"number": "80", "word": "Bumbling", "meaning": "clumsy"},
+{"number": "81", "word": "Buoyant", "meaning": "cheerful"},
+{"number": "82", "word": "burden", "meaning": "load"},
+{"number": "83", "word": "Cacophony", "meaning": "harsh noise"},
+{"number": "84", "word": "calamity", "meaning": "disaster"},
+{"number": "85", "word": "Callous", "meaning": "insensitive"},
+{"number": "86", "word": "Camouflage", "meaning": "disguise"},
+{"number": "87", "word": "Cascade", "meaning": "waterfall"},
+{"number": "88", "word": "Catastrophe", "meaning": "disaster"},
+{"number": "89", "word": "caution", "meaning": "warning"},
+{"number": "90", "word": "cease", "meaning": "stop"},
+{"number": "91", "word": "cemetery", "meaning": "graveyard"},
+{"number": "92", "word": "Challenge", "meaning": "test"},
+{"number": "93", "word": "Champion", "meaning": "winner"},
+{"number": "94", "word": "chaos", "meaning": "disorder"},
+{"number": "95", "word": "Charred", "meaning": "burnt"},
+{"number": "96", "word": "Chivalrous", "meaning": "courteous"},
+{"number": "97", "word": "Clamber", "meaning": "climb awkwardly"},
+{"number": "98", "word": "Clench", "meaning": "grip tightly"},
+{"number": "99", "word": "coarse", "meaning": "rough"},
+{"number": "100", "word": "Coax", "meaning": "persuade gently"},
+{"number": "101", "word": "Coincidence", "meaning": "chance occurrence"},
+{"number": "102", "word": "Collapse", "meaning": "fall down"},
+{"number": "103", "word": "Comfort", "meaning": "ease"},
+{"number": "104", "word": "Commemorate", "meaning": "remember"},
+{"number": "105", "word": "Commence", "meaning": "begin"},
+{"number": "106", "word": "companion", "meaning": "friend"},
+{"number": "107", "word": "Compassion", "meaning": "sympathy"},
+{"number": "108", "word": "Compel", "meaning": "force"},
+{"number": "109", "word": "competition", "meaning": "contest"},
+{"number": "110", "word": "complex", "meaning": "complicated"},
+{"number": "111", "word": "Compliment", "meaning": "praise"},
+{"number": "112", "word": "Compose", "meaning": "create"},
+{"number": "113", "word": "comprehend", "meaning": "understand"},
+{"number": "114", "word": "Compromise", "meaning": "agreement"},
+{"number": "115", "word": "comrade", "meaning": "companion"},
+{"number": "116", "word": "Conceal", "meaning": "hide"},
+{"number": "117", "word": "Concede", "meaning": "admit"},
+{"number": "118", "word": "conceited", "meaning": "vain"},
+{"number": "119", "word": "conclude", "meaning": "end"},
+{"number": "120", "word": "conclusion", "meaning": "end"},
+{"number": "121", "word": "condemn", "meaning": "criticize"},
+{"number": "122", "word": "Confide", "meaning": "tell secretly"},
+{"number": "123", "word": "confine", "meaning": "restrict"},
+{"number": "124", "word": "Conquer", "meaning": "defeat"},
+{"number": "125", "word": "Conscience", "meaning": "moral sense"},
+{"number": "126", "word": "conscious", "meaning": "aware"},
+{"number": "127", "word": "consent", "meaning": "agree"},
+{"number": "128", "word": "Considerate", "meaning": "thoughtful"},
+{"number": "129", "word": "consideration", "meaning": "thought"},
+{"number": "130", "word": "consist", "meaning": "be composed of"},
+{"number": "131", "word": "Consistent", "meaning": "unchanging"},
+{"number": "132", "word": "Conspire", "meaning": "plot"},
+{"number": "133", "word": "constant", "meaning": "unchanging"},
+{"number": "134", "word": "consume", "meaning": "eat"},
+{"number": "135", "word": "Consumer", "meaning": "buyer"},
+{"number": "136", "word": "Contemplate", "meaning": "think about"},
+{"number": "137", "word": "contemporary", "meaning": "modern"},
+{"number": "138", "word": "contempt", "meaning": "scorn"},
+{"number": "139", "word": "content", "meaning": "satisfied"},
+{"number": "140", "word": "contest", "meaning": "competition"},
+{"number": "141", "word": "contract", "meaning": "agreement"},
+{"number": "142", "word": "Contradict", "meaning": "deny"},
+{"number": "143", "word": "Contrast", "meaning": "difference"},
+{"number": "144", "word": "contribute", "meaning": "give"},
+{"number": "145", "word": "Conundrum", "meaning": "puzzle"},
+{"number": "146", "word": "conventional", "meaning": "traditional"},
+{"number": "147", "word": "convert", "meaning": "change"},
+{"number": "148", "word": "convey", "meaning": "transport"},
+{"number": "149", "word": "Convince", "meaning": "persuade"},
+{"number": "150", "word": "Cooperative", "meaning": "helpful"},
+{"number": "151", "word": "Cordial", "meaning": "warm and friendly"},
+{"number": "152", "word": "correct", "meaning": "right"},
+{"number": "153", "word": "Courage", "meaning": "bravery"},
+{"number": "154", "word": "course", "meaning": "path"},
+{"number": "155", "word": "covert", "meaning": "secret"},
+{"number": "156", "word": "covet", "meaning": "desire"},
+{"number": "157", "word": "coy", "meaning": "shy"},
+{"number": "158", "word": "credit", "meaning": "trust"},
+{"number": "159", "word": "Creep", "meaning": "crawl"},
+{"number": "160", "word": "cultivate", "meaning": "grow"},
+{"number": "161", "word": "cunning", "meaning": "crafty"},
+{"number": "162", "word": "curb", "meaning": "restrain"},
+{"number": "163", "word": "curious", "meaning": "inquisitive"},
+{"number": "164", "word": "curt", "meaning": "brief"},
+{"number": "165", "word": "custom", "meaning": "tradition"},
+{"number": "166", "word": "Dubious", "meaning": "doubtful"},
+{"number": "167", "word": "earnest", "meaning": "sincere; serious"},
+{"number": "168", "word": "Echo", "meaning": "reflected sound; repeat"},
+{"number": "169", "word": "economical", "meaning": "thrifty; efficient"},
+{"number": "170", "word": "Ecosystem", "meaning": "ecological system"},
+{"number": "171", "word": "Eerie", "meaning": "strange; spooky"},
+{"number": "172", "word": "elect", "meaning": "choose; select"},
+{"number": "173", "word": "elude", "meaning": "escape; avoid"},
+{"number": "174", "word": "Elusive", "meaning": "hard to catch; evasive"},
+{"number": "175", "word": "embarrass", "meaning": "make uncomfortable; shame"},
+{"number": "176", "word": "Embellish", "meaning": "decorate; enhance"},
+{"number": "177", "word": "Embrace", "meaning": "hug; accept"},
+{"number": "178", "word": "emerge", "meaning": "come out; appear"},
+{"number": "179", "word": "empire", "meaning": "group of territories under one ruler"},
+{"number": "180", "word": "employ", "meaning": "use; hire"},
+{"number": "181", "word": "Empower", "meaning": "authorize; enable"},
+{"number": "182", "word": "Endeavour", "meaning": "try hard"},
+{"number": "183", "word": "Endurance", "meaning": "stamina; perseverance"},
+{"number": "184", "word": "Endure", "meaning": "bear; last"},
+{"number": "185", "word": "Enrage", "meaning": "anger; infuriate"},
+{"number": "186", "word": "entire", "meaning": "whole; complete"},
+{"number": "187", "word": "entirely", "meaning": "completely; wholly"},
+{"number": "188", "word": "entrance", "meaning": "entry; captivate"},
+{"number": "189", "word": "Envelop", "meaning": "wrap; surround"},
+{"number": "190", "word": "environment", "meaning": "surroundings; conditions"},
+{"number": "191", "word": "Equality", "meaning": "sameness; fairness"},
+{"number": "192", "word": "equip", "meaning": "provide; supply"},
+{"number": "193", "word": "equipment", "meaning": "supplies; gear"},
+{"number": "194", "word": "Era", "meaning": "age; period"},
+{"number": "195", "word": "erect", "meaning": "upright; build"},
+{"number": "196", "word": "Erosion", "meaning": "wearing away; corrosion"},
+{"number": "197", "word": "errand", "meaning": "short trip; task"},
+{"number": "198", "word": "Erratic", "meaning": "unpredictable; irregular"},
+{"number": "199", "word": "Escalate", "meaning": "increase; intensify"},
+{"number": "200", "word": "especially", "meaning": "particularly; specially"},
+{"number": "201", "word": "estimate", "meaning": "approximate calculation; judge"},
+{"number": "202", "word": "Ethereal", "meaning": "heavenly; delicate"},
+{"number": "203", "word": "evaluation", "meaning": "assessment; judgment"},
+{"number": "204", "word": "every", "meaning": "each; all"},
+{"number": "205", "word": "Evidence", "meaning": "proof; indication"},
+{"number": "206", "word": "evident", "meaning": "obvious; clear"},
+{"number": "207", "word": "Exaggerate", "meaning": "overstate; overemphasize"},
+{"number": "208", "word": "Exam", "meaning": "examination; test"},
+{"number": "209", "word": "excellent", "meaning": "outstanding; superior"},
+{"number": "210", "word": "Exception", "meaning": "exclusion; special case"},
+{"number": "211", "word": "exciting", "meaning": "thrilling; stimulating"},
+{"number": "212", "word": "exclaim", "meaning": "cry out; shout"},
+{"number": "213", "word": "Excruciating", "meaning": "agonizing; very painful"},
+{"number": "214", "word": "existence", "meaning": "being; life"},
+{"number": "215", "word": "expand", "meaning": "enlarge; increase"},
+{"number": "216", "word": "expel", "meaning": "drive out; eject"},
+{"number": "217", "word": "expense", "meaning": "cost; expenditure"},
+{"number": "218", "word": "explanation", "meaning": "clarification; reason"},
+{"number": "219", "word": "Expressive", "meaning": "showing feelings; meaningful"},
+{"number": "220", "word": "Exquisite", "meaning": "beautiful; refined"},
+{"number": "221", "word": "extended", "meaning": "stretched out; prolonged"},
+{"number": "222", "word": "exterior", "meaning": "outer; outside"},
+{"number": "223", "word": "extinction", "meaning": "dying out; end"},
+{"number": "224", "word": "extract", "meaning": "remove; passage"},
+{"number": "225", "word": "extremely", "meaning": "very; exceptionally"},
+{"number": "226", "word": "Exuberant", "meaning": "lively"},
+{"number": "227", "word": "Exultant", "meaning": "rejoicing; triumphant"},
+{"number": "228", "word": "Foamy", "meaning": "frothy; bubbly"},
+{"number": "229", "word": "foe", "meaning": "enemy; opponent"},
+{"number": "230", "word": "Folklore", "meaning": "traditional beliefs"},
+{"number": "231", "word": "forbid", "meaning": "prohibit; prevent"},
+{"number": "232", "word": "Foreboding", "meaning": "premonition; ominous"},
+{"number": "233", "word": "Forecast", "meaning": "predict; prediction"},
+{"number": "234", "word": "Foreshadow", "meaning": "indicate beforehand"},
+{"number": "235", "word": "Formidable", "meaning": "fearsome"},
+{"number": "236", "word": "found", "meaning": "establish; past of find"},
+{"number": "237", "word": "foundation", "meaning": "base; establishment"},
+{"number": "238", "word": "fragrant", "meaning": "sweet-smelling; aromatic"},
+{"number": "239", "word": "free", "meaning": "not confined; without charge"},
+{"number": "240", "word": "Frequent", "meaning": "common; visit often"},
+{"number": "241", "word": "Fretful", "meaning": "anxious; irritable"},
+{"number": "242", "word": "Friday", "meaning": "sixth day of week"},
+{"number": "243", "word": "friend", "meaning": "companion; ally"},
+{"number": "244", "word": "friendly", "meaning": "amicable; kind"},
+{"number": "245", "word": "frivolous", "meaning": "silly; trivial"},
+{"number": "246", "word": "front", "meaning": "forward part; face"},
+{"number": "247", "word": "fund", "meaning": "money reserve; finance"},
+{"number": "248", "word": "Gullible", "meaning": "easily fooled"},
+{"number": "249", "word": "Imminent", "meaning": "about to happen"},
+{"number": "250", "word": "Ingenious", "meaning": "clever"},
+{"number": "251", "word": "Jovial", "meaning": "cheerful"},
+{"number": "252", "word": "Lethargic", "meaning": "sluggish"},
+{"number": "253", "word": "Lucrative", "meaning": "profitable"},
+{"number": "254", "word": "Macabre", "meaning": "gruesome"},
+{"number": "255", "word": "Majestic", "meaning": "grand"},
+{"number": "256", "word": "Malady", "meaning": "illness"},
+{"number": "257", "word": "Meticulous", "meaning": "very careful"},
+{"number": "258", "word": "nimble", "meaning": "quick"},
+{"number": "259", "word": "Obedient", "meaning": "dutiful"},
+{"number": "260", "word": "Ominous", "meaning": "threatening"},
+{"number": "261", "word": "peril", "meaning": "danger"},
+{"number": "262", "word": "Plausible", "meaning": "believable"},
+{"number": "263", "word": "Pristine", "meaning": "pure"},
+{"number": "264", "word": "Relinquish", "meaning": "give up"},
+{"number": "265", "word": "Rigorous", "meaning": "strict"},
+{"number": "266", "word": "Ruthless", "meaning": "merciless"},
+{"number": "267", "word": "Sanguine", "meaning": "optimistic"},
+{"number": "268", "word": "Sinister", "meaning": "evil"},
+{"number": "269", "word": "Tedious", "meaning": "boring"},
+{"number": "270", "word": "Treacherous", "meaning": "dangerous"},
+{"number": "271", "word": "Turbulent", "meaning": "stormy"},
+{"number": "272", "word": "Unfathomable", "meaning": "hard to understand"},
+{"number": "273", "word": "Vigilant", "meaning": "watchful"},
+{"number": "274", "word": "Vivacious", "meaning": "lively"},
+{"number": "275", "word": "Wistful", "meaning": "longing"},
+{"number": "276", "word": "Zealous", "meaning": "enthusiastic"}
+        ];
+
+        let currentIndex = 0;
+        let reviewedCards = new Set();
+        let isFlipped = false;
+        let quizCorrect = 0;
+        let quizTotal = 0;
+        let currentMode = 'flashcard';
+        let teacherIndex = 0;
+
+        function updateCard() {
+            const card = vocabData[currentIndex];
+            document.getElementById('wordDisplay').textContent = card.word;
+            document.getElementById('meaningDisplay').textContent = card.meaning;
+            document.getElementById('cardNumberFront').textContent = `${currentIndex + 1} / ${vocabData.length}`;
+            document.getElementById('cardNumberBack').textContent = `${currentIndex + 1} / ${vocabData.length}`;
+            document.getElementById('currentCard').textContent = currentIndex + 1;
+            document.getElementById('totalCards').textContent = vocabData.length;
+
+            reviewedCards.add(currentIndex);
+            document.getElementById('reviewedCards').textContent = reviewedCards.size;
+
+            updateProgress();
+            updateNavButtons();
+        }
+
+        function updateProgress() {
+            const progress = (reviewedCards.size / vocabData.length) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+            document.getElementById('progressBar').textContent = Math.round(progress) + '%';
+        }
+
+        function updateNavButtons() {
+            document.getElementById('prevBtn').disabled = currentIndex === 0;
+            document.getElementById('nextBtn').disabled = currentIndex === vocabData.length - 1;
+        }
+
+        function flipCard() {
+            const flashcard = document.getElementById('flashcard');
+            flashcard.classList.toggle('flipped');
+            isFlipped = !isFlipped;
+        }
+
+        function nextCard() {
+            if (currentIndex < vocabData.length - 1) {
+                currentIndex++;
+                if (isFlipped) flipCard();
+                updateCard();
+            }
+        }
+
+        function previousCard() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                if (isFlipped) flipCard();
+                updateCard();
+            }
+        }
+
+        function shuffleCards() {
+            for (let i = vocabData.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [vocabData[i], vocabData[j]] = [vocabData[j], vocabData[i]];
+            }
+            currentIndex = 0;
+            if (isFlipped) flipCard();
+            updateCard();
+            showNotification('Cards shuffled!');
+        }
+
+        function resetProgress() {
+            reviewedCards.clear();
+            currentIndex = 0;
+            quizCorrect = 0;
+            quizTotal = 0;
+            if (isFlipped) flipCard();
+            updateCard();
+            document.getElementById('quizScore').textContent = '0%';
+            showNotification('Progress reset!');
+        }
+
+        function markAsKnown() {
+            showNotification('Marked as known!');
+            nextCard();
+        }
+
+        function switchMode(mode) {
+            currentMode = mode;
+            document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+
+            if (mode === 'flashcard') {
+                document.getElementById('flashcardMode').style.display = 'block';
+                document.getElementById('quizMode').classList.remove('active');
+                document.getElementById('teacherMode').style.display = 'none';
+                document.querySelectorAll('.mode-btn')[0].classList.add('active');
+            } else if (mode === 'quiz') {
+                document.getElementById('flashcardMode').style.display = 'none';
+                document.getElementById('quizMode').classList.add('active');
+                document.getElementById('teacherMode').style.display = 'none';
+                document.querySelectorAll('.mode-btn')[1].classList.add('active');
+                loadQuiz();
+            } else if (mode === 'teacher') {
+                document.getElementById('flashcardMode').style.display = 'none';
+                document.getElementById('quizMode').classList.remove('active');
+                document.getElementById('teacherMode').style.display = 'block';
+                document.querySelectorAll('.mode-btn')[2].classList.add('active');
+                updateTeacherCard();
+            }
+        }
+
+        function loadQuiz() {
+            const quizCard = vocabData[Math.floor(Math.random() * vocabData.length)];
+            document.getElementById('quizWord').textContent = quizCard.word;
+
+            const options = [quizCard.meaning];
+            while (options.length < 4) {
+                const randomMeaning = vocabData[Math.floor(Math.random() * vocabData.length)].meaning;
+                if (!options.includes(randomMeaning)) {
+                    options.push(randomMeaning);
+                }
+            }
+
+            options.sort(() => Math.random() - 0.5);
+
+            const quizOptions = document.getElementById('quizOptions');
+            quizOptions.innerHTML = '';
+
+            options.forEach(option => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'quiz-option';
+                optionDiv.textContent = option;
+                optionDiv.onclick = () => checkQuizAnswer(option, quizCard.meaning, optionDiv);
+                quizOptions.appendChild(optionDiv);
+            });
+        }
+
+        function checkQuizAnswer(selected, correct, element) {
+            quizTotal++;
+            if (selected === correct) {
+                element.classList.add('correct');
+                quizCorrect++;
+                showNotification('Correct!');
+            } else {
+                element.classList.add('incorrect');
+                showNotification('Try again!');
+                document.querySelectorAll('.quiz-option').forEach(opt => {
+                    if (opt.textContent === correct) {
+                        opt.classList.add('correct');
+                    }
+                });
+            }
+
+            const score = Math.round((quizCorrect / quizTotal) * 100);
+            document.getElementById('quizScore').textContent = score + '%';
+
+            document.querySelectorAll('.quiz-option').forEach(opt => {
+                opt.style.pointerEvents = 'none';
+            });
+        }
+
+        function nextQuiz() {
+            loadQuiz();
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: white;
+                padding: 20px 30px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                z-index: 1000;
+                animation: fadeIn 0.3s ease;
+                font-weight: bold;
+                color: #667eea;
+            `;
+            document.body.appendChild(notification);
+            setTimeout(() => {
+                notification.style.animation = 'fadeOut 0.3s ease';
+                setTimeout(() => notification.remove(), 300);
+            }, 2000);
+        }
+
+        function updateTeacherCard() {
+            const card = vocabData[teacherIndex];
+            document.getElementById('teacherWordDisplay').textContent = card.word;
+            document.getElementById('teacherCardNumber').textContent = `${teacherIndex + 1} / ${vocabData.length}`;
+            updateTeacherNavButtons();
+        }
+
+        function updateTeacherNavButtons() {
+            document.getElementById('teacherPrevBtn').disabled = teacherIndex === 0;
+            document.getElementById('teacherNextBtn').disabled = teacherIndex === vocabData.length - 1;
+        }
+
+        function nextTeacherCard() {
+            if (teacherIndex < vocabData.length - 1) {
+                teacherIndex++;
+                updateTeacherCard();
+            }
+        }
+
+        function previousTeacherCard() {
+            if (teacherIndex > 0) {
+                teacherIndex--;
+                updateTeacherCard();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (currentMode === 'flashcard') {
+                if (e.key === 'ArrowRight') nextCard();
+                if (e.key === 'ArrowLeft') previousCard();
+                if (e.key === ' ') {
+                    e.preventDefault();
+                    flipCard();
+                }
+            } else if (currentMode === 'teacher') {
+                if (e.key === 'ArrowRight') nextTeacherCard();
+                if (e.key === 'ArrowLeft') previousTeacherCard();
+            }
+        });
+
+        updateCard();
+    </script>
+</body>
+</html>

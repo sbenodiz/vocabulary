@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11+ Vocabulary Flashcards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .subtitle {
+            color: white;
+            font-size: 1.3em;
+            margin-bottom: 50px;
+            opacity: 0.9;
+            animation: fadeIn 1s ease;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+        }
+
+        .card-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #6c757d;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>11+ Vocabulary Flashcards</h1>
+        <p class="subtitle">Choose your learning mode below</p>
+
+        <div class="cards-container">
+            <a href="student-version.html" class="card">
+                <div class="card-icon">🎓</div>
+                <h2>Student Practice</h2>
+                <p>Interactive flashcards with 3 learning modes: Self-study, Quiz, and Teacher-led</p>
+                <span class="badge">276 Words</span>
+            </a>
+
+            <a href="teacher-version.html" class="card">
+                <div class="card-icon">👨‍🏫</div>
+                <h2>Teacher Reference</h2>
+                <p>Complete word list with definitions, searchable and printable</p>
+                <span class="badge">Full Reference</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

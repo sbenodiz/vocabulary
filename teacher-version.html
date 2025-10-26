@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11+ Vocabulary - Teacher Version</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .controls {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #dee2e6;
+            border-radius: 30px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+        }
+
+        .print-btn {
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .print-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102,126,234,0.3);
+        }
+
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .vocab-table thead {
+            background: #667eea;
+            color: white;
+        }
+
+        .vocab-table th {
+            padding: 20px;
+            text-align: left;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .vocab-table tbody tr {
+            border-bottom: 1px solid #e9ecef;
+            transition: all 0.3s;
+        }
+
+        .vocab-table tbody tr:hover {
+            background: #f8f9fa;
+            transform: scale(1.01);
+        }
+
+        .vocab-table td {
+            padding: 18px 20px;
+        }
+
+        .word-cell {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #667eea;
+        }
+
+        .meaning-cell {
+            color: #495057;
+            line-height: 1.6;
+        }
+
+        .number-cell {
+            color: #6c757d;
+            font-weight: 500;
+            width: 60px;
+        }
+
+        .stats {
+            padding: 30px;
+            background: #f8f9fa;
+            border-top: 2px solid #e9ecef;
+            text-align: center;
+        }
+
+        .stats h3 {
+            color: #495057;
+            margin-bottom: 20px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-card .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-card .label {
+            color: #6c757d;
+            margin-top: 5px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .controls, .print-btn, .stats {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .vocab-table tbody tr:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .controls {
+                flex-direction: column;
+            }
+            .search-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>11+ Vocabulary Flashcards</h1>
+            <p>Teacher's Complete Reference Guide</p>
+            <div class="badge">300 Essential Words</div>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for any word or meaning...">
+            </div>
+            <button class="print-btn" onclick="window.print()">Print Reference Guide</button>
+        </div>
+
+        <table class="vocab-table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Word</th>
+                    <th>Meaning / Synonyms</th>
+                </tr>
+            </thead>
+            <tbody id="vocabTableBody">
+                <!-- Data will be loaded here -->
+            </tbody>
+        </table>
+
+        <div class="stats">
+            <h3>Vocabulary Statistics</h3>
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="number">300</div>
+                    <div class="label">Total Words</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number" id="displayCount">300</div>
+                    <div class="label">Currently Showing</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">11+</div>
+                    <div class="label">Target Age</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const vocabData = [
+{"number": "1", "word": "abandon", "meaning": "give up; leave behind"},
+{"number": "2", "word": "Abbreviate", "meaning": "shorten"},
+{"number": "3", "word": "Abduct", "meaning": "kidnap"},
+{"number": "4", "word": "Aberration", "meaning": "deviation from normal"},
+{"number": "5", "word": "Abhorrent", "meaning": "disgusting; hateful"},
+{"number": "6", "word": "abode", "meaning": "home; dwelling"},
+{"number": "7", "word": "Abrasive", "meaning": "rough; harsh"},
+{"number": "8", "word": "absence", "meaning": "being away"},
+{"number": "9", "word": "Absent", "meaning": "not present"},
+{"number": "10", "word": "Abstract", "meaning": "theoretical; not concrete"},
+{"number": "11", "word": "absurd", "meaning": "ridiculous"},
+{"number": "12", "word": "Abundance", "meaning": "plenty; large quantity"},
+{"number": "13", "word": "abundant", "meaning": "plentiful"},
+{"number": "14", "word": "Abysmal", "meaning": "extremely bad"},
+{"number": "15", "word": "Abyss", "meaning": "deep pit"},
+{"number": "16", "word": "Acclaim", "meaning": "praise"},
+{"number": "17", "word": "accuse", "meaning": "blame"},
+{"number": "18", "word": "accustom", "meaning": "make familiar"},
+{"number": "19", "word": "Acknowledge", "meaning": "admit; recognize"},
+{"number": "20", "word": "acquainted", "meaning": "familiar with"},
+{"number": "21", "word": "Adamant", "meaning": "firm"},
+{"number": "22", "word": "Adhere", "meaning": "stick to"},
+{"number": "23", "word": "Adorn", "meaning": "decorate"},
+{"number": "24", "word": "affable", "meaning": "friendly"},
+{"number": "25", "word": "Affluent", "meaning": "wealthy"},
+{"number": "26", "word": "alert", "meaning": "watchful"},
+{"number": "27", "word": "ally", "meaning": "friend; supporter"},
+{"number": "28", "word": "Aloof", "meaning": "distant"},
+{"number": "29", "word": "altitude", "meaning": "height"},
+{"number": "30", "word": "Ambiguous", "meaning": "unclear"},
+{"number": "31", "word": "ambition", "meaning": "strong desire"},
+{"number": "32", "word": "Amicable", "meaning": "friendly"},
+{"number": "33", "word": "ample", "meaning": "plenty"},
+{"number": "34", "word": "Anecdote", "meaning": "short story"},
+{"number": "35", "word": "Anguish", "meaning": "great suffering"},
+{"number": "36", "word": "Apex", "meaning": "highest point"},
+{"number": "37", "word": "Appeal", "meaning": "request; attract"},
+{"number": "38", "word": "apprehensive", "meaning": "anxious"},
+{"number": "39", "word": "Apprentice", "meaning": "trainee"},
+{"number": "40", "word": "approve", "meaning": "accept"},
+{"number": "41", "word": "Apt", "meaning": "suitable; likely"},
+{"number": "42", "word": "Archaic", "meaning": "old-fashioned"},
+{"number": "43", "word": "arduous", "meaning": "difficult"},
+{"number": "44", "word": "arouse", "meaning": "awaken"},
+{"number": "45", "word": "Array", "meaning": "display"},
+{"number": "46", "word": "Articulate", "meaning": "express clearly"},
+{"number": "47", "word": "Artificial", "meaning": "man-made"},
+{"number": "48", "word": "Ascend", "meaning": "rise"},
+{"number": "49", "word": "assemble", "meaning": "gather"},
+{"number": "50", "word": "Asset", "meaning": "valuable thing"},
+{"number": "51", "word": "Astute", "meaning": "shrewd"},
+{"number": "52", "word": "attempt", "meaning": "try"},
+{"number": "53", "word": "Attribute", "meaning": "quality"},
+{"number": "54", "word": "available", "meaning": "obtainable"},
+{"number": "55", "word": "Avenge", "meaning": "take revenge"},
+{"number": "56", "word": "banish", "meaning": "exile"},
+{"number": "57", "word": "Barbaric", "meaning": "savage"},
+{"number": "58", "word": "bargain", "meaning": "deal"},
+{"number": "59", "word": "barren", "meaning": "empty; infertile"},
+{"number": "60", "word": "Bashful", "meaning": "shy"},
+{"number": "61", "word": "believe", "meaning": "accept as true"},
+{"number": "62", "word": "Belligerent", "meaning": "hostile"},
+{"number": "63", "word": "bemused", "meaning": "confused"},
+{"number": "64", "word": "Beneficial", "meaning": "helpful"},
+{"number": "65", "word": "benefit", "meaning": "advantage"},
+{"number": "66", "word": "Benevolent", "meaning": "kind"},
+{"number": "67", "word": "betray", "meaning": "be disloyal"},
+{"number": "68", "word": "Beverage", "meaning": "drink"},
+{"number": "69", "word": "Bewilder", "meaning": "confuse"},
+{"number": "70", "word": "Bias", "meaning": "prejudice"},
+{"number": "71", "word": "Blatant", "meaning": "obvious"},
+{"number": "72", "word": "Boisterous", "meaning": "noisy"},
+{"number": "73", "word": "Bold", "meaning": "brave"},
+{"number": "74", "word": "Bolster", "meaning": "support"},
+{"number": "75", "word": "Brandish", "meaning": "wave"},
+{"number": "76", "word": "brief", "meaning": "short"},
+{"number": "77", "word": "broad", "meaning": "wide"},
+{"number": "78", "word": "bruise", "meaning": "injury"},
+{"number": "79", "word": "brusque", "meaning": "abrupt"},
+{"number": "80", "word": "Bumbling", "meaning": "clumsy"},
+{"number": "81", "word": "Buoyant", "meaning": "cheerful"},
+{"number": "82", "word": "burden", "meaning": "load"},
+{"number": "83", "word": "Cacophony", "meaning": "harsh noise"},
+{"number": "84", "word": "calamity", "meaning": "disaster"},
+{"number": "85", "word": "Callous", "meaning": "insensitive"},
+{"number": "86", "word": "Camouflage", "meaning": "disguise"},
+{"number": "87", "word": "Cascade", "meaning": "waterfall"},
+{"number": "88", "word": "Catastrophe", "meaning": "disaster"},
+{"number": "89", "word": "caution", "meaning": "warning"},
+{"number": "90", "word": "cease", "meaning": "stop"},
+{"number": "91", "word": "cemetery", "meaning": "graveyard"},
+{"number": "92", "word": "Challenge", "meaning": "test"},
+{"number": "93", "word": "Champion", "meaning": "winner"},
+{"number": "94", "word": "chaos", "meaning": "disorder"},
+{"number": "95", "word": "Charred", "meaning": "burnt"},
+{"number": "96", "word": "Chivalrous", "meaning": "courteous"},
+{"number": "97", "word": "Clamber", "meaning": "climb awkwardly"},
+{"number": "98", "word": "Clench", "meaning": "grip tightly"},
+{"number": "99", "word": "coarse", "meaning": "rough"},
+{"number": "100", "word": "Coax", "meaning": "persuade gently"},
+{"number": "101", "word": "Coincidence", "meaning": "chance occurrence"},
+{"number": "102", "word": "Collapse", "meaning": "fall down"},
+{"number": "103", "word": "Comfort", "meaning": "ease"},
+{"number": "104", "word": "Commemorate", "meaning": "remember"},
+{"number": "105", "word": "Commence", "meaning": "begin"},
+{"number": "106", "word": "companion", "meaning": "friend"},
+{"number": "107", "word": "Compassion", "meaning": "sympathy"},
+{"number": "108", "word": "Compel", "meaning": "force"},
+{"number": "109", "word": "competition", "meaning": "contest"},
+{"number": "110", "word": "complex", "meaning": "complicated"},
+{"number": "111", "word": "Compliment", "meaning": "praise"},
+{"number": "112", "word": "Compose", "meaning": "create"},
+{"number": "113", "word": "comprehend", "meaning": "understand"},
+{"number": "114", "word": "Compromise", "meaning": "agreement"},
+{"number": "115", "word": "comrade", "meaning": "companion"},
+{"number": "116", "word": "Conceal", "meaning": "hide"},
+{"number": "117", "word": "Concede", "meaning": "admit"},
+{"number": "118", "word": "conceited", "meaning": "vain"},
+{"number": "119", "word": "conclude", "meaning": "end"},
+{"number": "120", "word": "conclusion", "meaning": "end"},
+{"number": "121", "word": "condemn", "meaning": "criticize"},
+{"number": "122", "word": "Confide", "meaning": "tell secretly"},
+{"number": "123", "word": "confine", "meaning": "restrict"},
+{"number": "124", "word": "Conquer", "meaning": "defeat"},
+{"number": "125", "word": "Conscience", "meaning": "moral sense"},
+{"number": "126", "word": "conscious", "meaning": "aware"},
+{"number": "127", "word": "consent", "meaning": "agree"},
+{"number": "128", "word": "Considerate", "meaning": "thoughtful"},
+{"number": "129", "word": "consideration", "meaning": "thought"},
+{"number": "130", "word": "consist", "meaning": "be composed of"},
+{"number": "131", "word": "Consistent", "meaning": "unchanging"},
+{"number": "132", "word": "Conspire", "meaning": "plot"},
+{"number": "133", "word": "constant", "meaning": "unchanging"},
+{"number": "134", "word": "consume", "meaning": "eat"},
+{"number": "135", "word": "Consumer", "meaning": "buyer"},
+{"number": "136", "word": "Contemplate", "meaning": "think about"},
+{"number": "137", "word": "contemporary", "meaning": "modern"},
+{"number": "138", "word": "contempt", "meaning": "scorn"},
+{"number": "139", "word": "content", "meaning": "satisfied"},
+{"number": "140", "word": "contest", "meaning": "competition"},
+{"number": "141", "word": "contract", "meaning": "agreement"},
+{"number": "142", "word": "Contradict", "meaning": "deny"},
+{"number": "143", "word": "Contrast", "meaning": "difference"},
+{"number": "144", "word": "contribute", "meaning": "give"},
+{"number": "145", "word": "Conundrum", "meaning": "puzzle"},
+{"number": "146", "word": "conventional", "meaning": "traditional"},
+{"number": "147", "word": "convert", "meaning": "change"},
+{"number": "148", "word": "convey", "meaning": "transport"},
+{"number": "149", "word": "Convince", "meaning": "persuade"},
+{"number": "150", "word": "Cooperative", "meaning": "helpful"},
+{"number": "151", "word": "Cordial", "meaning": "warm and friendly"},
+{"number": "152", "word": "correct", "meaning": "right"},
+{"number": "153", "word": "Courage", "meaning": "bravery"},
+{"number": "154", "word": "course", "meaning": "path"},
+{"number": "155", "word": "covert", "meaning": "secret"},
+{"number": "156", "word": "covet", "meaning": "desire"},
+{"number": "157", "word": "coy", "meaning": "shy"},
+{"number": "158", "word": "credit", "meaning": "trust"},
+{"number": "159", "word": "Creep", "meaning": "crawl"},
+{"number": "160", "word": "cultivate", "meaning": "grow"},
+{"number": "161", "word": "cunning", "meaning": "crafty"},
+{"number": "162", "word": "curb", "meaning": "restrain"},
+{"number": "163", "word": "curious", "meaning": "inquisitive"},
+{"number": "164", "word": "curt", "meaning": "brief"},
+{"number": "165", "word": "custom", "meaning": "tradition"},
+{"number": "166", "word": "Dubious", "meaning": "doubtful"},
+{"number": "167", "word": "earnest", "meaning": "sincere; serious"},
+{"number": "168", "word": "Echo", "meaning": "reflected sound; repeat"},
+{"number": "169", "word": "economical", "meaning": "thrifty; efficient"},
+{"number": "170", "word": "Ecosystem", "meaning": "ecological system"},
+{"number": "171", "word": "Eerie", "meaning": "strange; spooky"},
+{"number": "172", "word": "elect", "meaning": "choose; select"},
+{"number": "173", "word": "elude", "meaning": "escape; avoid"},
+{"number": "174", "word": "Elusive", "meaning": "hard to catch; evasive"},
+{"number": "175", "word": "embarrass", "meaning": "make uncomfortable; shame"},
+{"number": "176", "word": "Embellish", "meaning": "decorate; enhance"},
+{"number": "177", "word": "Embrace", "meaning": "hug; accept"},
+{"number": "178", "word": "emerge", "meaning": "come out; appear"},
+{"number": "179", "word": "empire", "meaning": "group of territories under one ruler"},
+{"number": "180", "word": "employ", "meaning": "use; hire"},
+{"number": "181", "word": "Empower", "meaning": "authorize; enable"},
+{"number": "182", "word": "Endeavour", "meaning": "try hard"},
+{"number": "183", "word": "Endurance", "meaning": "stamina; perseverance"},
+{"number": "184", "word": "Endure", "meaning": "bear; last"},
+{"number": "185", "word": "Enrage", "meaning": "anger; infuriate"},
+{"number": "186", "word": "entire", "meaning": "whole; complete"},
+{"number": "187", "word": "entirely", "meaning": "completely; wholly"},
+{"number": "188", "word": "entrance", "meaning": "entry; captivate"},
+{"number": "189", "word": "Envelop", "meaning": "wrap; surround"},
+{"number": "190", "word": "environment", "meaning": "surroundings; conditions"},
+{"number": "191", "word": "Equality", "meaning": "sameness; fairness"},
+{"number": "192", "word": "equip", "meaning": "provide; supply"},
+{"number": "193", "word": "equipment", "meaning": "supplies; gear"},
+{"number": "194", "word": "Era", "meaning": "age; period"},
+{"number": "195", "word": "erect", "meaning": "upright; build"},
+{"number": "196", "word": "Erosion", "meaning": "wearing away; corrosion"},
+{"number": "197", "word": "errand", "meaning": "short trip; task"},
+{"number": "198", "word": "Erratic", "meaning": "unpredictable; irregular"},
+{"number": "199", "word": "Escalate", "meaning": "increase; intensify"},
+{"number": "200", "word": "especially", "meaning": "particularly; specially"},
+{"number": "201", "word": "estimate", "meaning": "approximate calculation; judge"},
+{"number": "202", "word": "Ethereal", "meaning": "heavenly; delicate"},
+{"number": "203", "word": "evaluation", "meaning": "assessment; judgment"},
+{"number": "204", "word": "every", "meaning": "each; all"},
+{"number": "205", "word": "Evidence", "meaning": "proof; indication"},
+{"number": "206", "word": "evident", "meaning": "obvious; clear"},
+{"number": "207", "word": "Exaggerate", "meaning": "overstate; overemphasize"},
+{"number": "208", "word": "Exam", "meaning": "examination; test"},
+{"number": "209", "word": "excellent", "meaning": "outstanding; superior"},
+{"number": "210", "word": "Exception", "meaning": "exclusion; special case"},
+{"number": "211", "word": "exciting", "meaning": "thrilling; stimulating"},
+{"number": "212", "word": "exclaim", "meaning": "cry out; shout"},
+{"number": "213", "word": "Excruciating", "meaning": "agonizing; very painful"},
+{"number": "214", "word": "existence", "meaning": "being; life"},
+{"number": "215", "word": "expand", "meaning": "enlarge; increase"},
+{"number": "216", "word": "expel", "meaning": "drive out; eject"},
+{"number": "217", "word": "expense", "meaning": "cost; expenditure"},
+{"number": "218", "word": "explanation", "meaning": "clarification; reason"},
+{"number": "219", "word": "Expressive", "meaning": "showing feelings; meaningful"},
+{"number": "220", "word": "Exquisite", "meaning": "beautiful; refined"},
+{"number": "221", "word": "extended", "meaning": "stretched out; prolonged"},
+{"number": "222", "word": "exterior", "meaning": "outer; outside"},
+{"number": "223", "word": "extinction", "meaning": "dying out; end"},
+{"number": "224", "word": "extract", "meaning": "remove; passage"},
+{"number": "225", "word": "extremely", "meaning": "very; exceptionally"},
+{"number": "226", "word": "Exuberant", "meaning": "lively"},
+{"number": "227", "word": "Exultant", "meaning": "rejoicing; triumphant"},
+{"number": "228", "word": "Foamy", "meaning": "frothy; bubbly"},
+{"number": "229", "word": "foe", "meaning": "enemy; opponent"},
+{"number": "230", "word": "Folklore", "meaning": "traditional beliefs"},
+{"number": "231", "word": "forbid", "meaning": "prohibit; prevent"},
+{"number": "232", "word": "Foreboding", "meaning": "premonition; ominous"},
+{"number": "233", "word": "Forecast", "meaning": "predict; prediction"},
+{"number": "234", "word": "Foreshadow", "meaning": "indicate beforehand"},
+{"number": "235", "word": "Formidable", "meaning": "fearsome"},
+{"number": "236", "word": "found", "meaning": "establish; past of find"},
+{"number": "237", "word": "foundation", "meaning": "base; establishment"},
+{"number": "238", "word": "fragrant", "meaning": "sweet-smelling; aromatic"},
+{"number": "239", "word": "free", "meaning": "not confined; without charge"},
+{"number": "240", "word": "Frequent", "meaning": "common; visit often"},
+{"number": "241", "word": "Fretful", "meaning": "anxious; irritable"},
+{"number": "242", "word": "Friday", "meaning": "sixth day of week"},
+{"number": "243", "word": "friend", "meaning": "companion; ally"},
+{"number": "244", "word": "friendly", "meaning": "amicable; kind"},
+{"number": "245", "word": "frivolous", "meaning": "silly; trivial"},
+{"number": "246", "word": "front", "meaning": "forward part; face"},
+{"number": "247", "word": "fund", "meaning": "money reserve; finance"},
+{"number": "248", "word": "Gullible", "meaning": "easily fooled"},
+{"number": "249", "word": "Imminent", "meaning": "about to happen"},
+{"number": "250", "word": "Ingenious", "meaning": "clever"},
+{"number": "251", "word": "Jovial", "meaning": "cheerful"},
+{"number": "252", "word": "Lethargic", "meaning": "sluggish"},
+{"number": "253", "word": "Lucrative", "meaning": "profitable"},
+{"number": "254", "word": "Macabre", "meaning": "gruesome"},
+{"number": "255", "word": "Majestic", "meaning": "grand"},
+{"number": "256", "word": "Malady", "meaning": "illness"},
+{"number": "257", "word": "Meticulous", "meaning": "very careful"},
+{"number": "258", "word": "nimble", "meaning": "quick"},
+{"number": "259", "word": "Obedient", "meaning": "dutiful"},
+{"number": "260", "word": "Ominous", "meaning": "threatening"},
+{"number": "261", "word": "peril", "meaning": "danger"},
+{"number": "262", "word": "Plausible", "meaning": "believable"},
+{"number": "263", "word": "Pristine", "meaning": "pure"},
+{"number": "264", "word": "Relinquish", "meaning": "give up"},
+{"number": "265", "word": "Rigorous", "meaning": "strict"},
+{"number": "266", "word": "Ruthless", "meaning": "merciless"},
+{"number": "267", "word": "Sanguine", "meaning": "optimistic"},
+{"number": "268", "word": "Sinister", "meaning": "evil"},
+{"number": "269", "word": "Tedious", "meaning": "boring"},
+{"number": "270", "word": "Treacherous", "meaning": "dangerous"},
+{"number": "271", "word": "Turbulent", "meaning": "stormy"},
+{"number": "272", "word": "Unfathomable", "meaning": "hard to understand"},
+{"number": "273", "word": "Vigilant", "meaning": "watchful"},
+{"number": "274", "word": "Vivacious", "meaning": "lively"},
+{"number": "275", "word": "Wistful", "meaning": "longing"},
+{"number": "276", "word": "Zealous", "meaning": "enthusiastic"}
+        ];
+
+        function renderVocabTable(data) {
+            const tbody = document.getElementById('vocabTableBody');
+            tbody.innerHTML = '';
+
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="number-cell">${item.number}</td>
+                    <td class="word-cell">${item.word}</td>
+                    <td class="meaning-cell">${item.meaning}</td>
+                `;
+                tbody.appendChild(row);
+            });
+
+            document.getElementById('displayCount').textContent = data.length;
+        }
+
+        function searchVocab() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = vocabData.filter(item =>
+                item.word.toLowerCase().includes(searchTerm) ||
+                item.meaning.toLowerCase().includes(searchTerm)
+            );
+            renderVocabTable(filtered);
+        }
+
+        document.getElementById('searchInput').addEventListener('input', searchVocab);
+
+        renderVocabTable(vocabData);
+    </script>
+</body>
+</html>

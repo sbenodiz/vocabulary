@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*~
+
+# Original Word document (keep in repo but could exclude if desired)
+# 11plus_vocabulary_flashcards.docx
