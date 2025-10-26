@@ -1,6 +1,6 @@
 # 11+ Vocabulary Flashcards WebApp
 
-A beautiful, professional interactive flashcard application for learning 276 essential vocabulary words. Designed for 11-year-old children preparing for 11+ exams.
+A beautiful, professional interactive flashcard application for learning 1,193 essential vocabulary words. Designed for 11-year-old children preparing for 11+ exams.
 
 ## 🚀 Live Demo
 
@@ -56,7 +56,7 @@ A beautiful, professional interactive flashcard application for learning 276 ess
 ## Features Breakdown
 
 ### Student Practice Features:
-- 276 essential vocabulary words
+- 1,193 essential vocabulary words
 - Child-friendly definitions
 - Progress tracking
 - Interactive animations
