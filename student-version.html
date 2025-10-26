@@ -450,7 +450,7 @@
                 </div>
                 <div class="stat-box">
                     <div class="number" id="reviewedCards">0</div>
-                    <div class="label">Reviewed</div>
+                    <div class="label">Known Words</div>
                 </div>
                 <div class="stat-box">
                     <div class="number" id="quizScore">0%</div>
@@ -801,6 +801,26 @@
         let quizTotal = 0;
         let currentMode = 'flashcard';
         let teacherIndex = 0;
+        let knownWords = new Set();
+
+        // Load known words from localStorage
+        function loadKnownWords() {
+            const saved = localStorage.getItem('knownWords');
+            if (saved) {
+                knownWords = new Set(JSON.parse(saved));
+            }
+        }
+
+        // Save known words to localStorage
+        function saveKnownWords() {
+            localStorage.setItem('knownWords', JSON.stringify([...knownWords]));
+        }
+
+        // Check if current word is known
+        function isCurrentWordKnown() {
+            const word = vocabData[currentIndex].word;
+            return knownWords.has(word);
+        }
 
         function updateCard() {
             const card = vocabData[currentIndex];
@@ -812,10 +832,26 @@
             document.getElementById('totalCards').textContent = vocabData.length;
 
             reviewedCards.add(currentIndex);
-            document.getElementById('reviewedCards').textContent = reviewedCards.size;
+            document.getElementById('reviewedCards').textContent = knownWords.size;
+
+            // Update mark as known button appearance
+            updateMarkAsKnownButton();
 
             updateProgress();
             updateNavButtons();
+        }
+
+        function updateMarkAsKnownButton() {
+            const markBtn = document.querySelector('.btn-success');
+            if (markBtn) {
+                if (isCurrentWordKnown()) {
+                    markBtn.textContent = '✓ Known';
+                    markBtn.style.background = '#28a745';
+                } else {
+                    markBtn.textContent = 'Mark as Known';
+                    markBtn.style.background = '#6c757d';
+                }
+            }
         }
 
         function updateProgress() {
@@ -863,19 +899,37 @@
         }
 
         function resetProgress() {
-            reviewedCards.clear();
-            currentIndex = 0;
-            quizCorrect = 0;
-            quizTotal = 0;
-            if (isFlipped) flipCard();
-            updateCard();
-            document.getElementById('quizScore').textContent = '0%';
-            showNotification('Progress reset!');
+            if (confirm('Reset all progress including known words?')) {
+                reviewedCards.clear();
+                knownWords.clear();
+                saveKnownWords();
+                currentIndex = 0;
+                quizCorrect = 0;
+                quizTotal = 0;
+                if (isFlipped) flipCard();
+                updateCard();
+                document.getElementById('quizScore').textContent = '0%';
+                showNotification('Progress reset!');
+            }
         }
 
         function markAsKnown() {
-            showNotification('Marked as known!');
-            nextCard();
+            const word = vocabData[currentIndex].word;
+
+            if (knownWords.has(word)) {
+                // Unmark as known
+                knownWords.delete(word);
+                saveKnownWords();
+                showNotification('Unmarked!');
+                updateMarkAsKnownButton();
+                document.getElementById('reviewedCards').textContent = knownWords.size;
+            } else {
+                // Mark as known
+                knownWords.add(word);
+                saveKnownWords();
+                showNotification('Marked as known!');
+                nextCard();
+            }
         }
 
         function switchMode(mode) {
@@ -1019,6 +1073,8 @@
             }
         });
 
+        // Initialize the app
+        loadKnownWords();
         updateCard();
     </script>
 </body>
