@@ -2,6 +2,14 @@
 
 A beautiful, professional interactive flashcard application for learning 276 essential vocabulary words. Designed for 11-year-old children preparing for 11+ exams.
 
+## 🚀 Live Demo
+
+**[https://vocabulary-production-58bc.up.railway.app](https://vocabulary-production-58bc.up.railway.app)**
+
+## 📦 GitHub Repository
+
+**[https://github.com/sbenodiz/vocabulary](https://github.com/sbenodiz/vocabulary)**
+
 ## Features
 
 ### Teacher Version (`teacher-version.html`)
