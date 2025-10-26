@@ -1,1497 +1,5967 @@
 [
   {
-    "number": "2",
     "word": "abandon",
-    "meaning": "give up; leave behind"
+    "meaning": "give up; leave behind",
+    "number": "1"
   },
   {
-    "number": "3",
+    "word": "Abashed",
+    "meaning": "embarrassed",
+    "number": "2"
+  },
+  {
     "word": "Abbreviate",
-    "meaning": "shorten"
+    "meaning": "shorten",
+    "number": "3"
   },
   {
-    "number": "4",
     "word": "Abduct",
-    "meaning": "kidnap"
+    "meaning": "kidnap",
+    "number": "4"
   },
   {
-    "number": "5",
     "word": "Aberration",
-    "meaning": "deviation from normal"
+    "meaning": "deviation from normal",
+    "number": "5"
   },
   {
-    "number": "6",
+    "word": "Abhor",
+    "meaning": "hate",
+    "number": "6"
+  },
+  {
     "word": "Abhorrent",
-    "meaning": "disgusting; hateful"
+    "meaning": "disgusting; hateful",
+    "number": "7"
   },
   {
-    "number": "7",
     "word": "abode",
-    "meaning": "home; dwelling"
+    "meaning": "home; dwelling",
+    "number": "8"
   },
   {
-    "number": "8",
     "word": "Abrasive",
-    "meaning": "rough; harsh"
+    "meaning": "rough; harsh",
+    "number": "9"
   },
   {
-    "number": "9",
     "word": "absence",
-    "meaning": "being away"
+    "meaning": "being away",
+    "number": "10"
   },
   {
-    "number": "10",
     "word": "Absent",
-    "meaning": "not present"
+    "meaning": "not present",
+    "number": "11"
   },
   {
-    "number": "11",
     "word": "Abstract",
-    "meaning": "theoretical; not concrete"
+    "meaning": "theoretical; not concrete",
+    "number": "12"
   },
   {
-    "number": "12",
     "word": "absurd",
-    "meaning": "ridiculous"
+    "meaning": "ridiculous",
+    "number": "13"
   },
   {
-    "number": "13",
     "word": "Abundance",
-    "meaning": "plenty; large quantity"
+    "meaning": "plenty; large quantity",
+    "number": "14"
   },
   {
-    "number": "14",
-    "word": "abundance",
-    "meaning": "plenty; large quantity"
-  },
-  {
-    "number": "15",
     "word": "abundant",
-    "meaning": "plentiful"
+    "meaning": "plentiful",
+    "number": "15"
   },
   {
-    "number": "16",
     "word": "Abysmal",
-    "meaning": "extremely bad"
+    "meaning": "extremely bad",
+    "number": "16"
   },
   {
-    "number": "17",
     "word": "Abyss",
-    "meaning": "deep pit"
+    "meaning": "deep pit",
+    "number": "17"
   },
   {
-    "number": "18",
     "word": "Acclaim",
-    "meaning": "praise"
+    "meaning": "praise",
+    "number": "18"
   },
   {
-    "number": "19",
     "word": "accuse",
-    "meaning": "blame"
+    "meaning": "blame",
+    "number": "19"
   },
   {
-    "number": "20",
     "word": "accustom",
-    "meaning": "make familiar"
+    "meaning": "make familiar",
+    "number": "20"
   },
   {
-    "number": "21",
     "word": "Acknowledge",
-    "meaning": "admit; recognize"
+    "meaning": "admit; recognize",
+    "number": "21"
   },
   {
-    "number": "22",
     "word": "acquainted",
-    "meaning": "familiar with"
+    "meaning": "familiar with",
+    "number": "22"
   },
   {
-    "number": "23",
+    "word": "acquire",
+    "meaning": "",
+    "number": "23"
+  },
+  {
+    "word": "across",
+    "meaning": "",
+    "number": "24"
+  },
+  {
     "word": "Adamant",
-    "meaning": "firm"
+    "meaning": "firm",
+    "number": "25"
   },
   {
-    "number": "24",
+    "word": "Adaptation",
+    "meaning": "",
+    "number": "26"
+  },
+  {
+    "word": "address",
+    "meaning": "",
+    "number": "27"
+  },
+  {
     "word": "Adhere",
-    "meaning": "stick to"
+    "meaning": "stick to",
+    "number": "28"
   },
   {
-    "number": "25",
-    "word": "adhere",
-    "meaning": "stick to"
+    "word": "Admirable",
+    "meaning": "",
+    "number": "29"
   },
   {
-    "number": "26",
+    "word": "admission",
+    "meaning": "",
+    "number": "30"
+  },
+  {
+    "word": "adopt",
+    "meaning": "",
+    "number": "31"
+  },
+  {
     "word": "Adorn",
-    "meaning": "decorate"
+    "meaning": "decorate",
+    "number": "32"
   },
   {
-    "number": "27",
+    "word": "advance",
+    "meaning": "",
+    "number": "33"
+  },
+  {
+    "word": "Adventurous",
+    "meaning": "",
+    "number": "34"
+  },
+  {
+    "word": "advice",
+    "meaning": "",
+    "number": "35"
+  },
+  {
+    "word": "Aeon",
+    "meaning": "",
+    "number": "36"
+  },
+  {
     "word": "affable",
-    "meaning": "friendly"
+    "meaning": "friendly",
+    "number": "37"
   },
   {
-    "number": "28",
+    "word": "affectionate",
+    "meaning": "",
+    "number": "38"
+  },
+  {
     "word": "Affluent",
-    "meaning": "wealthy"
+    "meaning": "wealthy",
+    "number": "39"
   },
   {
-    "number": "29",
+    "word": "Affordable",
+    "meaning": "",
+    "number": "40"
+  },
+  {
+    "word": "Agitated",
+    "meaning": "",
+    "number": "41"
+  },
+  {
+    "word": "Agonising",
+    "meaning": "",
+    "number": "42"
+  },
+  {
+    "word": "Ailment",
+    "meaning": "",
+    "number": "44"
+  },
+  {
     "word": "alert",
-    "meaning": "watchful"
+    "meaning": "watchful",
+    "number": "45"
   },
   {
-    "number": "30",
+    "word": "Alibi",
+    "meaning": "",
+    "number": "46"
+  },
+  {
+    "word": "Align",
+    "meaning": "",
+    "number": "47"
+  },
+  {
+    "word": "Alliance",
+    "meaning": "",
+    "number": "49"
+  },
+  {
     "word": "ally",
-    "meaning": "friend; supporter"
+    "meaning": "friend; supporter",
+    "number": "50"
   },
   {
-    "number": "31",
     "word": "Aloof",
-    "meaning": "distant"
+    "meaning": "distant",
+    "number": "51"
   },
   {
-    "number": "32",
     "word": "altitude",
-    "meaning": "height"
+    "meaning": "height",
+    "number": "52"
   },
   {
-    "number": "33",
+    "word": "Amazon",
+    "meaning": "",
+    "number": "53"
+  },
+  {
     "word": "Ambiguous",
-    "meaning": "unclear"
+    "meaning": "unclear",
+    "number": "54"
   },
   {
-    "number": "34",
     "word": "ambition",
-    "meaning": "strong desire"
+    "meaning": "strong desire",
+    "number": "55"
   },
   {
-    "number": "35",
     "word": "Amicable",
-    "meaning": "friendly"
+    "meaning": "friendly",
+    "number": "56"
   },
   {
-    "number": "36",
+    "word": "amount",
+    "meaning": "",
+    "number": "57"
+  },
+  {
     "word": "ample",
-    "meaning": "plenty"
+    "meaning": "plenty",
+    "number": "58"
   },
   {
-    "number": "37",
+    "word": "Amused",
+    "meaning": "",
+    "number": "59"
+  },
+  {
+    "word": "Ancestral",
+    "meaning": "",
+    "number": "61"
+  },
+  {
     "word": "Anecdote",
-    "meaning": "short story"
+    "meaning": "short story",
+    "number": "63"
   },
   {
-    "number": "38",
     "word": "Anguish",
-    "meaning": "great suffering"
+    "meaning": "great suffering",
+    "number": "64"
   },
   {
-    "number": "39",
+    "word": "Anomaly",
+    "meaning": "",
+    "number": "65"
+  },
+  {
+    "word": "answers",
+    "meaning": "",
+    "number": "66"
+  },
+  {
+    "word": "Antagonize",
+    "meaning": "",
+    "number": "67"
+  },
+  {
+    "word": "antiquity",
+    "meaning": "",
+    "number": "68"
+  },
+  {
+    "word": "Anxious",
+    "meaning": "",
+    "number": "69"
+  },
+  {
     "word": "Apex",
-    "meaning": "highest point"
+    "meaning": "highest point",
+    "number": "71"
   },
   {
-    "number": "40",
+    "word": "Apparition",
+    "meaning": "",
+    "number": "72"
+  },
+  {
     "word": "Appeal",
-    "meaning": "request; attract"
+    "meaning": "request; attract",
+    "number": "73"
   },
   {
-    "number": "41",
-    "word": "apprehensive",
-    "meaning": "anxious"
+    "word": "appearance",
+    "meaning": "",
+    "number": "74"
   },
   {
-    "number": "42",
+    "word": "Apple",
+    "meaning": "",
+    "number": "75"
+  },
+  {
     "word": "Apprehensive",
-    "meaning": "anxious"
+    "meaning": "anxious",
+    "number": "76"
   },
   {
-    "number": "43",
     "word": "Apprentice",
-    "meaning": "trainee"
+    "meaning": "trainee",
+    "number": "77"
   },
   {
-    "number": "44",
     "word": "approve",
-    "meaning": "accept"
+    "meaning": "accept",
+    "number": "78"
   },
   {
-    "number": "45",
     "word": "Apt",
-    "meaning": "suitable; likely"
+    "meaning": "suitable; likely",
+    "number": "79"
   },
   {
-    "number": "46",
     "word": "Archaic",
-    "meaning": "old-fashioned"
+    "meaning": "old-fashioned",
+    "number": "80"
   },
   {
-    "number": "47",
     "word": "arduous",
-    "meaning": "difficult"
+    "meaning": "difficult",
+    "number": "81"
   },
   {
-    "number": "48",
-    "word": "Arduous",
-    "meaning": "difficult"
+    "word": "argument",
+    "meaning": "",
+    "number": "83"
   },
   {
-    "number": "49",
+    "word": "Aroma",
+    "meaning": "",
+    "number": "84"
+  },
+  {
     "word": "arouse",
-    "meaning": "awaken"
+    "meaning": "awaken",
+    "number": "85"
   },
   {
-    "number": "50",
     "word": "Array",
-    "meaning": "display"
+    "meaning": "display",
+    "number": "86"
   },
   {
-    "number": "51",
+    "word": "artful",
+    "meaning": "",
+    "number": "87"
+  },
+  {
+    "word": "article",
+    "meaning": "",
+    "number": "88"
+  },
+  {
     "word": "Articulate",
-    "meaning": "express clearly"
+    "meaning": "express clearly",
+    "number": "89"
   },
   {
-    "number": "52",
     "word": "Artificial",
-    "meaning": "man-made"
+    "meaning": "man-made",
+    "number": "90"
   },
   {
-    "number": "53",
     "word": "Ascend",
-    "meaning": "rise"
+    "meaning": "rise",
+    "number": "92"
   },
   {
-    "number": "54",
     "word": "assemble",
-    "meaning": "gather"
+    "meaning": "gather",
+    "number": "93"
   },
   {
-    "number": "55",
     "word": "Asset",
-    "meaning": "valuable thing"
+    "meaning": "valuable thing",
+    "number": "94"
   },
   {
-    "number": "56",
+    "word": "assiduous",
+    "meaning": "",
+    "number": "95"
+  },
+  {
+    "word": "assistance",
+    "meaning": "",
+    "number": "96"
+  },
+  {
+    "word": "Assumption",
+    "meaning": "",
+    "number": "97"
+  },
+  {
+    "word": "Assured",
+    "meaning": "",
+    "number": "98"
+  },
+  {
     "word": "Astute",
-    "meaning": "shrewd"
+    "meaning": "shrewd",
+    "number": "99"
   },
   {
-    "number": "57",
+    "word": "asunder",
+    "meaning": "",
+    "number": "100"
+  },
+  {
+    "word": "attached",
+    "meaning": "",
+    "number": "102"
+  },
+  {
     "word": "attempt",
-    "meaning": "try"
+    "meaning": "try",
+    "number": "103"
   },
   {
-    "number": "58",
     "word": "Attribute",
-    "meaning": "quality"
+    "meaning": "quality",
+    "number": "104"
   },
   {
-    "number": "59",
+    "word": "Authoritative",
+    "meaning": "",
+    "number": "105"
+  },
+  {
     "word": "available",
-    "meaning": "obtainable"
+    "meaning": "obtainable",
+    "number": "106"
   },
   {
-    "number": "60",
     "word": "Avenge",
-    "meaning": "take revenge"
+    "meaning": "take revenge",
+    "number": "107"
   },
   {
-    "number": "61",
+    "word": "average",
+    "meaning": "",
+    "number": "108"
+  },
+  {
+    "word": "avoid",
+    "meaning": "",
+    "number": "109"
+  },
+  {
+    "word": "avowed",
+    "meaning": "",
+    "number": "110"
+  },
+  {
+    "word": "Awareness",
+    "meaning": "",
+    "number": "111"
+  },
+  {
+    "word": "awkward",
+    "meaning": "",
+    "number": "112"
+  },
+  {
+    "word": "Awry",
+    "meaning": "",
+    "number": "113"
+  },
+  {
+    "word": "Balance",
+    "meaning": "",
+    "number": "114"
+  },
+  {
     "word": "banish",
-    "meaning": "exile"
+    "meaning": "exile",
+    "number": "115"
   },
   {
-    "number": "62",
     "word": "Barbaric",
-    "meaning": "savage"
+    "meaning": "savage",
+    "number": "116"
   },
   {
-    "number": "63",
     "word": "bargain",
-    "meaning": "deal"
+    "meaning": "deal",
+    "number": "117"
   },
   {
-    "number": "64",
     "word": "barren",
-    "meaning": "empty; infertile"
+    "meaning": "empty; infertile",
+    "number": "118"
   },
   {
-    "number": "65",
+    "word": "Barricade",
+    "meaning": "",
+    "number": "119"
+  },
+  {
     "word": "Bashful",
-    "meaning": "shy"
+    "meaning": "shy",
+    "number": "120"
   },
   {
-    "number": "66",
+    "word": "beautiful",
+    "meaning": "",
+    "number": "122"
+  },
+  {
+    "word": "because",
+    "meaning": "",
+    "number": "123"
+  },
+  {
+    "word": "beck",
+    "meaning": "",
+    "number": "124"
+  },
+  {
     "word": "believe",
-    "meaning": "accept as true"
+    "meaning": "accept as true",
+    "number": "125"
   },
   {
-    "number": "67",
     "word": "Belligerent",
-    "meaning": "hostile"
+    "meaning": "hostile",
+    "number": "126"
   },
   {
-    "number": "68",
-    "word": "belligerent",
-    "meaning": "hostile"
+    "word": "Belonging",
+    "meaning": "",
+    "number": "127"
   },
   {
-    "number": "69",
     "word": "bemused",
-    "meaning": "confused"
+    "meaning": "confused",
+    "number": "128"
   },
   {
-    "number": "70",
     "word": "Beneficial",
-    "meaning": "helpful"
+    "meaning": "helpful",
+    "number": "129"
   },
   {
-    "number": "71",
     "word": "benefit",
-    "meaning": "advantage"
+    "meaning": "advantage",
+    "number": "130"
   },
   {
-    "number": "72",
     "word": "Benevolent",
-    "meaning": "kind"
+    "meaning": "kind",
+    "number": "131"
   },
   {
-    "number": "73",
+    "word": "Berate",
+    "meaning": "",
+    "number": "132"
+  },
+  {
+    "word": "besieged",
+    "meaning": "",
+    "number": "133"
+  },
+  {
+    "word": "best",
+    "meaning": "",
+    "number": "134"
+  },
+  {
     "word": "betray",
-    "meaning": "be disloyal"
+    "meaning": "be disloyal",
+    "number": "135"
   },
   {
-    "number": "74",
+    "word": "between",
+    "meaning": "",
+    "number": "136"
+  },
+  {
     "word": "Beverage",
-    "meaning": "drink"
+    "meaning": "drink",
+    "number": "137"
   },
   {
-    "number": "75",
     "word": "Bewilder",
-    "meaning": "confuse"
+    "meaning": "confuse",
+    "number": "138"
   },
   {
-    "number": "76",
+    "word": "bewildered",
+    "meaning": "",
+    "number": "139"
+  },
+  {
     "word": "Bias",
-    "meaning": "prejudice"
+    "meaning": "prejudice",
+    "number": "140"
   },
   {
-    "number": "77",
+    "word": "Biased",
+    "meaning": "",
+    "number": "141"
+  },
+  {
+    "word": "bicycle",
+    "meaning": "",
+    "number": "142"
+  },
+  {
+    "word": "Biodiversity",
+    "meaning": "",
+    "number": "143"
+  },
+  {
     "word": "Blatant",
-    "meaning": "obvious"
+    "meaning": "obvious",
+    "number": "144"
   },
   {
-    "number": "78",
+    "word": "Blossom",
+    "meaning": "",
+    "number": "145"
+  },
+  {
+    "word": "Bludgeon",
+    "meaning": "",
+    "number": "146"
+  },
+  {
     "word": "Boisterous",
-    "meaning": "noisy"
+    "meaning": "noisy",
+    "number": "147"
   },
   {
-    "number": "79",
     "word": "Bold",
-    "meaning": "brave"
+    "meaning": "brave",
+    "number": "148"
   },
   {
-    "number": "80",
     "word": "Bolster",
-    "meaning": "support"
+    "meaning": "support",
+    "number": "149"
   },
   {
-    "number": "81",
+    "word": "Bolt",
+    "meaning": "",
+    "number": "150"
+  },
+  {
+    "word": "Book",
+    "meaning": "",
+    "number": "151"
+  },
+  {
+    "word": "Boom",
+    "meaning": "",
+    "number": "152"
+  },
+  {
     "word": "Brandish",
-    "meaning": "wave"
+    "meaning": "wave",
+    "number": "154"
   },
   {
-    "number": "82",
+    "word": "Breakthrough",
+    "meaning": "",
+    "number": "155"
+  },
+  {
+    "word": "Breeze",
+    "meaning": "",
+    "number": "156"
+  },
+  {
     "word": "brief",
-    "meaning": "short"
+    "meaning": "short",
+    "number": "157"
   },
   {
-    "number": "83",
+    "word": "Briny",
+    "meaning": "",
+    "number": "158"
+  },
+  {
+    "word": "Britain",
+    "meaning": "",
+    "number": "159"
+  },
+  {
     "word": "broad",
-    "meaning": "wide"
+    "meaning": "wide",
+    "number": "160"
   },
   {
-    "number": "84",
     "word": "bruise",
-    "meaning": "injury"
+    "meaning": "injury",
+    "number": "161"
   },
   {
-    "number": "85",
     "word": "brusque",
-    "meaning": "abrupt"
+    "meaning": "abrupt",
+    "number": "162"
   },
   {
-    "number": "86",
+    "word": "Buckle",
+    "meaning": "",
+    "number": "163"
+  },
+  {
     "word": "Bumbling",
-    "meaning": "clumsy"
+    "meaning": "clumsy",
+    "number": "164"
   },
   {
-    "number": "87",
     "word": "Buoyant",
-    "meaning": "cheerful"
+    "meaning": "cheerful",
+    "number": "165"
   },
   {
-    "number": "88",
     "word": "burden",
-    "meaning": "load"
+    "meaning": "load",
+    "number": "166"
   },
   {
-    "number": "89",
+    "word": "business",
+    "meaning": "",
+    "number": "167"
+  },
+  {
+    "word": "Bustling",
+    "meaning": "",
+    "number": "168"
+  },
+  {
     "word": "Cacophony",
-    "meaning": "harsh noise"
+    "meaning": "harsh noise",
+    "number": "169"
   },
   {
-    "number": "90",
     "word": "calamity",
-    "meaning": "disaster"
+    "meaning": "disaster",
+    "number": "170"
   },
   {
-    "number": "91",
     "word": "Callous",
-    "meaning": "insensitive"
+    "meaning": "insensitive",
+    "number": "171"
   },
   {
-    "number": "92",
     "word": "Camouflage",
-    "meaning": "disguise"
+    "meaning": "disguise",
+    "number": "172"
   },
   {
-    "number": "93",
+    "word": "Campaign",
+    "meaning": "",
+    "number": "173"
+  },
+  {
+    "word": "candidate",
+    "meaning": "",
+    "number": "175"
+  },
+  {
+    "word": "Canopy",
+    "meaning": "",
+    "number": "176"
+  },
+  {
+    "word": "Capacious",
+    "meaning": "",
+    "number": "177"
+  },
+  {
+    "word": "careering",
+    "meaning": "",
+    "number": "178"
+  },
+  {
     "word": "Cascade",
-    "meaning": "waterfall"
+    "meaning": "waterfall",
+    "number": "179"
   },
   {
-    "number": "94",
     "word": "Catastrophe",
-    "meaning": "disaster"
+    "meaning": "disaster",
+    "number": "180"
   },
   {
-    "number": "95",
+    "word": "category",
+    "meaning": "",
+    "number": "181"
+  },
+  {
+    "word": "caulking",
+    "meaning": "",
+    "number": "182"
+  },
+  {
     "word": "caution",
-    "meaning": "warning"
+    "meaning": "warning",
+    "number": "183"
   },
   {
-    "number": "96",
     "word": "cease",
-    "meaning": "stop"
+    "meaning": "stop",
+    "number": "184"
   },
   {
-    "number": "97",
     "word": "cemetery",
-    "meaning": "graveyard"
+    "meaning": "graveyard",
+    "number": "185"
   },
   {
-    "number": "98",
     "word": "Challenge",
-    "meaning": "test"
+    "meaning": "test",
+    "number": "186"
   },
   {
-    "number": "99",
     "word": "Champion",
-    "meaning": "winner"
+    "meaning": "winner",
+    "number": "187"
   },
   {
-    "number": "100",
     "word": "chaos",
-    "meaning": "disorder"
+    "meaning": "disorder",
+    "number": "188"
   },
   {
-    "number": "101",
+    "word": "Charismatic",
+    "meaning": "",
+    "number": "189"
+  },
+  {
     "word": "Charred",
-    "meaning": "burnt"
+    "meaning": "burnt",
+    "number": "190"
   },
   {
-    "number": "102",
-    "word": "charred",
-    "meaning": "burnt"
+    "word": "check",
+    "meaning": "",
+    "number": "191"
   },
   {
-    "number": "103",
+    "word": "child",
+    "meaning": "",
+    "number": "192"
+  },
+  {
+    "word": "Chilly",
+    "meaning": "",
+    "number": "193"
+  },
+  {
     "word": "Chivalrous",
-    "meaning": "courteous"
+    "meaning": "courteous",
+    "number": "194"
   },
   {
-    "number": "104",
+    "word": "choreographer",
+    "meaning": "",
+    "number": "195"
+  },
+  {
+    "word": "Chortle",
+    "meaning": "",
+    "number": "196"
+  },
+  {
+    "word": "Chronology",
+    "meaning": "",
+    "number": "197"
+  },
+  {
+    "word": "Civilisation",
+    "meaning": "",
+    "number": "198"
+  },
+  {
     "word": "Clamber",
-    "meaning": "climb awkwardly"
+    "meaning": "climb awkwardly",
+    "number": "199"
   },
   {
-    "number": "105",
+    "word": "clemency",
+    "meaning": "",
+    "number": "200"
+  },
+  {
     "word": "Clench",
-    "meaning": "grip tightly"
+    "meaning": "grip tightly",
+    "number": "201"
   },
   {
-    "number": "106",
+    "word": "Close",
+    "meaning": "",
+    "number": "202"
+  },
+  {
+    "word": "Coach",
+    "meaning": "",
+    "number": "203"
+  },
+  {
     "word": "coarse",
-    "meaning": "rough"
+    "meaning": "rough",
+    "number": "204"
   },
   {
-    "number": "107",
-    "word": "coax",
-    "meaning": "persuade gently"
-  },
-  {
-    "number": "108",
     "word": "Coax",
-    "meaning": "persuade gently"
+    "meaning": "persuade gently",
+    "number": "205"
   },
   {
-    "number": "109",
     "word": "Coincidence",
-    "meaning": "chance occurrence"
+    "meaning": "chance occurrence",
+    "number": "206"
   },
   {
-    "number": "110",
     "word": "Collapse",
-    "meaning": "fall down"
+    "meaning": "fall down",
+    "number": "207"
   },
   {
-    "number": "111",
+    "word": "Collectively",
+    "meaning": "",
+    "number": "208"
+  },
+  {
+    "word": "college",
+    "meaning": "",
+    "number": "209"
+  },
+  {
+    "word": "colour",
+    "meaning": "",
+    "number": "210"
+  },
+  {
+    "word": "combination",
+    "meaning": "",
+    "number": "212"
+  },
+  {
     "word": "Comfort",
-    "meaning": "ease"
+    "meaning": "ease",
+    "number": "213"
   },
   {
-    "number": "112",
+    "word": "Commanding",
+    "meaning": "",
+    "number": "214"
+  },
+  {
     "word": "Commemorate",
-    "meaning": "remember"
+    "meaning": "remember",
+    "number": "215"
   },
   {
-    "number": "113",
     "word": "Commence",
-    "meaning": "begin"
+    "meaning": "begin",
+    "number": "216"
   },
   {
-    "number": "114",
+    "word": "commit",
+    "meaning": "",
+    "number": "217"
+  },
+  {
+    "word": "committee",
+    "meaning": "",
+    "number": "218"
+  },
+  {
+    "word": "communicate",
+    "meaning": "",
+    "number": "219"
+  },
+  {
+    "word": "community",
+    "meaning": "",
+    "number": "220"
+  },
+  {
     "word": "companion",
-    "meaning": "friend"
+    "meaning": "friend",
+    "number": "221"
   },
   {
-    "number": "115",
+    "word": "company",
+    "meaning": "",
+    "number": "222"
+  },
+  {
     "word": "Compassion",
-    "meaning": "sympathy"
+    "meaning": "sympathy",
+    "number": "223"
   },
   {
-    "number": "116",
-    "word": "compel",
-    "meaning": "force"
-  },
-  {
-    "number": "117",
     "word": "Compel",
-    "meaning": "force"
+    "meaning": "force",
+    "number": "224"
   },
   {
-    "number": "118",
     "word": "competition",
-    "meaning": "contest"
+    "meaning": "contest",
+    "number": "225"
   },
   {
-    "number": "119",
+    "word": "completely",
+    "meaning": "",
+    "number": "226"
+  },
+  {
     "word": "complex",
-    "meaning": "complicated"
+    "meaning": "complicated",
+    "number": "227"
   },
   {
-    "number": "120",
+    "word": "Complicit",
+    "meaning": "",
+    "number": "228"
+  },
+  {
     "word": "Compliment",
-    "meaning": "praise"
+    "meaning": "praise",
+    "number": "229"
   },
   {
-    "number": "121",
     "word": "Compose",
-    "meaning": "create"
+    "meaning": "create",
+    "number": "230"
   },
   {
-    "number": "122",
+    "word": "composition",
+    "meaning": "",
+    "number": "231"
+  },
+  {
+    "word": "Compost",
+    "meaning": "",
+    "number": "232"
+  },
+  {
     "word": "comprehend",
-    "meaning": "understand"
+    "meaning": "understand",
+    "number": "233"
   },
   {
-    "number": "123",
     "word": "Compromise",
-    "meaning": "agreement"
+    "meaning": "agreement",
+    "number": "234"
   },
   {
-    "number": "124",
     "word": "comrade",
-    "meaning": "companion"
+    "meaning": "companion",
+    "number": "235"
   },
   {
-    "number": "125",
     "word": "Conceal",
-    "meaning": "hide"
+    "meaning": "hide",
+    "number": "236"
   },
   {
-    "number": "126",
-    "word": "conceal",
-    "meaning": "hide"
-  },
-  {
-    "number": "127",
     "word": "Concede",
-    "meaning": "admit"
+    "meaning": "admit",
+    "number": "237"
   },
   {
-    "number": "128",
     "word": "conceited",
-    "meaning": "vain"
+    "meaning": "vain",
+    "number": "238"
   },
   {
-    "number": "129",
+    "word": "concentrated",
+    "meaning": "",
+    "number": "239"
+  },
+  {
     "word": "conclude",
-    "meaning": "end"
+    "meaning": "end",
+    "number": "240"
   },
   {
-    "number": "130",
     "word": "conclusion",
-    "meaning": "end"
+    "meaning": "end",
+    "number": "241"
   },
   {
-    "number": "131",
     "word": "condemn",
-    "meaning": "criticize"
+    "meaning": "criticize",
+    "number": "242"
   },
   {
-    "number": "132",
+    "word": "conferred",
+    "meaning": "",
+    "number": "243"
+  },
+  {
     "word": "Confide",
-    "meaning": "tell secretly"
+    "meaning": "tell secretly",
+    "number": "244"
   },
   {
-    "number": "133",
     "word": "confine",
-    "meaning": "restrict"
+    "meaning": "restrict",
+    "number": "245"
   },
   {
-    "number": "134",
     "word": "Conquer",
-    "meaning": "defeat"
+    "meaning": "defeat",
+    "number": "246"
   },
   {
-    "number": "135",
     "word": "conscience",
-    "meaning": "moral sense"
+    "meaning": "moral sense",
+    "number": "247"
   },
   {
-    "number": "136",
-    "word": "Conscience",
-    "meaning": "moral sense"
-  },
-  {
-    "number": "137",
     "word": "conscious",
-    "meaning": "aware"
+    "meaning": "aware",
+    "number": "248"
   },
   {
-    "number": "138",
     "word": "consent",
-    "meaning": "agree"
+    "meaning": "agree",
+    "number": "249"
   },
   {
-    "number": "139",
+    "word": "Conservation",
+    "meaning": "",
+    "number": "250"
+  },
+  {
+    "word": "conserve",
+    "meaning": "",
+    "number": "251"
+  },
+  {
     "word": "Considerate",
-    "meaning": "thoughtful"
+    "meaning": "thoughtful",
+    "number": "252"
   },
   {
-    "number": "140",
     "word": "consideration",
-    "meaning": "thought"
+    "meaning": "thought",
+    "number": "253"
   },
   {
-    "number": "141",
     "word": "consist",
-    "meaning": "be composed of"
+    "meaning": "be composed of",
+    "number": "254"
   },
   {
-    "number": "142",
     "word": "Consistent",
-    "meaning": "unchanging"
+    "meaning": "unchanging",
+    "number": "255"
   },
   {
-    "number": "143",
     "word": "conspire",
-    "meaning": "plot"
+    "meaning": "plot",
+    "number": "256"
   },
   {
-    "number": "144",
-    "word": "Conspire",
-    "meaning": "plot"
-  },
-  {
-    "number": "145",
     "word": "constant",
-    "meaning": "unchanging"
+    "meaning": "unchanging",
+    "number": "257"
   },
   {
-    "number": "146",
     "word": "consume",
-    "meaning": "eat"
+    "meaning": "eat",
+    "number": "258"
   },
   {
-    "number": "147",
     "word": "Consumer",
-    "meaning": "buyer"
+    "meaning": "buyer",
+    "number": "259"
   },
   {
-    "number": "148",
     "word": "Contemplate",
-    "meaning": "think about"
+    "meaning": "think about",
+    "number": "260"
   },
   {
-    "number": "149",
     "word": "contemporary",
-    "meaning": "modern"
+    "meaning": "modern",
+    "number": "261"
   },
   {
-    "number": "150",
-    "word": "contempt",
-    "meaning": "scorn"
+    "word": "Contempt",
+    "meaning": "scorn",
+    "number": "262"
   },
   {
-    "number": "151",
     "word": "content",
-    "meaning": "satisfied"
+    "meaning": "satisfied",
+    "number": "263"
   },
   {
-    "number": "152",
     "word": "contest",
-    "meaning": "competition"
+    "meaning": "competition",
+    "number": "264"
   },
   {
-    "number": "153",
+    "word": "Continuous",
+    "meaning": "",
+    "number": "265"
+  },
+  {
     "word": "contract",
-    "meaning": "agreement"
+    "meaning": "agreement",
+    "number": "266"
   },
   {
-    "number": "154",
     "word": "Contradict",
-    "meaning": "deny"
+    "meaning": "deny",
+    "number": "267"
   },
   {
-    "number": "155",
     "word": "Contrast",
-    "meaning": "difference"
+    "meaning": "difference",
+    "number": "268"
   },
   {
-    "number": "156",
-    "word": "contrast",
-    "meaning": "difference"
-  },
-  {
-    "number": "157",
     "word": "contribute",
-    "meaning": "give"
+    "meaning": "give",
+    "number": "269"
   },
   {
-    "number": "158",
     "word": "Conundrum",
-    "meaning": "puzzle"
+    "meaning": "puzzle",
+    "number": "270"
   },
   {
-    "number": "159",
     "word": "conventional",
-    "meaning": "traditional"
+    "meaning": "traditional",
+    "number": "271"
   },
   {
-    "number": "160",
     "word": "convert",
-    "meaning": "change"
+    "meaning": "change",
+    "number": "272"
   },
   {
-    "number": "161",
     "word": "convey",
-    "meaning": "transport"
+    "meaning": "transport",
+    "number": "273"
   },
   {
-    "number": "162",
-    "word": "convince",
-    "meaning": "persuade"
+    "word": "convict",
+    "meaning": "",
+    "number": "274"
   },
   {
-    "number": "163",
     "word": "Convince",
-    "meaning": "persuade"
+    "meaning": "persuade",
+    "number": "275"
   },
   {
-    "number": "164",
     "word": "Cooperative",
-    "meaning": "helpful"
+    "meaning": "helpful",
+    "number": "276"
   },
   {
-    "number": "165",
     "word": "Cordial",
-    "meaning": "warm and friendly"
+    "meaning": "warm and friendly",
+    "number": "277"
   },
   {
-    "number": "166",
     "word": "correct",
-    "meaning": "right"
+    "meaning": "right",
+    "number": "278"
   },
   {
-    "number": "167",
+    "word": "Counterargument",
+    "meaning": "",
+    "number": "279"
+  },
+  {
     "word": "Courage",
-    "meaning": "bravery"
+    "meaning": "bravery",
+    "number": "280"
   },
   {
-    "number": "168",
     "word": "course",
-    "meaning": "path"
+    "meaning": "path",
+    "number": "281"
   },
   {
-    "number": "169",
+    "word": "courses",
+    "meaning": "",
+    "number": "282"
+  },
+  {
     "word": "covert",
-    "meaning": "secret"
+    "meaning": "secret",
+    "number": "283"
   },
   {
-    "number": "170",
     "word": "covet",
-    "meaning": "desire"
+    "meaning": "desire",
+    "number": "284"
   },
   {
-    "number": "171",
     "word": "coy",
-    "meaning": "shy"
+    "meaning": "shy",
+    "number": "285"
   },
   {
-    "number": "172",
     "word": "credit",
-    "meaning": "trust"
+    "meaning": "trust",
+    "number": "286"
   },
   {
-    "number": "173",
     "word": "Creep",
-    "meaning": "crawl"
+    "meaning": "crawl",
+    "number": "287"
   },
   {
-    "number": "174",
+    "word": "Criticise",
+    "meaning": "",
+    "number": "288"
+  },
+  {
     "word": "cultivate",
-    "meaning": "grow"
+    "meaning": "grow",
+    "number": "289"
   },
   {
-    "number": "175",
     "word": "cunning",
-    "meaning": "crafty"
+    "meaning": "crafty",
+    "number": "290"
   },
   {
-    "number": "176",
     "word": "curb",
-    "meaning": "restrain"
+    "meaning": "restrain",
+    "number": "291"
   },
   {
-    "number": "177",
     "word": "curious",
-    "meaning": "inquisitive"
+    "meaning": "inquisitive",
+    "number": "292"
   },
   {
-    "number": "178",
     "word": "curt",
-    "meaning": "brief"
+    "meaning": "brief",
+    "number": "293"
   },
   {
-    "number": "179",
     "word": "custom",
-    "meaning": "tradition"
+    "meaning": "tradition",
+    "number": "294"
   },
   {
-    "number": "180",
+    "word": "Daily",
+    "meaning": "",
+    "number": "295"
+  },
+  {
+    "word": "Dart",
+    "meaning": "",
+    "number": "296"
+  },
+  {
+    "word": "debate",
+    "meaning": "",
+    "number": "298"
+  },
+  {
+    "word": "Debonair",
+    "meaning": "",
+    "number": "299"
+  },
+  {
+    "word": "debrief",
+    "meaning": "",
+    "number": "300"
+  },
+  {
+    "word": "deceit",
+    "meaning": "",
+    "number": "301"
+  },
+  {
+    "word": "deceive",
+    "meaning": "",
+    "number": "302"
+  },
+  {
+    "word": "Decisive",
+    "meaning": "",
+    "number": "303"
+  },
+  {
+    "word": "declare",
+    "meaning": "",
+    "number": "304"
+  },
+  {
+    "word": "Decline",
+    "meaning": "",
+    "number": "305"
+  },
+  {
+    "word": "Decree",
+    "meaning": "",
+    "number": "306"
+  },
+  {
+    "word": "Deduction",
+    "meaning": "",
+    "number": "307"
+  },
+  {
+    "word": "Defeat",
+    "meaning": "",
+    "number": "308"
+  },
+  {
+    "word": "Defiance",
+    "meaning": "",
+    "number": "309"
+  },
+  {
+    "word": "Deficient",
+    "meaning": "",
+    "number": "310"
+  },
+  {
+    "word": "definite",
+    "meaning": "",
+    "number": "311"
+  },
+  {
+    "word": "Delegate",
+    "meaning": "",
+    "number": "312"
+  },
+  {
+    "word": "deliberate",
+    "meaning": "",
+    "number": "313"
+  },
+  {
+    "word": "deliver",
+    "meaning": "",
+    "number": "314"
+  },
+  {
+    "word": "Delude",
+    "meaning": "",
+    "number": "315"
+  },
+  {
+    "word": "demolished",
+    "meaning": "",
+    "number": "316"
+  },
+  {
+    "word": "Demure",
+    "meaning": "",
+    "number": "317"
+  },
+  {
+    "word": "deny",
+    "meaning": "",
+    "number": "318"
+  },
+  {
+    "word": "Depict",
+    "meaning": "",
+    "number": "319"
+  },
+  {
+    "word": "deposit",
+    "meaning": "",
+    "number": "320"
+  },
+  {
+    "word": "depot",
+    "meaning": "",
+    "number": "321"
+  },
+  {
+    "word": "depth",
+    "meaning": "",
+    "number": "322"
+  },
+  {
+    "word": "Deranged",
+    "meaning": "",
+    "number": "323"
+  },
+  {
+    "word": "Derelict",
+    "meaning": "",
+    "number": "324"
+  },
+  {
+    "word": "description",
+    "meaning": "",
+    "number": "325"
+  },
+  {
+    "word": "Desolate",
+    "meaning": "",
+    "number": "326"
+  },
+  {
+    "word": "despair",
+    "meaning": "",
+    "number": "327"
+  },
+  {
+    "word": "desperately",
+    "meaning": "",
+    "number": "328"
+  },
+  {
+    "word": "despise",
+    "meaning": "",
+    "number": "329"
+  },
+  {
+    "word": "Destination",
+    "meaning": "",
+    "number": "330"
+  },
+  {
+    "word": "Destitute",
+    "meaning": "",
+    "number": "331"
+  },
+  {
+    "word": "Deteriorate",
+    "meaning": "",
+    "number": "332"
+  },
+  {
+    "word": "determine",
+    "meaning": "",
+    "number": "333"
+  },
+  {
+    "word": "Determined",
+    "meaning": "",
+    "number": "334"
+  },
+  {
+    "word": "Deterrent",
+    "meaning": "",
+    "number": "335"
+  },
+  {
+    "word": "Detrimental",
+    "meaning": "",
+    "number": "336"
+  },
+  {
+    "word": "Devastation",
+    "meaning": "",
+    "number": "337"
+  },
+  {
+    "word": "develop",
+    "meaning": "",
+    "number": "338"
+  },
+  {
+    "word": "development",
+    "meaning": "",
+    "number": "339"
+  },
+  {
+    "word": "device",
+    "meaning": "",
+    "number": "340"
+  },
+  {
+    "word": "Devious",
+    "meaning": "",
+    "number": "341"
+  },
+  {
+    "word": "devote",
+    "meaning": "",
+    "number": "342"
+  },
+  {
+    "word": "Devoted",
+    "meaning": "",
+    "number": "343"
+  },
+  {
+    "word": "Diametrically",
+    "meaning": "",
+    "number": "344"
+  },
+  {
+    "word": "dictionary",
+    "meaning": "",
+    "number": "345"
+  },
+  {
+    "word": "digest",
+    "meaning": "",
+    "number": "346"
+  },
+  {
+    "word": "dilapidated",
+    "meaning": "",
+    "number": "347"
+  },
+  {
+    "word": "Diligent",
+    "meaning": "",
+    "number": "348"
+  },
+  {
+    "word": "diluted",
+    "meaning": "",
+    "number": "349"
+  },
+  {
+    "word": "Diminish",
+    "meaning": "",
+    "number": "350"
+  },
+  {
+    "word": "Diplomatic",
+    "meaning": "",
+    "number": "353"
+  },
+  {
+    "word": "disappear",
+    "meaning": "",
+    "number": "354"
+  },
+  {
+    "word": "disappointed",
+    "meaning": "",
+    "number": "355"
+  },
+  {
+    "word": "disarray",
+    "meaning": "",
+    "number": "356"
+  },
+  {
+    "word": "disastrous",
+    "meaning": "",
+    "number": "357"
+  },
+  {
+    "word": "Discern",
+    "meaning": "",
+    "number": "358"
+  },
+  {
+    "word": "disclose",
+    "meaning": "",
+    "number": "359"
+  },
+  {
+    "word": "discontent",
+    "meaning": "",
+    "number": "360"
+  },
+  {
+    "word": "Discourage",
+    "meaning": "",
+    "number": "361"
+  },
+  {
+    "word": "Discreet",
+    "meaning": "",
+    "number": "362"
+  },
+  {
+    "word": "Disembark",
+    "meaning": "",
+    "number": "363"
+  },
+  {
+    "word": "dishevelled",
+    "meaning": "",
+    "number": "364"
+  },
+  {
+    "word": "Disloyal",
+    "meaning": "",
+    "number": "365"
+  },
+  {
+    "word": "dismal",
+    "meaning": "",
+    "number": "366"
+  },
+  {
+    "word": "Dismayed",
+    "meaning": "",
+    "number": "367"
+  },
+  {
+    "word": "Dismiss",
+    "meaning": "",
+    "number": "368"
+  },
+  {
+    "word": "Disobedient",
+    "meaning": "",
+    "number": "369"
+  },
+  {
+    "word": "disperse",
+    "meaning": "",
+    "number": "370"
+  },
+  {
+    "word": "dispute",
+    "meaning": "",
+    "number": "371"
+  },
+  {
+    "word": "Dissent",
+    "meaning": "",
+    "number": "372"
+  },
+  {
+    "word": "distasteful",
+    "meaning": "",
+    "number": "373"
+  },
+  {
+    "word": "distinct",
+    "meaning": "",
+    "number": "374"
+  },
+  {
+    "word": "distinguished",
+    "meaning": "",
+    "number": "375"
+  },
+  {
+    "word": "Distort",
+    "meaning": "",
+    "number": "376"
+  },
+  {
+    "word": "Distress",
+    "meaning": "",
+    "number": "377"
+  },
+  {
+    "word": "Diverse",
+    "meaning": "",
+    "number": "378"
+  },
+  {
+    "word": "divine",
+    "meaning": "",
+    "number": "379"
+  },
+  {
+    "word": "divinity",
+    "meaning": "",
+    "number": "380"
+  },
+  {
+    "word": "domestic",
+    "meaning": "",
+    "number": "381"
+  },
+  {
+    "word": "Dormant",
+    "meaning": "",
+    "number": "382"
+  },
+  {
+    "word": "dose",
+    "meaning": "",
+    "number": "383"
+  },
+  {
+    "word": "Dramatic",
+    "meaning": "",
+    "number": "384"
+  },
+  {
+    "word": "Dread",
+    "meaning": "",
+    "number": "385"
+  },
+  {
+    "word": "Drift",
+    "meaning": "",
+    "number": "386"
+  },
+  {
+    "word": "Driven",
+    "meaning": "",
+    "number": "387"
+  },
+  {
+    "word": "Drizzle",
+    "meaning": "",
+    "number": "388"
+  },
+  {
+    "word": "drought",
+    "meaning": "",
+    "number": "389"
+  },
+  {
     "word": "Dubious",
-    "meaning": "doubtful"
+    "meaning": "doubtful",
+    "number": "390"
   },
   {
-    "number": "181",
+    "word": "dumb",
+    "meaning": "",
+    "number": "391"
+  },
+  {
+    "word": "Durable",
+    "meaning": "",
+    "number": "392"
+  },
+  {
+    "word": "dwelling",
+    "meaning": "",
+    "number": "393"
+  },
+  {
+    "word": "Dwindle",
+    "meaning": "",
+    "number": "394"
+  },
+  {
+    "word": "Dynasty",
+    "meaning": "",
+    "number": "395"
+  },
+  {
     "word": "earnest",
-    "meaning": "sincere; serious"
+    "meaning": "sincere; serious",
+    "number": "396"
   },
   {
-    "number": "182",
     "word": "Echo",
-    "meaning": "reflected sound; repeat"
+    "meaning": "reflected sound; repeat",
+    "number": "397"
   },
   {
-    "number": "183",
     "word": "economical",
-    "meaning": "thrifty; efficient"
+    "meaning": "thrifty; efficient",
+    "number": "399"
   },
   {
-    "number": "184",
     "word": "Ecosystem",
-    "meaning": "ecological system"
+    "meaning": "ecological system",
+    "number": "400"
   },
   {
-    "number": "185",
     "word": "Eerie",
-    "meaning": "strange; spooky"
+    "meaning": "strange; spooky",
+    "number": "401"
   },
   {
-    "number": "186",
     "word": "elect",
-    "meaning": "choose; select"
+    "meaning": "choose; select",
+    "number": "402"
   },
   {
-    "number": "187",
+    "word": "Eloquent",
+    "meaning": "fluent",
+    "number": "403"
+  },
+  {
     "word": "elude",
-    "meaning": "escape; avoid"
+    "meaning": "escape; avoid",
+    "number": "404"
   },
   {
-    "number": "188",
     "word": "Elusive",
-    "meaning": "hard to catch; evasive"
+    "meaning": "hard to catch; evasive",
+    "number": "405"
   },
   {
-    "number": "189",
+    "word": "email",
+    "meaning": "",
+    "number": "406"
+  },
+  {
     "word": "embarrass",
-    "meaning": "make uncomfortable; shame"
+    "meaning": "make uncomfortable; shame",
+    "number": "407"
   },
   {
-    "number": "190",
     "word": "Embellish",
-    "meaning": "decorate; enhance"
+    "meaning": "decorate; enhance",
+    "number": "408"
   },
   {
-    "number": "191",
     "word": "Embrace",
-    "meaning": "hug; accept"
+    "meaning": "hug; accept",
+    "number": "409"
   },
   {
-    "number": "192",
-    "word": "embrace",
-    "meaning": "hug; accept"
-  },
-  {
-    "number": "193",
     "word": "emerge",
-    "meaning": "come out; appear"
+    "meaning": "come out; appear",
+    "number": "410"
   },
   {
-    "number": "194",
+    "word": "Empathetic",
+    "meaning": "",
+    "number": "411"
+  },
+  {
+    "word": "Emphasise",
+    "meaning": "",
+    "number": "412"
+  },
+  {
     "word": "empire",
-    "meaning": "group of territories under one ruler"
+    "meaning": "group of territories under one ruler",
+    "number": "413"
   },
   {
-    "number": "195",
     "word": "employ",
-    "meaning": "use; hire"
+    "meaning": "use; hire",
+    "number": "414"
   },
   {
-    "number": "196",
     "word": "Empower",
-    "meaning": "authorize; enable"
+    "meaning": "authorize; enable",
+    "number": "415"
   },
   {
-    "number": "197",
-    "word": "endeavour",
-    "meaning": "try hard"
-  },
-  {
-    "number": "198",
     "word": "Endeavour",
-    "meaning": "try hard"
+    "meaning": "try hard",
+    "number": "416"
   },
   {
-    "number": "199",
     "word": "Endurance",
-    "meaning": "stamina; perseverance"
+    "meaning": "stamina; perseverance",
+    "number": "417"
   },
   {
-    "number": "200",
     "word": "endure",
-    "meaning": "bear; last"
+    "meaning": "bear; last",
+    "number": "418"
   },
   {
-    "number": "201",
-    "word": "Endure",
-    "meaning": "bear; last"
+    "word": "English",
+    "meaning": "",
+    "number": "419"
   },
   {
-    "number": "202",
+    "word": "Enigmatic",
+    "meaning": "",
+    "number": "420"
+  },
+  {
     "word": "Enrage",
-    "meaning": "anger; infuriate"
+    "meaning": "anger; infuriate",
+    "number": "421"
   },
   {
-    "number": "203",
+    "word": "enterprise",
+    "meaning": "",
+    "number": "422"
+  },
+  {
+    "word": "Enthral",
+    "meaning": "",
+    "number": "423"
+  },
+  {
     "word": "entire",
-    "meaning": "whole; complete"
+    "meaning": "whole; complete",
+    "number": "424"
   },
   {
-    "number": "204",
     "word": "entirely",
-    "meaning": "completely; wholly"
+    "meaning": "completely; wholly",
+    "number": "425"
   },
   {
-    "number": "205",
     "word": "entrance",
-    "meaning": "entry; captivate"
+    "meaning": "entry; captivate",
+    "number": "426"
   },
   {
-    "number": "206",
     "word": "Envelop",
-    "meaning": "wrap; surround"
+    "meaning": "wrap; surround",
+    "number": "427"
   },
   {
-    "number": "207",
     "word": "environment",
-    "meaning": "surroundings; conditions"
+    "meaning": "surroundings; conditions",
+    "number": "428"
   },
   {
-    "number": "208",
+    "word": "episodes",
+    "meaning": "",
+    "number": "429"
+  },
+  {
     "word": "Equality",
-    "meaning": "sameness; fairness"
+    "meaning": "sameness; fairness",
+    "number": "430"
   },
   {
-    "number": "209",
     "word": "equip",
-    "meaning": "provide; supply"
+    "meaning": "provide; supply",
+    "number": "431"
   },
   {
-    "number": "210",
     "word": "equipment",
-    "meaning": "supplies; gear"
+    "meaning": "supplies; gear",
+    "number": "432"
   },
   {
-    "number": "211",
+    "word": "equipped",
+    "meaning": "",
+    "number": "433"
+  },
+  {
     "word": "Era",
-    "meaning": "age; period"
+    "meaning": "age; period",
+    "number": "434"
   },
   {
-    "number": "212",
     "word": "erect",
-    "meaning": "upright; build"
+    "meaning": "upright; build",
+    "number": "435"
   },
   {
-    "number": "213",
     "word": "Erosion",
-    "meaning": "wearing away; corrosion"
+    "meaning": "wearing away; corrosion",
+    "number": "436"
   },
   {
-    "number": "214",
     "word": "errand",
-    "meaning": "short trip; task"
+    "meaning": "short trip; task",
+    "number": "437"
   },
   {
-    "number": "215",
     "word": "Erratic",
-    "meaning": "unpredictable; irregular"
+    "meaning": "unpredictable; irregular",
+    "number": "438"
   },
   {
-    "number": "216",
     "word": "Escalate",
-    "meaning": "increase; intensify"
+    "meaning": "increase; intensify",
+    "number": "439"
   },
   {
-    "number": "217",
     "word": "especially",
-    "meaning": "particularly; specially"
+    "meaning": "particularly; specially",
+    "number": "440"
   },
   {
-    "number": "218",
     "word": "estimate",
-    "meaning": "approximate calculation; judge"
+    "meaning": "approximate calculation; judge",
+    "number": "441"
   },
   {
-    "number": "219",
     "word": "Ethereal",
-    "meaning": "heavenly; delicate"
+    "meaning": "heavenly; delicate",
+    "number": "442"
   },
   {
-    "number": "220",
     "word": "evaluation",
-    "meaning": "assessment; judgment"
+    "meaning": "assessment; judgment",
+    "number": "443"
   },
   {
-    "number": "221",
     "word": "every",
-    "meaning": "each; all"
+    "meaning": "each; all",
+    "number": "444"
   },
   {
-    "number": "222",
     "word": "Evidence",
-    "meaning": "proof; indication"
+    "meaning": "proof; indication",
+    "number": "445"
   },
   {
-    "number": "223",
     "word": "evident",
-    "meaning": "obvious; clear"
+    "meaning": "obvious; clear",
+    "number": "446"
   },
   {
-    "number": "224",
     "word": "Exaggerate",
-    "meaning": "overstate; overemphasize"
+    "meaning": "overstate; overemphasize",
+    "number": "447"
   },
   {
-    "number": "225",
-    "word": "exaggerate",
-    "meaning": "overstate; overemphasize"
-  },
-  {
-    "number": "226",
     "word": "Exam",
-    "meaning": "examination; test"
+    "meaning": "examination; test",
+    "number": "448"
   },
   {
-    "number": "227",
-    "word": "exam",
-    "meaning": "examination; test"
+    "word": "Exasperated",
+    "meaning": "",
+    "number": "449"
   },
   {
-    "number": "228",
     "word": "excellent",
-    "meaning": "outstanding; superior"
+    "meaning": "outstanding; superior",
+    "number": "450"
   },
   {
-    "number": "229",
     "word": "Exception",
-    "meaning": "exclusion; special case"
+    "meaning": "exclusion; special case",
+    "number": "451"
   },
   {
-    "number": "230",
+    "word": "excitement",
+    "meaning": "",
+    "number": "452"
+  },
+  {
     "word": "exciting",
-    "meaning": "thrilling; stimulating"
+    "meaning": "thrilling; stimulating",
+    "number": "453"
   },
   {
-    "number": "231",
     "word": "exclaim",
-    "meaning": "cry out; shout"
+    "meaning": "cry out; shout",
+    "number": "454"
   },
   {
-    "number": "232",
     "word": "Excruciating",
-    "meaning": "agonizing; very painful"
+    "meaning": "agonizing; very painful",
+    "number": "455"
   },
   {
-    "number": "233",
     "word": "existence",
-    "meaning": "being; life"
+    "meaning": "being; life",
+    "number": "456"
   },
   {
-    "number": "234",
     "word": "expand",
-    "meaning": "enlarge; increase"
+    "meaning": "enlarge; increase",
+    "number": "457"
   },
   {
-    "number": "235",
+    "word": "Expedite",
+    "meaning": "",
+    "number": "458"
+  },
+  {
+    "word": "Expedition",
+    "meaning": "",
+    "number": "459"
+  },
+  {
     "word": "expel",
-    "meaning": "drive out; eject"
+    "meaning": "drive out; eject",
+    "number": "460"
   },
   {
-    "number": "236",
     "word": "expense",
-    "meaning": "cost; expenditure"
+    "meaning": "cost; expenditure",
+    "number": "461"
   },
   {
-    "number": "237",
     "word": "explanation",
-    "meaning": "clarification; reason"
+    "meaning": "clarification; reason",
+    "number": "462"
   },
   {
-    "number": "238",
     "word": "Expressive",
-    "meaning": "showing feelings; meaningful"
+    "meaning": "showing feelings; meaningful",
+    "number": "463"
   },
   {
-    "number": "239",
     "word": "Exquisite",
-    "meaning": "beautiful; refined"
+    "meaning": "beautiful; refined",
+    "number": "464"
   },
   {
-    "number": "240",
     "word": "extended",
-    "meaning": "stretched out; prolonged"
+    "meaning": "stretched out; prolonged",
+    "number": "465"
   },
   {
-    "number": "241",
     "word": "exterior",
-    "meaning": "outer; outside"
+    "meaning": "outer; outside",
+    "number": "466"
   },
   {
-    "number": "242",
     "word": "extinction",
-    "meaning": "dying out; end"
+    "meaning": "dying out; end",
+    "number": "467"
   },
   {
-    "number": "243",
     "word": "extract",
-    "meaning": "remove; passage"
+    "meaning": "remove; passage",
+    "number": "468"
   },
   {
-    "number": "244",
     "word": "extremely",
-    "meaning": "very; exceptionally"
+    "meaning": "very; exceptionally",
+    "number": "469"
   },
   {
-    "number": "245",
     "word": "Exuberant",
-    "meaning": "lively"
+    "meaning": "lively",
+    "number": "470"
   },
   {
-    "number": "246",
     "word": "Exultant",
-    "meaning": "rejoicing; triumphant"
+    "meaning": "rejoicing; triumphant",
+    "number": "471"
   },
   {
-    "number": "247",
+    "word": "Facebook",
+    "meaning": "",
+    "number": "472"
+  },
+  {
+    "word": "fact",
+    "meaning": "",
+    "number": "473"
+  },
+  {
+    "word": "Factor",
+    "meaning": "",
+    "number": "474"
+  },
+  {
+    "word": "Factual",
+    "meaning": "",
+    "number": "475"
+  },
+  {
+    "word": "Falter",
+    "meaning": "",
+    "number": "476"
+  },
+  {
+    "word": "famine",
+    "meaning": "",
+    "number": "477"
+  },
+  {
+    "word": "Fascinated",
+    "meaning": "",
+    "number": "478"
+  },
+  {
+    "word": "fatal",
+    "meaning": "",
+    "number": "479"
+  },
+  {
+    "word": "Fathom",
+    "meaning": "",
+    "number": "480"
+  },
+  {
+    "word": "fatigue",
+    "meaning": "",
+    "number": "481"
+  },
+  {
+    "word": "favourite",
+    "meaning": "",
+    "number": "482"
+  },
+  {
+    "word": "Fearless",
+    "meaning": "",
+    "number": "483"
+  },
+  {
+    "word": "feeble",
+    "meaning": "",
+    "number": "484"
+  },
+  {
+    "word": "feel",
+    "meaning": "",
+    "number": "485"
+  },
+  {
+    "word": "feign",
+    "meaning": "",
+    "number": "486"
+  },
+  {
+    "word": "fertile",
+    "meaning": "",
+    "number": "487"
+  },
+  {
+    "word": "Festivity",
+    "meaning": "",
+    "number": "488"
+  },
+  {
+    "word": "Fiasco",
+    "meaning": "",
+    "number": "489"
+  },
+  {
+    "word": "Fickle",
+    "meaning": "",
+    "number": "490"
+  },
+  {
+    "word": "Fidget",
+    "meaning": "",
+    "number": "491"
+  },
+  {
+    "word": "Fierce",
+    "meaning": "",
+    "number": "492"
+  },
+  {
+    "word": "Finding",
+    "meaning": "",
+    "number": "493"
+  },
+  {
+    "word": "Flabbergast",
+    "meaning": "",
+    "number": "494"
+  },
+  {
+    "word": "Flagrant",
+    "meaning": "",
+    "number": "495"
+  },
+  {
+    "word": "flamboyant",
+    "meaning": "",
+    "number": "496"
+  },
+  {
+    "word": "Flawless",
+    "meaning": "",
+    "number": "497"
+  },
+  {
+    "word": "flee",
+    "meaning": "",
+    "number": "498"
+  },
+  {
+    "word": "fleet",
+    "meaning": "",
+    "number": "499"
+  },
+  {
+    "word": "Flippant",
+    "meaning": "",
+    "number": "500"
+  },
+  {
+    "word": "flora",
+    "meaning": "",
+    "number": "501"
+  },
+  {
+    "word": "Flourish",
+    "meaning": "",
+    "number": "502"
+  },
+  {
     "word": "Foamy",
-    "meaning": "frothy; bubbly"
+    "meaning": "frothy; bubbly",
+    "number": "503"
   },
   {
-    "number": "248",
     "word": "foe",
-    "meaning": "enemy; opponent"
+    "meaning": "enemy; opponent",
+    "number": "504"
   },
   {
-    "number": "249",
     "word": "Folklore",
-    "meaning": "traditional beliefs"
+    "meaning": "traditional beliefs",
+    "number": "505"
   },
   {
-    "number": "250",
     "word": "for",
-    "meaning": "in favor of; because"
+    "meaning": "in favor of; because",
+    "number": "506"
   },
   {
-    "number": "251",
     "word": "forbid",
-    "meaning": "prohibit; prevent"
+    "meaning": "prohibit; prevent",
+    "number": "507"
   },
   {
-    "number": "252",
     "word": "Foreboding",
-    "meaning": "premonition; ominous"
+    "meaning": "premonition; ominous",
+    "number": "508"
   },
   {
-    "number": "253",
     "word": "Forecast",
-    "meaning": "predict; prediction"
+    "meaning": "predict; prediction",
+    "number": "509"
   },
   {
-    "number": "254",
     "word": "Foreshadow",
-    "meaning": "indicate beforehand"
+    "meaning": "indicate beforehand",
+    "number": "510"
   },
   {
-    "number": "255",
     "word": "Formidable",
-    "meaning": "fearsome"
+    "meaning": "fearsome",
+    "number": "511"
   },
   {
-    "number": "256",
     "word": "found",
-    "meaning": "establish; past of find"
+    "meaning": "establish; past of find",
+    "number": "512"
   },
   {
-    "number": "257",
     "word": "foundation",
-    "meaning": "base; establishment"
+    "meaning": "base; establishment",
+    "number": "513"
   },
   {
-    "number": "258",
+    "word": "fragment",
+    "meaning": "",
+    "number": "514"
+  },
+  {
     "word": "fragrant",
-    "meaning": "sweet-smelling; aromatic"
+    "meaning": "sweet-smelling; aromatic",
+    "number": "515"
   },
   {
-    "number": "259",
     "word": "free",
-    "meaning": "not confined; without charge"
+    "meaning": "not confined; without charge",
+    "number": "516"
   },
   {
-    "number": "260",
-    "word": "frequent",
-    "meaning": "common; visit often"
-  },
-  {
-    "number": "261",
     "word": "Frequent",
-    "meaning": "common; visit often"
+    "meaning": "common; visit often",
+    "number": "517"
   },
   {
-    "number": "262",
     "word": "Fretful",
-    "meaning": "anxious; irritable"
+    "meaning": "anxious; irritable",
+    "number": "518"
   },
   {
-    "number": "263",
     "word": "Friday",
-    "meaning": "sixth day of week"
+    "meaning": "sixth day of week",
+    "number": "519"
   },
   {
-    "number": "264",
     "word": "friend",
-    "meaning": "companion; ally"
+    "meaning": "companion; ally",
+    "number": "520"
   },
   {
-    "number": "265",
     "word": "friendly",
-    "meaning": "amicable; kind"
+    "meaning": "amicable; kind",
+    "number": "521"
   },
   {
-    "number": "266",
     "word": "frivolous",
-    "meaning": "silly; trivial"
+    "meaning": "silly; trivial",
+    "number": "522"
   },
   {
-    "number": "267",
     "word": "front",
-    "meaning": "forward part; face"
+    "meaning": "forward part; face",
+    "number": "523"
   },
   {
-    "number": "268",
     "word": "fund",
-    "meaning": "money reserve; finance"
+    "meaning": "money reserve; finance",
+    "number": "524"
   },
   {
-    "number": "269",
+    "word": "Gallant",
+    "meaning": "",
+    "number": "525"
+  },
+  {
+    "word": "Gargantuan",
+    "meaning": "",
+    "number": "526"
+  },
+  {
+    "word": "garment",
+    "meaning": "",
+    "number": "527"
+  },
+  {
+    "word": "Generous",
+    "meaning": "",
+    "number": "528"
+  },
+  {
+    "word": "Gentle",
+    "meaning": "",
+    "number": "529"
+  },
+  {
+    "word": "Glide",
+    "meaning": "",
+    "number": "530"
+  },
+  {
+    "word": "Glint",
+    "meaning": "",
+    "number": "531"
+  },
+  {
+    "word": "Glow",
+    "meaning": "",
+    "number": "532"
+  },
+  {
+    "word": "Gluttonous",
+    "meaning": "",
+    "number": "533"
+  },
+  {
+    "word": "Gnarled",
+    "meaning": "",
+    "number": "534"
+  },
+  {
+    "word": "government",
+    "meaning": "",
+    "number": "535"
+  },
+  {
+    "word": "grammar",
+    "meaning": "",
+    "number": "536"
+  },
+  {
+    "word": "grate",
+    "meaning": "",
+    "number": "537"
+  },
+  {
+    "word": "gratitude",
+    "meaning": "",
+    "number": "538"
+  },
+  {
+    "word": "grave",
+    "meaning": "",
+    "number": "539"
+  },
+  {
+    "word": "gregarious",
+    "meaning": "",
+    "number": "540"
+  },
+  {
+    "word": "grieve",
+    "meaning": "",
+    "number": "541"
+  },
+  {
+    "word": "Grotesque",
+    "meaning": "",
+    "number": "542"
+  },
+  {
+    "word": "Groundbreaking",
+    "meaning": "",
+    "number": "543"
+  },
+  {
+    "word": "guarantee",
+    "meaning": "",
+    "number": "544"
+  },
+  {
+    "word": "guard",
+    "meaning": "",
+    "number": "545"
+  },
+  {
+    "word": "Guardian",
+    "meaning": "",
+    "number": "546"
+  },
+  {
+    "word": "guide",
+    "meaning": "",
+    "number": "547"
+  },
+  {
+    "word": "guides",
+    "meaning": "",
+    "number": "548"
+  },
+  {
     "word": "Gullible",
-    "meaning": "easily fooled"
+    "meaning": "easily fooled",
+    "number": "549"
   },
   {
-    "number": "270",
+    "word": "habitable",
+    "meaning": "",
+    "number": "550"
+  },
+  {
+    "word": "habitat",
+    "meaning": "",
+    "number": "551"
+  },
+  {
+    "word": "halt",
+    "meaning": "",
+    "number": "552"
+  },
+  {
+    "word": "handkerchief",
+    "meaning": "",
+    "number": "553"
+  },
+  {
+    "word": "Haphazardly",
+    "meaning": "",
+    "number": "554"
+  },
+  {
+    "word": "Harass",
+    "meaning": "",
+    "number": "555"
+  },
+  {
+    "word": "Harmonious",
+    "meaning": "",
+    "number": "556"
+  },
+  {
+    "word": "Harmony",
+    "meaning": "",
+    "number": "557"
+  },
+  {
+    "word": "Harsh",
+    "meaning": "",
+    "number": "558"
+  },
+  {
+    "word": "Haste",
+    "meaning": "",
+    "number": "559"
+  },
+  {
+    "word": "hasty",
+    "meaning": "",
+    "number": "560"
+  },
+  {
+    "word": "have",
+    "meaning": "",
+    "number": "561"
+  },
+  {
+    "word": "Headline",
+    "meaning": "",
+    "number": "562"
+  },
+  {
+    "word": "Hectic",
+    "meaning": "",
+    "number": "563"
+  },
+  {
+    "word": "Heed",
+    "meaning": "",
+    "number": "564"
+  },
+  {
+    "word": "helix",
+    "meaning": "",
+    "number": "565"
+  },
+  {
+    "word": "help",
+    "meaning": "",
+    "number": "566"
+  },
+  {
+    "word": "Heritage",
+    "meaning": "",
+    "number": "567"
+  },
+  {
+    "word": "heroic",
+    "meaning": "",
+    "number": "568"
+  },
+  {
+    "word": "Hesitant",
+    "meaning": "",
+    "number": "569"
+  },
+  {
+    "word": "Hesitantly",
+    "meaning": "",
+    "number": "570"
+  },
+  {
+    "word": "hoax",
+    "meaning": "",
+    "number": "571"
+  },
+  {
+    "word": "holiday",
+    "meaning": "",
+    "number": "572"
+  },
+  {
+    "word": "hollow",
+    "meaning": "",
+    "number": "573"
+  },
+  {
+    "word": "https",
+    "meaning": "",
+    "number": "574"
+  },
+  {
+    "word": "humble",
+    "meaning": "",
+    "number": "575"
+  },
+  {
+    "word": "Humiliate",
+    "meaning": "",
+    "number": "576"
+  },
+  {
+    "word": "hygienic",
+    "meaning": "",
+    "number": "577"
+  },
+  {
+    "word": "Hypocrite",
+    "meaning": "",
+    "number": "578"
+  },
+  {
+    "word": "Hysterical",
+    "meaning": "",
+    "number": "579"
+  },
+  {
+    "word": "idiosyncrasy",
+    "meaning": "",
+    "number": "580"
+  },
+  {
+    "word": "idle",
+    "meaning": "",
+    "number": "581"
+  },
+  {
+    "word": "idol",
+    "meaning": "",
+    "number": "582"
+  },
+  {
+    "word": "Ignominious",
+    "meaning": "",
+    "number": "584"
+  },
+  {
+    "word": "ignorant",
+    "meaning": "",
+    "number": "585"
+  },
+  {
+    "word": "Illustrious",
+    "meaning": "",
+    "number": "586"
+  },
+  {
+    "word": "Imagery",
+    "meaning": "",
+    "number": "587"
+  },
+  {
+    "word": "Imaginative",
+    "meaning": "",
+    "number": "588"
+  },
+  {
+    "word": "imitate",
+    "meaning": "",
+    "number": "589"
+  },
+  {
+    "word": "immediate",
+    "meaning": "",
+    "number": "590"
+  },
+  {
+    "word": "immediately",
+    "meaning": "",
+    "number": "591"
+  },
+  {
+    "word": "immerse",
+    "meaning": "",
+    "number": "592"
+  },
+  {
     "word": "Imminent",
-    "meaning": "about to happen"
+    "meaning": "about to happen",
+    "number": "593"
   },
   {
-    "number": "271",
+    "word": "Impactful",
+    "meaning": "",
+    "number": "594"
+  },
+  {
+    "word": "Impartial",
+    "meaning": "",
+    "number": "595"
+  },
+  {
+    "word": "Impeccable",
+    "meaning": "",
+    "number": "596"
+  },
+  {
+    "word": "Implied",
+    "meaning": "",
+    "number": "597"
+  },
+  {
+    "word": "Imposter",
+    "meaning": "",
+    "number": "598"
+  },
+  {
+    "word": "Improvisation",
+    "meaning": "",
+    "number": "599"
+  },
+  {
+    "word": "Improvise",
+    "meaning": "",
+    "number": "600"
+  },
+  {
+    "word": "impudent",
+    "meaning": "",
+    "number": "601"
+  },
+  {
+    "word": "inaudible",
+    "meaning": "",
+    "number": "603"
+  },
+  {
+    "word": "inaugural",
+    "meaning": "",
+    "number": "604"
+  },
+  {
+    "word": "inaugurate",
+    "meaning": "",
+    "number": "605"
+  },
+  {
+    "word": "Incessant",
+    "meaning": "",
+    "number": "606"
+  },
+  {
+    "word": "incision",
+    "meaning": "",
+    "number": "607"
+  },
+  {
+    "word": "Inclusive",
+    "meaning": "",
+    "number": "608"
+  },
+  {
+    "word": "inconspicuous",
+    "meaning": "",
+    "number": "609"
+  },
+  {
+    "word": "Inconvenient",
+    "meaning": "",
+    "number": "610"
+  },
+  {
+    "word": "Incorporate",
+    "meaning": "",
+    "number": "611"
+  },
+  {
+    "word": "Incredulous",
+    "meaning": "",
+    "number": "612"
+  },
+  {
+    "word": "independent",
+    "meaning": "",
+    "number": "613"
+  },
+  {
+    "word": "Indignant",
+    "meaning": "",
+    "number": "614"
+  },
+  {
+    "word": "individual",
+    "meaning": "",
+    "number": "615"
+  },
+  {
+    "word": "inedible",
+    "meaning": "",
+    "number": "616"
+  },
+  {
+    "word": "Inevitable",
+    "meaning": "",
+    "number": "617"
+  },
+  {
+    "word": "Infamous",
+    "meaning": "",
+    "number": "618"
+  },
+  {
+    "word": "inferior",
+    "meaning": "",
+    "number": "619"
+  },
+  {
+    "word": "influence",
+    "meaning": "",
+    "number": "620"
+  },
+  {
+    "word": "Influential",
+    "meaning": "",
+    "number": "621"
+  },
+  {
+    "word": "information",
+    "meaning": "",
+    "number": "622"
+  },
+  {
     "word": "Ingenious",
-    "meaning": "clever"
+    "meaning": "clever",
+    "number": "623"
   },
   {
-    "number": "272",
+    "word": "Inhabit",
+    "meaning": "",
+    "number": "624"
+  },
+  {
+    "word": "Inhabitant",
+    "meaning": "",
+    "number": "625"
+  },
+  {
+    "word": "inhabitants",
+    "meaning": "",
+    "number": "626"
+  },
+  {
+    "word": "innocuous",
+    "meaning": "",
+    "number": "627"
+  },
+  {
+    "word": "Innovate",
+    "meaning": "",
+    "number": "628"
+  },
+  {
+    "word": "Inquisitive",
+    "meaning": "",
+    "number": "629"
+  },
+  {
+    "word": "insane",
+    "meaning": "",
+    "number": "630"
+  },
+  {
+    "word": "insert",
+    "meaning": "",
+    "number": "631"
+  },
+  {
+    "word": "Insight",
+    "meaning": "",
+    "number": "632"
+  },
+  {
+    "word": "Insolent",
+    "meaning": "",
+    "number": "633"
+  },
+  {
+    "word": "inspire",
+    "meaning": "",
+    "number": "634"
+  },
+  {
+    "word": "Intact",
+    "meaning": "",
+    "number": "635"
+  },
+  {
+    "word": "intangible",
+    "meaning": "",
+    "number": "636"
+  },
+  {
+    "word": "Integrity",
+    "meaning": "",
+    "number": "637"
+  },
+  {
+    "word": "intense",
+    "meaning": "",
+    "number": "638"
+  },
+  {
+    "word": "intention",
+    "meaning": "",
+    "number": "639"
+  },
+  {
+    "word": "interested",
+    "meaning": "",
+    "number": "640"
+  },
+  {
+    "word": "interfere",
+    "meaning": "",
+    "number": "641"
+  },
+  {
+    "word": "interior",
+    "meaning": "",
+    "number": "642"
+  },
+  {
+    "word": "internet",
+    "meaning": "",
+    "number": "643"
+  },
+  {
+    "word": "interpret",
+    "meaning": "",
+    "number": "644"
+  },
+  {
+    "word": "interrogate",
+    "meaning": "",
+    "number": "645"
+  },
+  {
+    "word": "interrupt",
+    "meaning": "",
+    "number": "646"
+  },
+  {
+    "word": "Intervene",
+    "meaning": "",
+    "number": "647"
+  },
+  {
+    "word": "Intimidate",
+    "meaning": "",
+    "number": "648"
+  },
+  {
+    "word": "invalid",
+    "meaning": "",
+    "number": "649"
+  },
+  {
+    "word": "Invaluable",
+    "meaning": "",
+    "number": "650"
+  },
+  {
+    "word": "Inventive",
+    "meaning": "",
+    "number": "651"
+  },
+  {
+    "word": "Investment",
+    "meaning": "",
+    "number": "652"
+  },
+  {
+    "word": "Irate",
+    "meaning": "",
+    "number": "653"
+  },
+  {
+    "word": "Ironic",
+    "meaning": "",
+    "number": "654"
+  },
+  {
+    "word": "Irreversible",
+    "meaning": "",
+    "number": "655"
+  },
+  {
+    "word": "Irritable",
+    "meaning": "",
+    "number": "656"
+  },
+  {
+    "word": "Isolated",
+    "meaning": "",
+    "number": "657"
+  },
+  {
+    "word": "isolation",
+    "meaning": "",
+    "number": "658"
+  },
+  {
+    "word": "Jabber",
+    "meaning": "",
+    "number": "659"
+  },
+  {
+    "word": "Jeopardy",
+    "meaning": "",
+    "number": "660"
+  },
+  {
+    "word": "Jittery",
+    "meaning": "",
+    "number": "661"
+  },
+  {
     "word": "Jovial",
-    "meaning": "cheerful"
+    "meaning": "cheerful",
+    "number": "662"
   },
   {
-    "number": "273",
+    "word": "Just",
+    "meaning": "",
+    "number": "663"
+  },
+  {
+    "word": "justice",
+    "meaning": "",
+    "number": "664"
+  },
+  {
+    "word": "Justify",
+    "meaning": "",
+    "number": "665"
+  },
+  {
+    "word": "Keen",
+    "meaning": "",
+    "number": "666"
+  },
+  {
+    "word": "knit",
+    "meaning": "",
+    "number": "667"
+  },
+  {
+    "word": "labour",
+    "meaning": "",
+    "number": "668"
+  },
+  {
+    "word": "lament",
+    "meaning": "",
+    "number": "669"
+  },
+  {
+    "word": "language",
+    "meaning": "",
+    "number": "670"
+  },
+  {
+    "word": "Languid",
+    "meaning": "",
+    "number": "671"
+  },
+  {
+    "word": "large",
+    "meaning": "",
+    "number": "672"
+  },
+  {
+    "word": "latter",
+    "meaning": "",
+    "number": "673"
+  },
+  {
+    "word": "lavish",
+    "meaning": "",
+    "number": "674"
+  },
+  {
+    "word": "Lawful",
+    "meaning": "",
+    "number": "675"
+  },
+  {
+    "word": "lean",
+    "meaning": "",
+    "number": "676"
+  },
+  {
+    "word": "leisure",
+    "meaning": "",
+    "number": "677"
+  },
+  {
+    "word": "Lenient",
+    "meaning": "",
+    "number": "678"
+  },
+  {
     "word": "Lethargic",
-    "meaning": "sluggish"
+    "meaning": "sluggish",
+    "number": "679"
   },
   {
-    "number": "274",
+    "word": "liable",
+    "meaning": "",
+    "number": "680"
+  },
+  {
+    "word": "liberal",
+    "meaning": "",
+    "number": "681"
+  },
+  {
+    "word": "liberty",
+    "meaning": "",
+    "number": "682"
+  },
+  {
+    "word": "library",
+    "meaning": "",
+    "number": "683"
+  },
+  {
+    "word": "lightning",
+    "meaning": "",
+    "number": "684"
+  },
+  {
+    "word": "limb",
+    "meaning": "",
+    "number": "685"
+  },
+  {
+    "word": "limit",
+    "meaning": "",
+    "number": "686"
+  },
+  {
+    "word": "Linger",
+    "meaning": "",
+    "number": "687"
+  },
+  {
+    "word": "List",
+    "meaning": "",
+    "number": "688"
+  },
+  {
+    "word": "Listen",
+    "meaning": "",
+    "number": "689"
+  },
+  {
+    "word": "lodge",
+    "meaning": "",
+    "number": "690"
+  },
+  {
+    "word": "lofty",
+    "meaning": "",
+    "number": "691"
+  },
+  {
+    "word": "Logical",
+    "meaning": "",
+    "number": "692"
+  },
+  {
+    "word": "loneliness",
+    "meaning": "",
+    "number": "693"
+  },
+  {
+    "word": "loyal",
+    "meaning": "",
+    "number": "694"
+  },
+  {
     "word": "Lucrative",
-    "meaning": "profitable"
+    "meaning": "profitable",
+    "number": "695"
   },
   {
-    "number": "275",
+    "word": "Ludicrous",
+    "meaning": "",
+    "number": "696"
+  },
+  {
+    "word": "Lunge",
+    "meaning": "",
+    "number": "697"
+  },
+  {
     "word": "Macabre",
-    "meaning": "gruesome"
+    "meaning": "gruesome",
+    "number": "698"
   },
   {
-    "number": "276",
     "word": "Majestic",
-    "meaning": "grand"
+    "meaning": "grand",
+    "number": "699"
   },
   {
-    "number": "277",
-    "word": "majestic",
-    "meaning": "grand"
+    "word": "make",
+    "meaning": "",
+    "number": "700"
   },
   {
-    "number": "278",
-    "word": "Malady",
-    "meaning": "illness"
+    "word": "malady",
+    "meaning": "illness",
+    "number": "701"
   },
   {
-    "number": "279",
-    "word": "Meticulous",
-    "meaning": "very careful"
+    "word": "Malicious",
+    "meaning": "",
+    "number": "702"
   },
   {
-    "number": "280",
+    "word": "Manageable",
+    "meaning": "",
+    "number": "703"
+  },
+  {
+    "word": "Mangle",
+    "meaning": "",
+    "number": "704"
+  },
+  {
+    "word": "Manifest",
+    "meaning": "",
+    "number": "705"
+  },
+  {
+    "word": "Manipulation",
+    "meaning": "",
+    "number": "706"
+  },
+  {
+    "word": "margin",
+    "meaning": "",
+    "number": "707"
+  },
+  {
+    "word": "mariner",
+    "meaning": "",
+    "number": "708"
+  },
+  {
+    "word": "marks",
+    "meaning": "",
+    "number": "709"
+  },
+  {
+    "word": "matte",
+    "meaning": "",
+    "number": "710"
+  },
+  {
+    "word": "maximum",
+    "meaning": "",
+    "number": "711"
+  },
+  {
+    "word": "Mayhem",
+    "meaning": "",
+    "number": "712"
+  },
+  {
+    "word": "Meagre",
+    "meaning": "",
+    "number": "713"
+  },
+  {
+    "word": "meant",
+    "meaning": "",
+    "number": "714"
+  },
+  {
+    "word": "Meddle",
+    "meaning": "",
+    "number": "715"
+  },
+  {
+    "word": "Melancholy",
+    "meaning": "",
+    "number": "716"
+  },
+  {
+    "word": "Mellow",
+    "meaning": "",
+    "number": "717"
+  },
+  {
+    "word": "Melody",
+    "meaning": "",
+    "number": "718"
+  },
+  {
+    "word": "Menacing",
+    "meaning": "",
+    "number": "719"
+  },
+  {
+    "word": "Mentor",
+    "meaning": "",
+    "number": "720"
+  },
+  {
+    "word": "merchant",
+    "meaning": "",
+    "number": "721"
+  },
+  {
+    "word": "mercy",
+    "meaning": "",
+    "number": "722"
+  },
+  {
+    "word": "mere",
+    "meaning": "",
+    "number": "723"
+  },
+  {
+    "word": "Mesmerise",
+    "meaning": "",
+    "number": "724"
+  },
+  {
+    "word": "meticulous",
+    "meaning": "very careful",
+    "number": "725"
+  },
+  {
+    "word": "Metropolis",
+    "meaning": "",
+    "number": "726"
+  },
+  {
+    "word": "Mimic",
+    "meaning": "",
+    "number": "727"
+  },
+  {
+    "word": "minded",
+    "meaning": "",
+    "number": "728"
+  },
+  {
+    "word": "minimum",
+    "meaning": "",
+    "number": "729"
+  },
+  {
+    "word": "Miniscule",
+    "meaning": "",
+    "number": "730"
+  },
+  {
+    "word": "Miscellaneous",
+    "meaning": "",
+    "number": "731"
+  },
+  {
+    "word": "Mischievous",
+    "meaning": "",
+    "number": "732"
+  },
+  {
+    "word": "Misinformation",
+    "meaning": "",
+    "number": "733"
+  },
+  {
+    "word": "moderate",
+    "meaning": "",
+    "number": "734"
+  },
+  {
+    "word": "modest",
+    "meaning": "",
+    "number": "735"
+  },
+  {
+    "word": "Momentous",
+    "meaning": "",
+    "number": "736"
+  },
+  {
+    "word": "Monarchy",
+    "meaning": "",
+    "number": "737"
+  },
+  {
+    "word": "Monologue",
+    "meaning": "",
+    "number": "738"
+  },
+  {
+    "word": "Monotonous",
+    "meaning": "",
+    "number": "739"
+  },
+  {
+    "word": "moral",
+    "meaning": "",
+    "number": "740"
+  },
+  {
+    "word": "mortal",
+    "meaning": "",
+    "number": "741"
+  },
+  {
+    "word": "Multicultural",
+    "meaning": "",
+    "number": "742"
+  },
+  {
+    "word": "Murmur",
+    "meaning": "",
+    "number": "743"
+  },
+  {
+    "word": "Music",
+    "meaning": "",
+    "number": "744"
+  },
+  {
+    "word": "Mutter",
+    "meaning": "",
+    "number": "745"
+  },
+  {
+    "word": "Mutual",
+    "meaning": "",
+    "number": "746"
+  },
+  {
+    "word": "mysterious",
+    "meaning": "",
+    "number": "747"
+  },
+  {
+    "word": "Naive",
+    "meaning": "",
+    "number": "748"
+  },
+  {
+    "word": "Nauseous",
+    "meaning": "",
+    "number": "749"
+  },
+  {
+    "word": "Navigate",
+    "meaning": "",
+    "number": "750"
+  },
+  {
+    "word": "neat",
+    "meaning": "",
+    "number": "751"
+  },
+  {
+    "word": "necessary",
+    "meaning": "",
+    "number": "752"
+  },
+  {
+    "word": "Negotiate",
+    "meaning": "",
+    "number": "753"
+  },
+  {
+    "word": "newsletter",
+    "meaning": "",
+    "number": "755"
+  },
+  {
     "word": "nimble",
-    "meaning": "quick"
+    "meaning": "quick",
+    "number": "756"
   },
   {
-    "number": "281",
+    "word": "Nonchalant",
+    "meaning": "",
+    "number": "759"
+  },
+  {
+    "word": "Nonplussed",
+    "meaning": "",
+    "number": "760"
+  },
+  {
+    "word": "noted",
+    "meaning": "",
+    "number": "761"
+  },
+  {
+    "word": "nuisance",
+    "meaning": "",
+    "number": "762"
+  },
+  {
+    "word": "nurseryman",
+    "meaning": "",
+    "number": "763"
+  },
+  {
+    "word": "oath",
+    "meaning": "",
+    "number": "764"
+  },
+  {
     "word": "Obedient",
-    "meaning": "dutiful"
+    "meaning": "dutiful",
+    "number": "765"
   },
   {
-    "number": "282",
+    "word": "object",
+    "meaning": "",
+    "number": "766"
+  },
+  {
+    "word": "objection",
+    "meaning": "",
+    "number": "767"
+  },
+  {
+    "word": "oblige",
+    "meaning": "",
+    "number": "768"
+  },
+  {
+    "word": "Obliterate",
+    "meaning": "",
+    "number": "769"
+  },
+  {
+    "word": "Oblivion",
+    "meaning": "",
+    "number": "770"
+  },
+  {
+    "word": "Oblivious",
+    "meaning": "",
+    "number": "771"
+  },
+  {
+    "word": "obscure",
+    "meaning": "",
+    "number": "772"
+  },
+  {
+    "word": "Observant",
+    "meaning": "",
+    "number": "773"
+  },
+  {
+    "word": "Observation",
+    "meaning": "",
+    "number": "774"
+  },
+  {
+    "word": "obstinate",
+    "meaning": "",
+    "number": "775"
+  },
+  {
+    "word": "Obtuse",
+    "meaning": "",
+    "number": "776"
+  },
+  {
+    "word": "Occupation",
+    "meaning": "",
+    "number": "777"
+  },
+  {
+    "word": "occupy",
+    "meaning": "",
+    "number": "778"
+  },
+  {
+    "word": "occur",
+    "meaning": "",
+    "number": "779"
+  },
+  {
+    "word": "odour",
+    "meaning": "",
+    "number": "780"
+  },
+  {
+    "word": "offend",
+    "meaning": "",
+    "number": "782"
+  },
+  {
+    "word": "omen",
+    "meaning": "",
+    "number": "783"
+  },
+  {
     "word": "Ominous",
-    "meaning": "threatening"
+    "meaning": "threatening",
+    "number": "784"
   },
   {
-    "number": "283",
+    "word": "online",
+    "meaning": "",
+    "number": "787"
+  },
+  {
+    "word": "opportunity",
+    "meaning": "",
+    "number": "788"
+  },
+  {
+    "word": "oppose",
+    "meaning": "",
+    "number": "789"
+  },
+  {
+    "word": "Opposition",
+    "meaning": "",
+    "number": "790"
+  },
+  {
+    "word": "oppress",
+    "meaning": "",
+    "number": "791"
+  },
+  {
+    "word": "Optimal",
+    "meaning": "",
+    "number": "792"
+  },
+  {
+    "word": "option",
+    "meaning": "",
+    "number": "793"
+  },
+  {
+    "word": "Opulent",
+    "meaning": "",
+    "number": "794"
+  },
+  {
+    "word": "ordeal",
+    "meaning": "",
+    "number": "795"
+  },
+  {
+    "word": "Origin",
+    "meaning": "",
+    "number": "796"
+  },
+  {
+    "word": "orthodontist",
+    "meaning": "",
+    "number": "797"
+  },
+  {
+    "word": "ostentatious",
+    "meaning": "",
+    "number": "798"
+  },
+  {
+    "word": "Outcome",
+    "meaning": "",
+    "number": "801"
+  },
+  {
+    "word": "Outrageous",
+    "meaning": "",
+    "number": "802"
+  },
+  {
+    "word": "Overbearing",
+    "meaning": "",
+    "number": "803"
+  },
+  {
+    "word": "Overcrowding",
+    "meaning": "",
+    "number": "804"
+  },
+  {
+    "word": "Overwhelm",
+    "meaning": "",
+    "number": "805"
+  },
+  {
+    "word": "Page",
+    "meaning": "",
+    "number": "806"
+  },
+  {
+    "word": "pages",
+    "meaning": "",
+    "number": "807"
+  },
+  {
+    "word": "paid",
+    "meaning": "",
+    "number": "808"
+  },
+  {
+    "word": "Painstaking",
+    "meaning": "",
+    "number": "809"
+  },
+  {
+    "word": "palaeontologist",
+    "meaning": "",
+    "number": "810"
+  },
+  {
+    "word": "paper",
+    "meaning": "",
+    "number": "811"
+  },
+  {
+    "word": "papers",
+    "meaning": "",
+    "number": "812"
+  },
+  {
+    "word": "parallel",
+    "meaning": "",
+    "number": "813"
+  },
+  {
+    "word": "Parliament",
+    "meaning": "",
+    "number": "814"
+  },
+  {
+    "word": "passive",
+    "meaning": "",
+    "number": "815"
+  },
+  {
+    "word": "pasture",
+    "meaning": "",
+    "number": "816"
+  },
+  {
+    "word": "Pattern",
+    "meaning": "",
+    "number": "817"
+  },
+  {
+    "word": "peak",
+    "meaning": "",
+    "number": "818"
+  },
+  {
+    "word": "peculiar",
+    "meaning": "strange",
+    "number": "819"
+  },
+  {
+    "word": "Pedantic",
+    "meaning": "",
+    "number": "820"
+  },
+  {
+    "word": "perceive",
+    "meaning": "",
+    "number": "821"
+  },
+  {
     "word": "peril",
-    "meaning": "danger"
+    "meaning": "danger",
+    "number": "822"
   },
   {
-    "number": "284",
+    "word": "perilous",
+    "meaning": "",
+    "number": "823"
+  },
+  {
+    "word": "Perish",
+    "meaning": "",
+    "number": "824"
+  },
+  {
+    "word": "permit",
+    "meaning": "",
+    "number": "825"
+  },
+  {
+    "word": "Perpetual",
+    "meaning": "",
+    "number": "826"
+  },
+  {
+    "word": "perplexed",
+    "meaning": "",
+    "number": "827"
+  },
+  {
+    "word": "Perplexing",
+    "meaning": "",
+    "number": "828"
+  },
+  {
+    "word": "Perseverance",
+    "meaning": "",
+    "number": "829"
+  },
+  {
+    "word": "Persevere",
+    "meaning": "",
+    "number": "830"
+  },
+  {
+    "word": "Persist",
+    "meaning": "",
+    "number": "831"
+  },
+  {
+    "word": "persuade",
+    "meaning": "",
+    "number": "832"
+  },
+  {
+    "word": "Perturbed",
+    "meaning": "",
+    "number": "833"
+  },
+  {
+    "word": "Petrified",
+    "meaning": "",
+    "number": "834"
+  },
+  {
+    "word": "Petulant",
+    "meaning": "",
+    "number": "835"
+  },
+  {
+    "word": "physical",
+    "meaning": "",
+    "number": "836"
+  },
+  {
+    "word": "physiotherapy",
+    "meaning": "",
+    "number": "837"
+  },
+  {
+    "word": "pigment",
+    "meaning": "",
+    "number": "838"
+  },
+  {
+    "word": "pioneer",
+    "meaning": "",
+    "number": "839"
+  },
+  {
+    "word": "placid",
+    "meaning": "",
+    "number": "840"
+  },
+  {
     "word": "Plausible",
-    "meaning": "believable"
+    "meaning": "believable",
+    "number": "841"
   },
   {
-    "number": "285",
+    "word": "Please",
+    "meaning": "",
+    "number": "842"
+  },
+  {
+    "word": "pledge",
+    "meaning": "",
+    "number": "843"
+  },
+  {
+    "word": "Plot",
+    "meaning": "",
+    "number": "844"
+  },
+  {
+    "word": "plume",
+    "meaning": "",
+    "number": "845"
+  },
+  {
+    "word": "Plummet",
+    "meaning": "",
+    "number": "846"
+  },
+  {
+    "word": "plunder",
+    "meaning": "",
+    "number": "847"
+  },
+  {
+    "word": "plunge",
+    "meaning": "",
+    "number": "848"
+  },
+  {
+    "word": "Plus",
+    "meaning": "",
+    "number": "849"
+  },
+  {
+    "word": "Podcast",
+    "meaning": "",
+    "number": "850"
+  },
+  {
+    "word": "Podcasts",
+    "meaning": "",
+    "number": "851"
+  },
+  {
+    "word": "Poise",
+    "meaning": "",
+    "number": "852"
+  },
+  {
+    "word": "polarity",
+    "meaning": "",
+    "number": "853"
+  },
+  {
+    "word": "Pompous",
+    "meaning": "",
+    "number": "854"
+  },
+  {
+    "word": "Ponder",
+    "meaning": "",
+    "number": "855"
+  },
+  {
+    "word": "Portrayal",
+    "meaning": "",
+    "number": "856"
+  },
+  {
+    "word": "Potent",
+    "meaning": "",
+    "number": "857"
+  },
+  {
+    "word": "Potential",
+    "meaning": "",
+    "number": "858"
+  },
+  {
+    "word": "poultry",
+    "meaning": "",
+    "number": "859"
+  },
+  {
+    "word": "Practical",
+    "meaning": "",
+    "number": "860"
+  },
+  {
+    "word": "practice",
+    "meaning": "",
+    "number": "861"
+  },
+  {
+    "word": "Precarious",
+    "meaning": "",
+    "number": "862"
+  },
+  {
+    "word": "Precision",
+    "meaning": "",
+    "number": "863"
+  },
+  {
+    "word": "Predicament",
+    "meaning": "",
+    "number": "864"
+  },
+  {
+    "word": "prejudice",
+    "meaning": "",
+    "number": "865"
+  },
+  {
+    "word": "preparation",
+    "meaning": "",
+    "number": "866"
+  },
+  {
+    "word": "prepare",
+    "meaning": "",
+    "number": "867"
+  },
+  {
+    "word": "Preposterous",
+    "meaning": "",
+    "number": "868"
+  },
+  {
+    "word": "present",
+    "meaning": "",
+    "number": "869"
+  },
+  {
+    "word": "Preserve",
+    "meaning": "",
+    "number": "870"
+  },
+  {
     "word": "Pristine",
-    "meaning": "pure"
+    "meaning": "pure",
+    "number": "871"
   },
   {
-    "number": "286",
+    "word": "privilege",
+    "meaning": "",
+    "number": "872"
+  },
+  {
+    "word": "probably",
+    "meaning": "",
+    "number": "873"
+  },
+  {
+    "word": "proclaim",
+    "meaning": "",
+    "number": "874"
+  },
+  {
+    "word": "procure",
+    "meaning": "",
+    "number": "875"
+  },
+  {
+    "word": "profession",
+    "meaning": "",
+    "number": "876"
+  },
+  {
+    "word": "Proficient",
+    "meaning": "skilled",
+    "number": "877"
+  },
+  {
+    "word": "profit",
+    "meaning": "",
+    "number": "878"
+  },
+  {
+    "word": "Profound",
+    "meaning": "",
+    "number": "879"
+  },
+  {
+    "word": "programme",
+    "meaning": "",
+    "number": "880"
+  },
+  {
+    "word": "prohibit",
+    "meaning": "",
+    "number": "881"
+  },
+  {
+    "word": "prominent",
+    "meaning": "",
+    "number": "882"
+  },
+  {
+    "word": "promote",
+    "meaning": "",
+    "number": "883"
+  },
+  {
+    "word": "prompt",
+    "meaning": "",
+    "number": "884"
+  },
+  {
+    "word": "pronunciation",
+    "meaning": "",
+    "number": "885"
+  },
+  {
+    "word": "Propel",
+    "meaning": "",
+    "number": "886"
+  },
+  {
+    "word": "proportion",
+    "meaning": "",
+    "number": "887"
+  },
+  {
+    "word": "Prosperity",
+    "meaning": "",
+    "number": "888"
+  },
+  {
+    "word": "prosperous",
+    "meaning": "",
+    "number": "889"
+  },
+  {
+    "word": "Protest",
+    "meaning": "",
+    "number": "890"
+  },
+  {
+    "word": "provoke",
+    "meaning": "",
+    "number": "891"
+  },
+  {
+    "word": "public",
+    "meaning": "",
+    "number": "892"
+  },
+  {
+    "word": "punctual",
+    "meaning": "",
+    "number": "893"
+  },
+  {
+    "word": "puncture",
+    "meaning": "",
+    "number": "894"
+  },
+  {
+    "word": "purpose",
+    "meaning": "",
+    "number": "895"
+  },
+  {
+    "word": "Quaint",
+    "meaning": "",
+    "number": "896"
+  },
+  {
+    "word": "queer",
+    "meaning": "",
+    "number": "897"
+  },
+  {
+    "word": "quell",
+    "meaning": "",
+    "number": "898"
+  },
+  {
+    "word": "quench",
+    "meaning": "",
+    "number": "899"
+  },
+  {
+    "word": "questions",
+    "meaning": "",
+    "number": "900"
+  },
+  {
+    "word": "queue",
+    "meaning": "",
+    "number": "901"
+  },
+  {
+    "word": "quiet",
+    "meaning": "",
+    "number": "902"
+  },
+  {
+    "word": "quite",
+    "meaning": "",
+    "number": "903"
+  },
+  {
+    "word": "Quiver",
+    "meaning": "",
+    "number": "904"
+  },
+  {
+    "word": "raiment",
+    "meaning": "",
+    "number": "905"
+  },
+  {
+    "word": "ramble",
+    "meaning": "",
+    "number": "906"
+  },
+  {
+    "word": "Rampant",
+    "meaning": "",
+    "number": "907"
+  },
+  {
+    "word": "rank",
+    "meaning": "",
+    "number": "908"
+  },
+  {
+    "word": "Rapid",
+    "meaning": "",
+    "number": "909"
+  },
+  {
+    "word": "rare",
+    "meaning": "",
+    "number": "910"
+  },
+  {
+    "word": "Ravenous",
+    "meaning": "",
+    "number": "911"
+  },
+  {
+    "word": "really",
+    "meaning": "",
+    "number": "913"
+  },
+  {
+    "word": "receive",
+    "meaning": "",
+    "number": "914"
+  },
+  {
+    "word": "recite",
+    "meaning": "",
+    "number": "915"
+  },
+  {
+    "word": "Reclusive",
+    "meaning": "",
+    "number": "916"
+  },
+  {
+    "word": "recommended",
+    "meaning": "",
+    "number": "917"
+  },
+  {
+    "word": "Recover",
+    "meaning": "",
+    "number": "918"
+  },
+  {
+    "word": "Recuperate",
+    "meaning": "",
+    "number": "919"
+  },
+  {
+    "word": "Redemption",
+    "meaning": "",
+    "number": "920"
+  },
+  {
+    "word": "Reflect",
+    "meaning": "",
+    "number": "921"
+  },
+  {
+    "word": "Reform",
+    "meaning": "",
+    "number": "922"
+  },
+  {
+    "word": "refuse",
+    "meaning": "",
+    "number": "923"
+  },
+  {
+    "word": "Refute",
+    "meaning": "",
+    "number": "924"
+  },
+  {
+    "word": "Reinforce",
+    "meaning": "",
+    "number": "925"
+  },
+  {
+    "word": "Reiterate",
+    "meaning": "",
+    "number": "926"
+  },
+  {
+    "word": "Rejuvenate",
+    "meaning": "",
+    "number": "927"
+  },
+  {
+    "word": "related",
+    "meaning": "",
+    "number": "928"
+  },
+  {
+    "word": "Relatively",
+    "meaning": "",
+    "number": "929"
+  },
+  {
+    "word": "release",
+    "meaning": "",
+    "number": "930"
+  },
+  {
+    "word": "released",
+    "meaning": "",
+    "number": "931"
+  },
+  {
+    "word": "Relentless",
+    "meaning": "",
+    "number": "932"
+  },
+  {
+    "word": "Reliable",
+    "meaning": "",
+    "number": "933"
+  },
+  {
     "word": "Relinquish",
-    "meaning": "give up"
+    "meaning": "give up",
+    "number": "934"
   },
   {
-    "number": "287",
+    "word": "Remorse",
+    "meaning": "",
+    "number": "935"
+  },
+  {
+    "word": "Renewable",
+    "meaning": "",
+    "number": "936"
+  },
+  {
+    "word": "Renowned",
+    "meaning": "",
+    "number": "937"
+  },
+  {
+    "word": "repent",
+    "meaning": "",
+    "number": "938"
+  },
+  {
+    "word": "Repercussion",
+    "meaning": "",
+    "number": "939"
+  },
+  {
+    "word": "reprimand",
+    "meaning": "",
+    "number": "940"
+  },
+  {
+    "word": "Repugnant",
+    "meaning": "",
+    "number": "941"
+  },
+  {
+    "word": "Repulsive",
+    "meaning": "",
+    "number": "942"
+  },
+  {
+    "word": "Rescind",
+    "meaning": "",
+    "number": "943"
+  },
+  {
+    "word": "reserve",
+    "meaning": "",
+    "number": "944"
+  },
+  {
+    "word": "reside",
+    "meaning": "",
+    "number": "945"
+  },
+  {
+    "word": "residence",
+    "meaning": "",
+    "number": "946"
+  },
+  {
+    "word": "resign",
+    "meaning": "",
+    "number": "947"
+  },
+  {
+    "word": "Resilient",
+    "meaning": "",
+    "number": "948"
+  },
+  {
+    "word": "Resolute",
+    "meaning": "",
+    "number": "949"
+  },
+  {
+    "word": "resolve",
+    "meaning": "",
+    "number": "950"
+  },
+  {
+    "word": "Resonate",
+    "meaning": "",
+    "number": "951"
+  },
+  {
+    "word": "resort",
+    "meaning": "",
+    "number": "952"
+  },
+  {
+    "word": "Resourceful",
+    "meaning": "",
+    "number": "953"
+  },
+  {
+    "word": "resources",
+    "meaning": "",
+    "number": "954"
+  },
+  {
+    "word": "restaurant",
+    "meaning": "",
+    "number": "955"
+  },
+  {
+    "word": "Restlessness",
+    "meaning": "",
+    "number": "956"
+  },
+  {
+    "word": "restore",
+    "meaning": "",
+    "number": "957"
+  },
+  {
+    "word": "restrain",
+    "meaning": "",
+    "number": "958"
+  },
+  {
+    "word": "Resulting",
+    "meaning": "",
+    "number": "959"
+  },
+  {
+    "word": "retain",
+    "meaning": "",
+    "number": "960"
+  },
+  {
+    "word": "retreat",
+    "meaning": "",
+    "number": "961"
+  },
+  {
+    "word": "reveal",
+    "meaning": "",
+    "number": "962"
+  },
+  {
+    "word": "Revelation",
+    "meaning": "",
+    "number": "963"
+  },
+  {
+    "word": "revive",
+    "meaning": "",
+    "number": "964"
+  },
+  {
+    "word": "Revolution",
+    "meaning": "",
+    "number": "965"
+  },
+  {
+    "word": "Revolutionary",
+    "meaning": "",
+    "number": "966"
+  },
+  {
+    "word": "Rewarding",
+    "meaning": "",
+    "number": "967"
+  },
+  {
+    "word": "rhyme",
+    "meaning": "",
+    "number": "968"
+  },
+  {
+    "word": "Rhythm",
+    "meaning": "",
+    "number": "969"
+  },
+  {
+    "word": "ridiculous",
+    "meaning": "",
+    "number": "970"
+  },
+  {
+    "word": "Rife",
+    "meaning": "",
+    "number": "971"
+  },
+  {
+    "word": "right",
+    "meaning": "",
+    "number": "972"
+  },
+  {
+    "word": "Righteous",
+    "meaning": "",
+    "number": "973"
+  },
+  {
+    "word": "rigid",
+    "meaning": "",
+    "number": "974"
+  },
+  {
     "word": "Rigorous",
-    "meaning": "strict"
+    "meaning": "strict",
+    "number": "975"
   },
   {
-    "number": "288",
+    "word": "Rivalry",
+    "meaning": "",
+    "number": "976"
+  },
+  {
+    "word": "roam",
+    "meaning": "",
+    "number": "977"
+  },
+  {
+    "word": "Robust",
+    "meaning": "",
+    "number": "978"
+  },
+  {
+    "word": "rogue",
+    "meaning": "",
+    "number": "979"
+  },
+  {
+    "word": "Roots",
+    "meaning": "",
+    "number": "980"
+  },
+  {
+    "word": "rowdy",
+    "meaning": "",
+    "number": "981"
+  },
+  {
+    "word": "Rummage",
+    "meaning": "",
+    "number": "982"
+  },
+  {
+    "word": "Rupture",
+    "meaning": "",
+    "number": "983"
+  },
+  {
+    "word": "rural",
+    "meaning": "",
+    "number": "984"
+  },
+  {
     "word": "Ruthless",
-    "meaning": "merciless"
+    "meaning": "merciless",
+    "number": "985"
   },
   {
-    "number": "289",
+    "word": "Sabotage",
+    "meaning": "",
+    "number": "986"
+  },
+  {
+    "word": "sacred",
+    "meaning": "",
+    "number": "987"
+  },
+  {
+    "word": "sacrifice",
+    "meaning": "",
+    "number": "988"
+  },
+  {
+    "word": "sane",
+    "meaning": "",
+    "number": "989"
+  },
+  {
     "word": "Sanguine",
-    "meaning": "optimistic"
+    "meaning": "optimistic",
+    "number": "990"
   },
   {
-    "number": "290",
+    "word": "sanitary",
+    "meaning": "",
+    "number": "991"
+  },
+  {
+    "word": "Sarcasm",
+    "meaning": "",
+    "number": "992"
+  },
+  {
+    "word": "satin",
+    "meaning": "",
+    "number": "993"
+  },
+  {
+    "word": "Scald",
+    "meaning": "",
+    "number": "994"
+  },
+  {
+    "word": "scanty",
+    "meaning": "",
+    "number": "995"
+  },
+  {
+    "word": "schedule",
+    "meaning": "",
+    "number": "996"
+  },
+  {
+    "word": "Scholar",
+    "meaning": "",
+    "number": "997"
+  },
+  {
+    "word": "school",
+    "meaning": "",
+    "number": "998"
+  },
+  {
+    "word": "Scintillating",
+    "meaning": "",
+    "number": "999"
+  },
+  {
+    "word": "Scorching",
+    "meaning": "",
+    "number": "1000"
+  },
+  {
+    "word": "score",
+    "meaning": "",
+    "number": "1001"
+  },
+  {
+    "word": "scripture",
+    "meaning": "",
+    "number": "1002"
+  },
+  {
+    "word": "Scurry",
+    "meaning": "",
+    "number": "1003"
+  },
+  {
+    "word": "searching",
+    "meaning": "",
+    "number": "1004"
+  },
+  {
+    "word": "Secluded",
+    "meaning": "",
+    "number": "1005"
+  },
+  {
+    "word": "section",
+    "meaning": "",
+    "number": "1006"
+  },
+  {
+    "word": "secure",
+    "meaning": "",
+    "number": "1007"
+  },
+  {
+    "word": "seize",
+    "meaning": "",
+    "number": "1008"
+  },
+  {
+    "word": "seldom",
+    "meaning": "",
+    "number": "1009"
+  },
+  {
+    "word": "Selfless",
+    "meaning": "",
+    "number": "1010"
+  },
+  {
+    "word": "separate",
+    "meaning": "",
+    "number": "1011"
+  },
+  {
+    "word": "Serene",
+    "meaning": "",
+    "number": "1012"
+  },
+  {
+    "word": "sermon",
+    "meaning": "",
+    "number": "1013"
+  },
+  {
+    "word": "Sharp",
+    "meaning": "",
+    "number": "1014"
+  },
+  {
+    "word": "shoulder",
+    "meaning": "",
+    "number": "1015"
+  },
+  {
+    "word": "Shrill",
+    "meaning": "",
+    "number": "1016"
+  },
+  {
+    "word": "shrine",
+    "meaning": "",
+    "number": "1017"
+  },
+  {
+    "word": "shrink",
+    "meaning": "",
+    "number": "1018"
+  },
+  {
+    "word": "Shrug",
+    "meaning": "",
+    "number": "1019"
+  },
+  {
+    "word": "Shun",
+    "meaning": "",
+    "number": "1020"
+  },
+  {
+    "word": "Siege",
+    "meaning": "",
+    "number": "1021"
+  },
+  {
+    "word": "signature",
+    "meaning": "",
+    "number": "1022"
+  },
+  {
+    "word": "Silhouette",
+    "meaning": "",
+    "number": "1023"
+  },
+  {
+    "word": "sincere",
+    "meaning": "",
+    "number": "1024"
+  },
+  {
+    "word": "sincerely",
+    "meaning": "",
+    "number": "1025"
+  },
+  {
     "word": "Sinister",
-    "meaning": "evil"
+    "meaning": "evil",
+    "number": "1026"
   },
   {
-    "number": "291",
+    "word": "site",
+    "meaning": "",
+    "number": "1027"
+  },
+  {
+    "word": "Skilful",
+    "meaning": "",
+    "number": "1028"
+  },
+  {
+    "word": "sleek",
+    "meaning": "",
+    "number": "1029"
+  },
+  {
+    "word": "slope",
+    "meaning": "",
+    "number": "1030"
+  },
+  {
+    "word": "Smirk",
+    "meaning": "",
+    "number": "1032"
+  },
+  {
+    "word": "Snarl",
+    "meaning": "",
+    "number": "1033"
+  },
+  {
+    "word": "sober",
+    "meaning": "",
+    "number": "1034"
+  },
+  {
+    "word": "soldier",
+    "meaning": "",
+    "number": "1035"
+  },
+  {
+    "word": "Sombre",
+    "meaning": "",
+    "number": "1036"
+  },
+  {
+    "word": "Source",
+    "meaning": "",
+    "number": "1037"
+  },
+  {
+    "word": "special",
+    "meaning": "",
+    "number": "1039"
+  },
+  {
+    "word": "Spontaneous",
+    "meaning": "",
+    "number": "1040"
+  },
+  {
+    "word": "Spotify",
+    "meaning": "",
+    "number": "1041"
+  },
+  {
+    "word": "Squander",
+    "meaning": "",
+    "number": "1042"
+  },
+  {
+    "word": "Stagger",
+    "meaning": "",
+    "number": "1043"
+  },
+  {
+    "word": "Steadfast",
+    "meaning": "",
+    "number": "1044"
+  },
+  {
+    "word": "stern",
+    "meaning": "",
+    "number": "1045"
+  },
+  {
+    "word": "Stingy",
+    "meaning": "",
+    "number": "1046"
+  },
+  {
+    "word": "stomach",
+    "meaning": "",
+    "number": "1047"
+  },
+  {
+    "word": "stoop",
+    "meaning": "",
+    "number": "1048"
+  },
+  {
+    "word": "stout",
+    "meaning": "",
+    "number": "1049"
+  },
+  {
+    "word": "Strain",
+    "meaning": "",
+    "number": "1050"
+  },
+  {
+    "word": "stress",
+    "meaning": "",
+    "number": "1051"
+  },
+  {
+    "word": "stretched",
+    "meaning": "",
+    "number": "1052"
+  },
+  {
+    "word": "Stringent",
+    "meaning": "",
+    "number": "1053"
+  },
+  {
+    "word": "Strive",
+    "meaning": "",
+    "number": "1054"
+  },
+  {
+    "word": "Stroll",
+    "meaning": "",
+    "number": "1055"
+  },
+  {
+    "word": "stubborn",
+    "meaning": "",
+    "number": "1056"
+  },
+  {
+    "word": "Stumble",
+    "meaning": "",
+    "number": "1057"
+  },
+  {
+    "word": "sturdy",
+    "meaning": "",
+    "number": "1058"
+  },
+  {
+    "word": "subdued",
+    "meaning": "",
+    "number": "1059"
+  },
+  {
+    "word": "submissive",
+    "meaning": "",
+    "number": "1060"
+  },
+  {
+    "word": "submit",
+    "meaning": "",
+    "number": "1061"
+  },
+  {
+    "word": "Subordinate",
+    "meaning": "",
+    "number": "1062"
+  },
+  {
+    "word": "subscribe",
+    "meaning": "",
+    "number": "1063"
+  },
+  {
+    "word": "Substance",
+    "meaning": "",
+    "number": "1064"
+  },
+  {
+    "word": "Substantial",
+    "meaning": "",
+    "number": "1065"
+  },
+  {
+    "word": "subterfuge",
+    "meaning": "",
+    "number": "1066"
+  },
+  {
+    "word": "subterranean",
+    "meaning": "",
+    "number": "1067"
+  },
+  {
+    "word": "subtropical",
+    "meaning": "",
+    "number": "1068"
+  },
+  {
+    "word": "successful",
+    "meaning": "",
+    "number": "1069"
+  },
+  {
+    "word": "Succumb",
+    "meaning": "",
+    "number": "1070"
+  },
+  {
+    "word": "sufficient",
+    "meaning": "",
+    "number": "1071"
+  },
+  {
+    "word": "suggest",
+    "meaning": "",
+    "number": "1072"
+  },
+  {
+    "word": "Sullen",
+    "meaning": "",
+    "number": "1073"
+  },
+  {
+    "word": "summit",
+    "meaning": "",
+    "number": "1074"
+  },
+  {
+    "word": "super",
+    "meaning": "",
+    "number": "1075"
+  },
+  {
+    "word": "superfluous",
+    "meaning": "",
+    "number": "1076"
+  },
+  {
+    "word": "superior",
+    "meaning": "",
+    "number": "1077"
+  },
+  {
+    "word": "Supersede",
+    "meaning": "",
+    "number": "1078"
+  },
+  {
+    "word": "Supply",
+    "meaning": "",
+    "number": "1079"
+  },
+  {
+    "word": "Support",
+    "meaning": "",
+    "number": "1080"
+  },
+  {
+    "word": "supposed",
+    "meaning": "",
+    "number": "1081"
+  },
+  {
+    "word": "Surge",
+    "meaning": "",
+    "number": "1082"
+  },
+  {
+    "word": "Surpass",
+    "meaning": "",
+    "number": "1083"
+  },
+  {
+    "word": "surprise",
+    "meaning": "",
+    "number": "1084"
+  },
+  {
+    "word": "Susceptible",
+    "meaning": "",
+    "number": "1085"
+  },
+  {
+    "word": "suspect",
+    "meaning": "",
+    "number": "1086"
+  },
+  {
+    "word": "suspend",
+    "meaning": "",
+    "number": "1087"
+  },
+  {
+    "word": "Sustainable",
+    "meaning": "",
+    "number": "1088"
+  },
+  {
+    "word": "Sway",
+    "meaning": "",
+    "number": "1089"
+  },
+  {
+    "word": "Sweltering",
+    "meaning": "",
+    "number": "1090"
+  },
+  {
+    "word": "symbol",
+    "meaning": "",
+    "number": "1091"
+  },
+  {
+    "word": "Symmetry",
+    "meaning": "",
+    "number": "1092"
+  },
+  {
+    "word": "system",
+    "meaning": "",
+    "number": "1093"
+  },
+  {
+    "word": "Taciturn",
+    "meaning": "",
+    "number": "1094"
+  },
+  {
+    "word": "target",
+    "meaning": "",
+    "number": "1095"
+  },
+  {
+    "word": "Taunt",
+    "meaning": "",
+    "number": "1096"
+  },
+  {
+    "word": "teamkeen",
+    "meaning": "",
+    "number": "1097"
+  },
+  {
     "word": "Tedious",
-    "meaning": "boring"
+    "meaning": "boring",
+    "number": "1098"
   },
   {
-    "number": "292",
+    "word": "temperate",
+    "meaning": "",
+    "number": "1099"
+  },
+  {
+    "word": "Tempest",
+    "meaning": "",
+    "number": "1100"
+  },
+  {
+    "word": "Tempestuous",
+    "meaning": "",
+    "number": "1101"
+  },
+  {
+    "word": "temptation",
+    "meaning": "",
+    "number": "1102"
+  },
+  {
+    "word": "Tenacious",
+    "meaning": "",
+    "number": "1103"
+  },
+  {
+    "word": "Tense",
+    "meaning": "",
+    "number": "1104"
+  },
+  {
+    "word": "Tentative",
+    "meaning": "",
+    "number": "1105"
+  },
+  {
+    "word": "test",
+    "meaning": "",
+    "number": "1106"
+  },
+  {
+    "word": "Texture",
+    "meaning": "",
+    "number": "1107"
+  },
+  {
+    "word": "theexamcoach",
+    "meaning": "",
+    "number": "1109"
+  },
+  {
+    "word": "their",
+    "meaning": "",
+    "number": "1110"
+  },
+  {
+    "word": "then",
+    "meaning": "",
+    "number": "1111"
+  },
+  {
+    "word": "Theory",
+    "meaning": "",
+    "number": "1112"
+  },
+  {
+    "word": "they",
+    "meaning": "",
+    "number": "1113"
+  },
+  {
+    "word": "this",
+    "meaning": "",
+    "number": "1114"
+  },
+  {
+    "word": "Thoughtful",
+    "meaning": "",
+    "number": "1115"
+  },
+  {
+    "word": "Thrive",
+    "meaning": "",
+    "number": "1116"
+  },
+  {
+    "word": "thrust",
+    "meaning": "",
+    "number": "1117"
+  },
+  {
+    "word": "Thwart",
+    "meaning": "",
+    "number": "1118"
+  },
+  {
+    "word": "Timid",
+    "meaning": "",
+    "number": "1119"
+  },
+  {
+    "word": "Tireless",
+    "meaning": "",
+    "number": "1120"
+  },
+  {
+    "word": "tomorrow",
+    "meaning": "",
+    "number": "1122"
+  },
+  {
+    "word": "Tone",
+    "meaning": "",
+    "number": "1123"
+  },
+  {
+    "word": "torment",
+    "meaning": "",
+    "number": "1124"
+  },
+  {
+    "word": "traitor",
+    "meaning": "",
+    "number": "1125"
+  },
+  {
+    "word": "tranquil",
+    "meaning": "",
+    "number": "1126"
+  },
+  {
+    "word": "Transaction",
+    "meaning": "",
+    "number": "1127"
+  },
+  {
+    "word": "Transformative",
+    "meaning": "",
+    "number": "1128"
+  },
+  {
+    "word": "Transparent",
+    "meaning": "",
+    "number": "1129"
+  },
+  {
     "word": "Treacherous",
-    "meaning": "dangerous"
+    "meaning": "dangerous",
+    "number": "1130"
   },
   {
-    "number": "293",
+    "word": "Treachery",
+    "meaning": "",
+    "number": "1131"
+  },
+  {
+    "word": "Treaty",
+    "meaning": "",
+    "number": "1132"
+  },
+  {
+    "word": "Tremble",
+    "meaning": "",
+    "number": "1133"
+  },
+  {
+    "word": "Trend",
+    "meaning": "",
+    "number": "1134"
+  },
+  {
+    "word": "Tricky",
+    "meaning": "",
+    "number": "1135"
+  },
+  {
+    "word": "tries",
+    "meaning": "",
+    "number": "1136"
+  },
+  {
+    "word": "trifle",
+    "meaning": "",
+    "number": "1137"
+  },
+  {
+    "word": "Trigger",
+    "meaning": "",
+    "number": "1138"
+  },
+  {
+    "word": "Triumphantly",
+    "meaning": "",
+    "number": "1139"
+  },
+  {
+    "word": "trivia",
+    "meaning": "",
+    "number": "1140"
+  },
+  {
+    "word": "trivial",
+    "meaning": "",
+    "number": "1141"
+  },
+  {
+    "word": "Truce",
+    "meaning": "",
+    "number": "1142"
+  },
+  {
+    "word": "Trudge",
+    "meaning": "",
+    "number": "1143"
+  },
+  {
+    "word": "tuition",
+    "meaning": "",
+    "number": "1144"
+  },
+  {
     "word": "turbulent",
-    "meaning": "stormy"
+    "meaning": "stormy",
+    "number": "1145"
   },
   {
-    "number": "294",
-    "word": "Turbulent",
-    "meaning": "stormy"
+    "word": "tutors",
+    "meaning": "",
+    "number": "1146"
   },
   {
-    "number": "295",
-    "word": "unfathomable",
-    "meaning": "hard to understand"
+    "word": "twilight",
+    "meaning": "",
+    "number": "1148"
   },
   {
-    "number": "296",
+    "word": "tyrant",
+    "meaning": "",
+    "number": "1149"
+  },
+  {
+    "word": "Ultimately",
+    "meaning": "",
+    "number": "1151"
+  },
+  {
+    "word": "Uncanny",
+    "meaning": "",
+    "number": "1152"
+  },
+  {
+    "word": "Underlying",
+    "meaning": "",
+    "number": "1153"
+  },
+  {
+    "word": "Uneasy",
+    "meaning": "",
+    "number": "1154"
+  },
+  {
     "word": "Unfathomable",
-    "meaning": "hard to understand"
+    "meaning": "hard to understand",
+    "number": "1155"
   },
   {
-    "number": "297",
+    "word": "Unfurl",
+    "meaning": "",
+    "number": "1156"
+  },
+  {
+    "word": "uniform",
+    "meaning": "",
+    "number": "1157"
+  },
+  {
+    "word": "union",
+    "meaning": "",
+    "number": "1158"
+  },
+  {
+    "word": "unite",
+    "meaning": "",
+    "number": "1159"
+  },
+  {
+    "word": "unnecessary",
+    "meaning": "",
+    "number": "1160"
+  },
+  {
+    "word": "unorthodox",
+    "meaning": "",
+    "number": "1161"
+  },
+  {
+    "word": "Unravel",
+    "meaning": "",
+    "number": "1162"
+  },
+  {
+    "word": "Unsteadiness",
+    "meaning": "",
+    "number": "1163"
+  },
+  {
+    "word": "unsurpassed",
+    "meaning": "",
+    "number": "1164"
+  },
+  {
+    "word": "until",
+    "meaning": "",
+    "number": "1165"
+  },
+  {
+    "word": "Urbanisation",
+    "meaning": "",
+    "number": "1167"
+  },
+  {
+    "word": "Utopian",
+    "meaning": "",
+    "number": "1169"
+  },
+  {
+    "word": "vacant",
+    "meaning": "",
+    "number": "1170"
+  },
+  {
+    "word": "Vacuous",
+    "meaning": "",
+    "number": "1171"
+  },
+  {
+    "word": "Vague",
+    "meaning": "",
+    "number": "1172"
+  },
+  {
+    "word": "vanished",
+    "meaning": "",
+    "number": "1173"
+  },
+  {
+    "word": "Vantage",
+    "meaning": "",
+    "number": "1174"
+  },
+  {
+    "word": "vapour",
+    "meaning": "",
+    "number": "1175"
+  },
+  {
+    "word": "Various",
+    "meaning": "",
+    "number": "1176"
+  },
+  {
+    "word": "vast",
+    "meaning": "",
+    "number": "1177"
+  },
+  {
+    "word": "vehicle",
+    "meaning": "",
+    "number": "1178"
+  },
+  {
+    "word": "veil",
+    "meaning": "",
+    "number": "1179"
+  },
+  {
+    "word": "venerable",
+    "meaning": "",
+    "number": "1180"
+  },
+  {
+    "word": "Vengeance",
+    "meaning": "",
+    "number": "1181"
+  },
+  {
+    "word": "Venomous",
+    "meaning": "",
+    "number": "1182"
+  },
+  {
+    "word": "ventilation",
+    "meaning": "",
+    "number": "1183"
+  },
+  {
+    "word": "Verdant",
+    "meaning": "",
+    "number": "1184"
+  },
+  {
+    "word": "Verify",
+    "meaning": "",
+    "number": "1185"
+  },
+  {
+    "word": "vessel",
+    "meaning": "",
+    "number": "1186"
+  },
+  {
+    "word": "vicarious",
+    "meaning": "",
+    "number": "1187"
+  },
+  {
     "word": "Vigilant",
-    "meaning": "watchful"
+    "meaning": "watchful",
+    "number": "1188"
   },
   {
-    "number": "298",
+    "word": "Vigorous",
+    "meaning": "",
+    "number": "1189"
+  },
+  {
+    "word": "virtuous",
+    "meaning": "",
+    "number": "1190"
+  },
+  {
+    "word": "Visionary",
+    "meaning": "",
+    "number": "1191"
+  },
+  {
+    "word": "visit",
+    "meaning": "",
+    "number": "1192"
+  },
+  {
+    "word": "Vital",
+    "meaning": "",
+    "number": "1193"
+  },
+  {
     "word": "Vivacious",
-    "meaning": "lively"
+    "meaning": "lively",
+    "number": "1194"
   },
   {
-    "number": "299",
+    "word": "Vocab",
+    "meaning": "",
+    "number": "1195"
+  },
+  {
+    "word": "vocabulary",
+    "meaning": "",
+    "number": "1196"
+  },
+  {
+    "word": "volatile",
+    "meaning": "",
+    "number": "1197"
+  },
+  {
+    "word": "Vulgar",
+    "meaning": "",
+    "number": "1198"
+  },
+  {
+    "word": "Wander",
+    "meaning": "",
+    "number": "1199"
+  },
+  {
+    "word": "Want",
+    "meaning": "",
+    "number": "1200"
+  },
+  {
+    "word": "Warm",
+    "meaning": "",
+    "number": "1201"
+  },
+  {
+    "word": "wasteful",
+    "meaning": "",
+    "number": "1202"
+  },
+  {
+    "word": "Waver",
+    "meaning": "",
+    "number": "1203"
+  },
+  {
+    "word": "weary",
+    "meaning": "",
+    "number": "1205"
+  },
+  {
+    "word": "weekly",
+    "meaning": "",
+    "number": "1206"
+  },
+  {
+    "word": "weird",
+    "meaning": "",
+    "number": "1207"
+  },
+  {
+    "word": "well",
+    "meaning": "",
+    "number": "1208"
+  },
+  {
+    "word": "Wellness",
+    "meaning": "",
+    "number": "1209"
+  },
+  {
+    "word": "which",
+    "meaning": "",
+    "number": "1210"
+  },
+  {
+    "word": "Whimsical",
+    "meaning": "",
+    "number": "1211"
+  },
+  {
+    "word": "wholesome",
+    "meaning": "",
+    "number": "1212"
+  },
+  {
+    "word": "wholly",
+    "meaning": "",
+    "number": "1213"
+  },
+  {
+    "word": "Wince",
+    "meaning": "",
+    "number": "1214"
+  },
+  {
     "word": "Wistful",
-    "meaning": "longing"
+    "meaning": "longing",
+    "number": "1215"
   },
   {
-    "number": "300",
+    "word": "with",
+    "meaning": "",
+    "number": "1216"
+  },
+  {
+    "word": "wither",
+    "meaning": "",
+    "number": "1217"
+  },
+  {
+    "word": "Withered",
+    "meaning": "",
+    "number": "1218"
+  },
+  {
+    "word": "Workforce",
+    "meaning": "",
+    "number": "1219"
+  },
+  {
+    "word": "workshop",
+    "meaning": "",
+    "number": "1220"
+  },
+  {
+    "word": "worthy",
+    "meaning": "",
+    "number": "1221"
+  },
+  {
+    "word": "wound",
+    "meaning": "",
+    "number": "1222"
+  },
+  {
+    "word": "Wreckage",
+    "meaning": "",
+    "number": "1223"
+  },
+  {
+    "word": "wretched",
+    "meaning": "",
+    "number": "1224"
+  },
+  {
+    "word": "yield",
+    "meaning": "",
+    "number": "1226"
+  },
+  {
+    "word": "your",
+    "meaning": "",
+    "number": "1228"
+  },
+  {
+    "word": "YouTube",
+    "meaning": "",
+    "number": "1229"
+  },
+  {
     "word": "Zealous",
-    "meaning": "enthusiastic"
+    "meaning": "enthusiastic",
+    "number": "1230"
+  },
+  {
+    "word": "Zoom",
+    "meaning": "",
+    "number": "1231"
   }
 ]
