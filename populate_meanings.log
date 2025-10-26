@@ -1,0 +1,1042 @@
+Loading vocabulary data...
+Loaded 1193 words
+
+Populating missing meanings...
+Found 911 words with empty meanings
+Estimated time with API: 9.1 minutes
+
+  [1/911] 'acquire'... ✓
+  [2/911] 'across'... ✓
+  [3/911] 'Adaptation'... ✓
+  [4/911] 'address'... ✓
+  [5/911] 'Admirable'... ✓
+  [6/911] 'admission'... ✓
+  [7/911] 'adopt'... ✓
+  [8/911] 'advance'... ✓
+  [9/911] 'Adventurous'... ✓
+  [10/911] 'advice'... ✓
+  [11/911] 'Aeon'... ✓
+  [12/911] 'affectionate'... ✓
+  [13/911] 'Affordable'... ✓
+  [14/911] 'Agitated'... ✓
+  [15/911] 'Agonising'... ✓
+  [16/911] 'Ailment'... ✓
+  [17/911] 'Alibi'... ✓
+  [18/911] 'Align'... ✓
+  [19/911] 'Alliance'... ✓
+  [20/911] 'Amazon'... ✓
+  [21/911] 'amount'... ✓
+  [22/911] 'Amused'... ✓
+  [23/911] 'Ancestral'... ✓
+  [24/911] 'Anomaly'... ✓
+  [25/911] 'answers'... ✓
+  [26/911] 'Antagonize'... ✓
+  [27/911] 'antiquity'... ✓
+  [28/911] 'Anxious'... ✓
+  [29/911] 'Apparition'... ✓
+  [30/911] 'appearance'... ✓
+  [31/911] 'Apple'... ✓
+  [32/911] 'argument'... ✓
+  [33/911] 'Aroma'... ✓
+  [34/911] 'artful'... ✓
+  [35/911] 'article'... ✓
+  [36/911] 'assiduous'... ✓
+  [37/911] 'assistance'... ✓
+  [38/911] 'Assumption'... ✓
+  [39/911] 'Assured'... ✓
+  [40/911] 'asunder'... ✓
+  [41/911] 'attached'... ✓
+  [42/911] 'Authoritative'... ✓
+  [43/911] 'average'... ✓
+  [44/911] 'avoid'... ✓
+  [45/911] 'avowed'... ✓
+  [46/911] 'Awareness'... ✓
+  [47/911] 'awkward'... ✓
+  [48/911] 'Awry'... ✓
+  [49/911] 'Balance'... ✓
+  [50/911] 'Barricade'... ✓
+
+  💾 Saving progress... (50/911 completed)
+  ✓ Progress saved!
+
+  [51/911] 'beautiful'... ✓
+  [52/911] 'because'... ✓
+  [53/911] 'beck'... ✓
+  [54/911] 'Belonging'... ✓
+  [55/911] 'Berate'... ✓
+  [56/911] 'besieged'... ✓
+  [57/911] 'best'... ✓
+  [58/911] 'between'... ✓
+  [59/911] 'bewildered'... ✓
+  [60/911] 'Biased'... ⚠️  needs review
+  [61/911] 'bicycle'... ⚠️  needs review
+  [62/911] 'Biodiversity'... ⚠️  needs review
+  [63/911] 'Blossom'... ⚠️  needs review
+  [64/911] 'Bludgeon'... ✓
+  [65/911] 'Bolt'... ✓
+  [66/911] 'Book'... ✓
+  [67/911] 'Boom'... ✓
+  [68/911] 'Breakthrough'... ✓
+  [69/911] 'Breeze'... ✓
+  [70/911] 'Briny'... ✓
+  [71/911] 'Britain'... ⚠️  needs review
+  [72/911] 'Buckle'... ✓
+  [73/911] 'business'... ✓
+  [74/911] 'Bustling'... ✓
+  [75/911] 'Campaign'... ✓
+  [76/911] 'candidate'... ✓
+  [77/911] 'Canopy'... ✓
+  [78/911] 'Capacious'... ✓
+  [79/911] 'careering'... ✓
+  [80/911] 'category'... ✓
+  [81/911] 'caulking'... ✓
+  [82/911] 'Charismatic'... ✓
+  [83/911] 'check'... ✓
+  [84/911] 'child'... ✓
+  [85/911] 'Chilly'... ✓
+  [86/911] 'choreographer'... ✓
+  [87/911] 'Chortle'... ✓
+  [88/911] 'Chronology'... ✓
+  [89/911] 'Civilisation'... ✓
+  [90/911] 'clemency'... ✓
+  [91/911] 'Close'... ✓
+  [92/911] 'Coach'... ✓
+  [93/911] 'Collectively'... ✓
+  [94/911] 'college'... ✓
+  [95/911] 'colour'... ✓
+  [96/911] 'combination'... ✓
+  [97/911] 'Commanding'... ✓
+  [98/911] 'commit'... ✓
+  [99/911] 'committee'... ✓
+  [100/911] 'communicate'... ⚠️  needs review
+
+  💾 Saving progress... (100/911 completed)
+  ✓ Progress saved!
+
+  [101/911] 'community'... ⚠️  needs review
+  [102/911] 'company'... ⚠️  needs review
+  [103/911] 'completely'... ⚠️  needs review
+  [104/911] 'Complicit'... ✓
+  [105/911] 'composition'... ✓
+  [106/911] 'Compost'... ✓
+  [107/911] 'concentrated'... ✓
+  [108/911] 'conferred'... ✓
+  [109/911] 'Conservation'... ✓
+  [110/911] 'conserve'... ✓
+  [111/911] 'Continuous'... ✓
+  [112/911] 'convict'... ✓
+  [113/911] 'Counterargument'... ✓
+  [114/911] 'courses'... ✓
+  [115/911] 'Criticise'... ✓
+  [116/911] 'Daily'... ✓
+  [117/911] 'Dart'... ✓
+  [118/911] 'debate'... ✓
+  [119/911] 'Debonair'... ✓
+  [120/911] 'debrief'... ✓
+  [121/911] 'deceit'... ✓
+  [122/911] 'deceive'... ✓
+  [123/911] 'Decisive'... ✓
+  [124/911] 'declare'... ✓
+  [125/911] 'Decline'... ✓
+  [126/911] 'Decree'... ✓
+  [127/911] 'Deduction'... ✓
+  [128/911] 'Defeat'... ✓
+  [129/911] 'Defiance'... ✓
+  [130/911] 'Deficient'... ✓
+  [131/911] 'definite'... ✓
+  [132/911] 'Delegate'... ✓
+  [133/911] 'deliberate'... ✓
+  [134/911] 'deliver'... ✓
+  [135/911] 'Delude'... ⚠️  needs review
+  [136/911] 'demolished'... ⚠️  needs review
+  [137/911] 'Demure'... ⚠️  needs review
+  [138/911] 'deny'... ✓
+  [139/911] 'Depict'... ✓
+  [140/911] 'deposit'... ✓
+  [141/911] 'depot'... ✓
+  [142/911] 'depth'... ✓
+  [143/911] 'Deranged'... ✓
+  [144/911] 'Derelict'... ✓
+  [145/911] 'description'... ✓
+  [146/911] 'Desolate'... ✓
+  [147/911] 'despair'... ✓
+  [148/911] 'desperately'... ✓
+  [149/911] 'despise'... ✓
+  [150/911] 'Destination'... ✓
+
+  💾 Saving progress... (150/911 completed)
+  ✓ Progress saved!
+
+  [151/911] 'Destitute'... ✓
+  [152/911] 'Deteriorate'... ✓
+  [153/911] 'determine'... ✓
+  [154/911] 'Determined'... ✓
+  [155/911] 'Deterrent'... ✓
+  [156/911] 'Detrimental'... ✓
+  [157/911] 'Devastation'... ✓
+  [158/911] 'develop'... ✓
+  [159/911] 'development'... ✓
+  [160/911] 'device'... ✓
+  [161/911] 'Devious'... ✓
+  [162/911] 'devote'... ✓
+  [163/911] 'Devoted'... ✓
+  [164/911] 'Diametrically'... ✓
+  [165/911] 'dictionary'... ⚠️  needs review
+  [166/911] 'digest'... ⚠️  needs review
+  [167/911] 'dilapidated'... ⚠️  needs review
+  [168/911] 'Diligent'... ✓
+  [169/911] 'diluted'... ✓
+  [170/911] 'Diminish'... ✓
+  [171/911] 'Diplomatic'... ✓
+  [172/911] 'disappear'... ✓
+  [173/911] 'disappointed'... ✓
+  [174/911] 'disarray'... ✓
+  [175/911] 'disastrous'... ✓
+  [176/911] 'Discern'... ✓
+  [177/911] 'disclose'... ✓
+  [178/911] 'discontent'... ✓
+  [179/911] 'Discourage'... ✓
+  [180/911] 'Discreet'... ✓
+  [181/911] 'Disembark'... ✓
+  [182/911] 'dishevelled'... ✓
+  [183/911] 'Disloyal'... ✓
+  [184/911] 'dismal'... ✓
+  [185/911] 'Dismayed'... ✓
+  [186/911] 'Dismiss'... ✓
+  [187/911] 'Disobedient'... ✓
+  [188/911] 'disperse'... ✓
+  [189/911] 'dispute'... ✓
+  [190/911] 'Dissent'... ✓
+  [191/911] 'distasteful'... ✓
+  [192/911] 'distinct'... ✓
+  [193/911] 'distinguished'... ✓
+  [194/911] 'Distort'... ✓
+  [195/911] 'Distress'... ✓
+  [196/911] 'Diverse'... ✓
+  [197/911] 'divine'... ⚠️  needs review
+  [198/911] 'divinity'... ⚠️  needs review
+  [199/911] 'domestic'... ⚠️  needs review
+  [200/911] 'Dormant'... ⚠️  needs review
+
+  💾 Saving progress... (200/911 completed)
+  ✓ Progress saved!
+
+  [201/911] 'dose'... ⚠️  needs review
+  [202/911] 'Dramatic'... ✓
+  [203/911] 'Dread'... ✓
+  [204/911] 'Drift'... ✓
+  [205/911] 'Driven'... ✓
+  [206/911] 'Drizzle'... ✓
+  [207/911] 'drought'... ✓
+  [208/911] 'dumb'... ✓
+  [209/911] 'Durable'... ✓
+  [210/911] 'dwelling'... ✓
+  [211/911] 'Dwindle'... ✓
+  [212/911] 'Dynasty'... ✓
+  [213/911] 'email'... ✓
+  [214/911] 'Empathetic'... ✓
+  [215/911] 'Emphasise'... ✓
+  [216/911] 'English'... ✓
+  [217/911] 'Enigmatic'... ✓
+  [218/911] 'enterprise'... ✓
+  [219/911] 'Enthral'... ✓
+  [220/911] 'episodes'... ✓
+  [221/911] 'equipped'... ✓
+  [222/911] 'Exasperated'... ✓
+  [223/911] 'excitement'... ✓
+  [224/911] 'Expedite'... ✓
+  [225/911] 'Expedition'... ✓
+  [226/911] 'Facebook'... ⚠️  needs review
+  [227/911] 'fact'... ⚠️  needs review
+  [228/911] 'Factor'... ⚠️  needs review
+  [229/911] 'Factual'... ⚠️  needs review
+  [230/911] 'Falter'... ✓
+  [231/911] 'famine'... ✓
+  [232/911] 'Fascinated'... ✓
+  [233/911] 'fatal'... ✓
+  [234/911] 'Fathom'... ✓
+  [235/911] 'fatigue'... ✓
+  [236/911] 'favourite'... ✓
+  [237/911] 'Fearless'... ✓
+  [238/911] 'feeble'... ✓
+  [239/911] 'feel'... ✓
+  [240/911] 'feign'... ✓
+  [241/911] 'fertile'... ✓
+  [242/911] 'Festivity'... ✓
+  [243/911] 'Fiasco'... ✓
+  [244/911] 'Fickle'... ✓
+  [245/911] 'Fidget'... ✓
+  [246/911] 'Fierce'... ✓
+  [247/911] 'Finding'... ✓
+  [248/911] 'Flabbergast'... ✓
+  [249/911] 'Flagrant'... ✓
+  [250/911] 'flamboyant'... ✓
+
+  💾 Saving progress... (250/911 completed)
+  ✓ Progress saved!
+
+  [251/911] 'Flawless'... ✓
+  [252/911] 'flee'... ✓
+  [253/911] 'fleet'... ✓
+  [254/911] 'Flippant'... ✓
+  [255/911] 'flora'... ✓
+  [256/911] 'Flourish'... ⚠️  needs review
+  [257/911] 'fragment'... ⚠️  needs review
+  [258/911] 'Gallant'... ⚠️  needs review
+  [259/911] 'Gargantuan'... ⚠️  needs review
+  [260/911] 'garment'... ✓
+  [261/911] 'Generous'... ✓
+  [262/911] 'Gentle'... ✓
+  [263/911] 'Glide'... ✓
+  [264/911] 'Glint'... ✓
+  [265/911] 'Glow'... ✓
+  [266/911] 'Gluttonous'... ✓
+  [267/911] 'Gnarled'... ✓
+  [268/911] 'government'... ✓
+  [269/911] 'grammar'... ✓
+  [270/911] 'grate'... ✓
+  [271/911] 'gratitude'... ✓
+  [272/911] 'grave'... ✓
+  [273/911] 'gregarious'... ✓
+  [274/911] 'grieve'... ✓
+  [275/911] 'Grotesque'... ✓
+  [276/911] 'Groundbreaking'... ✓
+  [277/911] 'guarantee'... ✓
+  [278/911] 'guard'... ✓
+  [279/911] 'Guardian'... ✓
+  [280/911] 'guide'... ✓
+  [281/911] 'guides'... ✓
+  [282/911] 'habitable'... ✓
+  [283/911] 'habitat'... ✓
+  [284/911] 'halt'... ✓
+  [285/911] 'handkerchief'... ⚠️  needs review
+  [286/911] 'Haphazardly'... ⚠️  needs review
+  [287/911] 'Harass'... ⚠️  needs review
+  [288/911] 'Harmonious'... ⚠️  needs review
+  [289/911] 'Harmony'... ✓
+  [290/911] 'Harsh'... ✓
+  [291/911] 'Haste'... ✓
+  [292/911] 'hasty'... ✓
+  [293/911] 'have'... ✓
+  [294/911] 'Headline'... ✓
+  [295/911] 'Hectic'... ✓
+  [296/911] 'Heed'... ✓
+  [297/911] 'helix'... ✓
+  [298/911] 'help'... ✓
+  [299/911] 'Heritage'... ✓
+  [300/911] 'heroic'... ✓
+
+  💾 Saving progress... (300/911 completed)
+  ✓ Progress saved!
+
+  [301/911] 'Hesitant'... ✓
+  [302/911] 'Hesitantly'... ✓
+  [303/911] 'hoax'... ✓
+  [304/911] 'holiday'... ✓
+  [305/911] 'hollow'... ✓
+  [306/911] 'https'... ⚠️  needs review
+  [307/911] 'humble'... ✓
+  [308/911] 'Humiliate'... ✓
+  [309/911] 'hygienic'... ✓
+  [310/911] 'Hypocrite'... ✓
+  [311/911] 'Hysterical'... ✓
+  [312/911] 'idiosyncrasy'... ✓
+  [313/911] 'idle'... ✓
+  [314/911] 'idol'... ✓
+  [315/911] 'Ignominious'... ⚠️  needs review
+  [316/911] 'ignorant'... ⚠️  needs review
+  [317/911] 'Illustrious'... ⚠️  needs review
+  [318/911] 'Imagery'... ✓
+  [319/911] 'Imaginative'... ✓
+  [320/911] 'imitate'... ✓
+  [321/911] 'immediate'... ✓
+  [322/911] 'immediately'... ✓
+  [323/911] 'immerse'... ✓
+  [324/911] 'Impactful'... ✓
+  [325/911] 'Impartial'... ✓
+  [326/911] 'Impeccable'... ✓
+  [327/911] 'Implied'... ✓
+  [328/911] 'Imposter'... ✓
+  [329/911] 'Improvisation'... ✓
+  [330/911] 'Improvise'... ✓
+  [331/911] 'impudent'... ✓
+  [332/911] 'inaudible'... ✓
+  [333/911] 'inaugural'... ✓
+  [334/911] 'inaugurate'... ✓
+  [335/911] 'Incessant'... ✓
+  [336/911] 'incision'... ✓
+  [337/911] 'Inclusive'... ✓
+  [338/911] 'inconspicuous'... ✓
+  [339/911] 'Inconvenient'... ✓
+  [340/911] 'Incorporate'... ✓
+  [341/911] 'Incredulous'... ✓
+  [342/911] 'independent'... ✓
+  [343/911] 'Indignant'... ✓
+  [344/911] 'individual'... ✓
+  [345/911] 'inedible'... ⚠️  needs review
+  [346/911] 'Inevitable'... ⚠️  needs review
+  [347/911] 'Infamous'... ⚠️  needs review
+  [348/911] 'inferior'... ✓
+  [349/911] 'influence'... ✓
+  [350/911] 'Influential'... ✓
+
+  💾 Saving progress... (350/911 completed)
+  ✓ Progress saved!
+
+  [351/911] 'information'... ✓
+  [352/911] 'Inhabit'... ✓
+  [353/911] 'Inhabitant'... ✓
+  [354/911] 'inhabitants'... ✓
+  [355/911] 'innocuous'... ✓
+  [356/911] 'Innovate'... ✓
+  [357/911] 'Inquisitive'... ✓
+  [358/911] 'insane'... ✓
+  [359/911] 'insert'... ✓
+  [360/911] 'Insight'... ✓
+  [361/911] 'Insolent'... ✓
+  [362/911] 'inspire'... ✓
+  [363/911] 'Intact'... ✓
+  [364/911] 'intangible'... ✓
+  [365/911] 'Integrity'... ✓
+  [366/911] 'intense'... ✓
+  [367/911] 'intention'... ✓
+  [368/911] 'interested'... ✓
+  [369/911] 'interfere'... ✓
+  [370/911] 'interior'... ✓
+  [371/911] 'internet'... ✓
+  [372/911] 'interpret'... ✓
+  [373/911] 'interrogate'... ✓
+  [374/911] 'interrupt'... ⚠️  needs review
+  [375/911] 'Intervene'... ⚠️  needs review
+  [376/911] 'Intimidate'... ⚠️  needs review
+  [377/911] 'invalid'... ✓
+  [378/911] 'Invaluable'... ✓
+  [379/911] 'Inventive'... ✓
+  [380/911] 'Investment'... ✓
+  [381/911] 'Irate'... ✓
+  [382/911] 'Ironic'... ✓
+  [383/911] 'Irreversible'... ✓
+  [384/911] 'Irritable'... ✓
+  [385/911] 'Isolated'... ✓
+  [386/911] 'isolation'... ✓
+  [387/911] 'Jabber'... ✓
+  [388/911] 'Jeopardy'... ✓
+  [389/911] 'Jittery'... ✓
+  [390/911] 'Just'... ✓
+  [391/911] 'justice'... ✓
+  [392/911] 'Justify'... ✓
+  [393/911] 'Keen'... ✓
+  [394/911] 'knit'... ✓
+  [395/911] 'labour'... ✓
+  [396/911] 'lament'... ✓
+  [397/911] 'language'... ✓
+  [398/911] 'Languid'... ✓
+  [399/911] 'large'... ✓
+  [400/911] 'latter'... ✓
+
+  💾 Saving progress... (400/911 completed)
+  ✓ Progress saved!
+
+  [401/911] 'lavish'... ✓
+  [402/911] 'Lawful'... ✓
+  [403/911] 'lean'... ✓
+  [404/911] 'leisure'... ✓
+  [405/911] 'Lenient'... ✓
+  [406/911] 'liable'... ⚠️  needs review
+  [407/911] 'liberal'... ⚠️  needs review
+  [408/911] 'liberty'... ⚠️  needs review
+  [409/911] 'library'... ⚠️  needs review
+  [410/911] 'lightning'... ✓
+  [411/911] 'limb'... ✓
+  [412/911] 'limit'... ✓
+  [413/911] 'Linger'... ✓
+  [414/911] 'List'... ✓
+  [415/911] 'Listen'... ✓
+  [416/911] 'lodge'... ✓
+  [417/911] 'lofty'... ✓
+  [418/911] 'Logical'... ✓
+  [419/911] 'loneliness'... ✓
+  [420/911] 'loyal'... ✓
+  [421/911] 'Ludicrous'... ✓
+  [422/911] 'Lunge'... ✓
+  [423/911] 'make'... ✓
+  [424/911] 'Malicious'... ✓
+  [425/911] 'Manageable'... ✓
+  [426/911] 'Mangle'... ✓
+  [427/911] 'Manifest'... ✓
+  [428/911] 'Manipulation'... ✓
+  [429/911] 'margin'... ✓
+  [430/911] 'mariner'... ✓
+  [431/911] 'marks'... ✓
+  [432/911] 'matte'... ✓
+  [433/911] 'maximum'... ✓
+  [434/911] 'Mayhem'... ✓
+  [435/911] 'Meagre'... ✓
+  [436/911] 'meant'... ⚠️  needs review
+  [437/911] 'Meddle'... ⚠️  needs review
+  [438/911] 'Melancholy'... ⚠️  needs review
+  [439/911] 'Mellow'... ⚠️  needs review
+  [440/911] 'Melody'... ✓
+  [441/911] 'Menacing'... ✓
+  [442/911] 'Mentor'... ✓
+  [443/911] 'merchant'... ✓
+  [444/911] 'mercy'... ✓
+  [445/911] 'mere'... ✓
+  [446/911] 'Mesmerise'... ✓
+  [447/911] 'Metropolis'... ✓
+  [448/911] 'Mimic'... ✓
+  [449/911] 'minded'... ✓
+  [450/911] 'minimum'... ✓
+
+  💾 Saving progress... (450/911 completed)
+  ✓ Progress saved!
+
+  [451/911] 'Miniscule'... ✓
+  [452/911] 'Miscellaneous'... ✓
+  [453/911] 'Mischievous'... ✓
+  [454/911] 'Misinformation'... ✓
+  [455/911] 'moderate'... ✓
+  [456/911] 'modest'... ✓
+  [457/911] 'Momentous'... ✓
+  [458/911] 'Monarchy'... ✓
+  [459/911] 'Monologue'... ✓
+  [460/911] 'Monotonous'... ✓
+  [461/911] 'moral'... ✓
+  [462/911] 'mortal'... ✓
+  [463/911] 'Multicultural'... ✓
+  [464/911] 'Murmur'... ✓
+  [465/911] 'Music'... ✓
+  [466/911] 'Mutter'... ⚠️  needs review
+  [467/911] 'Mutual'... ⚠️  needs review
+  [468/911] 'mysterious'... ⚠️  needs review
+  [469/911] 'Naive'... ⚠️  needs review
+  [470/911] 'Nauseous'... ✓
+  [471/911] 'Navigate'... ✓
+  [472/911] 'neat'... ✓
+  [473/911] 'necessary'... ✓
+  [474/911] 'Negotiate'... ✓
+  [475/911] 'newsletter'... ✓
+  [476/911] 'Nonchalant'... ✓
+  [477/911] 'Nonplussed'... ✓
+  [478/911] 'noted'... ✓
+  [479/911] 'nuisance'... ✓
+  [480/911] 'nurseryman'... ✓
+  [481/911] 'oath'... ✓
+  [482/911] 'object'... ✓
+  [483/911] 'objection'... ✓
+  [484/911] 'oblige'... ✓
+  [485/911] 'Obliterate'... ✓
+  [486/911] 'Oblivion'... ✓
+  [487/911] 'Oblivious'... ✓
+  [488/911] 'obscure'... ✓
+  [489/911] 'Observant'... ✓
+  [490/911] 'Observation'... ✓
+  [491/911] 'obstinate'... ✓
+  [492/911] 'Obtuse'... ✓
+  [493/911] 'Occupation'... ✓
+  [494/911] 'occupy'... ✓
+  [495/911] 'occur'... ✓
+  [496/911] 'odour'... ⚠️  needs review
+  [497/911] 'offend'... ⚠️  needs review
+  [498/911] 'omen'... ⚠️  needs review
+  [499/911] 'online'... ⚠️  needs review
+  [500/911] 'opportunity'... ✓
+
+  💾 Saving progress... (500/911 completed)
+  ✓ Progress saved!
+
+  [501/911] 'oppose'... ✓
+  [502/911] 'Opposition'... ✓
+  [503/911] 'oppress'... ✓
+  [504/911] 'Optimal'... ✓
+  [505/911] 'option'... ✓
+  [506/911] 'Opulent'... ✓
+  [507/911] 'ordeal'... ✓
+  [508/911] 'Origin'... ✓
+  [509/911] 'orthodontist'... ✓
+  [510/911] 'ostentatious'... ✓
+  [511/911] 'Outcome'... ✓
+  [512/911] 'Outrageous'... ✓
+  [513/911] 'Overbearing'... ✓
+  [514/911] 'Overcrowding'... ✓
+  [515/911] 'Overwhelm'... ✓
+  [516/911] 'Page'... ✓
+  [517/911] 'pages'... ✓
+  [518/911] 'paid'... ✓
+  [519/911] 'Painstaking'... ✓
+  [520/911] 'palaeontologist'... ⚠️  needs review
+  [521/911] 'paper'... ✓
+  [522/911] 'papers'... ✓
+  [523/911] 'parallel'... ✓
+  [524/911] 'Parliament'... ✓
+  [525/911] 'passive'... ⚠️  needs review
+  [526/911] 'pasture'... ⚠️  needs review
+  [527/911] 'Pattern'... ⚠️  needs review
+  [528/911] 'peak'... ⚠️  needs review
+  [529/911] 'Pedantic'... ✓
+  [530/911] 'perceive'... ✓
+  [531/911] 'perilous'... ✓
+  [532/911] 'Perish'... ✓
+  [533/911] 'permit'... ✓
+  [534/911] 'Perpetual'... ✓
+  [535/911] 'perplexed'... ✓
+  [536/911] 'Perplexing'... ✓
+  [537/911] 'Perseverance'... ✓
+  [538/911] 'Persevere'... ✓
+  [539/911] 'Persist'... ✓
+  [540/911] 'persuade'... ✓
+  [541/911] 'Perturbed'... ✓
+  [542/911] 'Petrified'... ✓
+  [543/911] 'Petulant'... ✓
+  [544/911] 'physical'... ✓
+  [545/911] 'physiotherapy'... ✓
+  [546/911] 'pigment'... ✓
+  [547/911] 'pioneer'... ✓
+  [548/911] 'placid'... ✓
+  [549/911] 'Please'... ✓
+  [550/911] 'pledge'... ✓
+
+  💾 Saving progress... (550/911 completed)
+  ✓ Progress saved!
+
+  [551/911] 'Plot'... ✓
+  [552/911] 'plume'... ✓
+  [553/911] 'Plummet'... ✓
+  [554/911] 'plunder'... ⚠️  needs review
+  [555/911] 'plunge'... ⚠️  needs review
+  [556/911] 'Plus'... ⚠️  needs review
+  [557/911] 'Podcast'... ⚠️  needs review
+  [558/911] 'Podcasts'... ✓
+  [559/911] 'Poise'... ✓
+  [560/911] 'polarity'... ✓
+  [561/911] 'Pompous'... ✓
+  [562/911] 'Ponder'... ✓
+  [563/911] 'Portrayal'... ✓
+  [564/911] 'Potent'... ✓
+  [565/911] 'Potential'... ✓
+  [566/911] 'poultry'... ✓
+  [567/911] 'Practical'... ✓
+  [568/911] 'practice'... ✓
+  [569/911] 'Precarious'... ✓
+  [570/911] 'Precision'... ✓
+  [571/911] 'Predicament'... ✓
+  [572/911] 'prejudice'... ✓
+  [573/911] 'preparation'... ✓
+  [574/911] 'prepare'... ✓
+  [575/911] 'Preposterous'... ✓
+  [576/911] 'present'... ✓
+  [577/911] 'Preserve'... ✓
+  [578/911] 'privilege'... ✓
+  [579/911] 'probably'... ✓
+  [580/911] 'proclaim'... ✓
+  [581/911] 'procure'... ✓
+  [582/911] 'profession'... ✓
+  [583/911] 'profit'... ✓
+  [584/911] 'Profound'... ✓
+  [585/911] 'programme'... ⚠️  needs review
+  [586/911] 'prohibit'... ⚠️  needs review
+  [587/911] 'prominent'... ⚠️  needs review
+  [588/911] 'promote'... ⚠️  needs review
+  [589/911] 'prompt'... ✓
+  [590/911] 'pronunciation'... ✓
+  [591/911] 'Propel'... ✓
+  [592/911] 'proportion'... ✓
+  [593/911] 'Prosperity'... ✓
+  [594/911] 'prosperous'... ✓
+  [595/911] 'Protest'... ✓
+  [596/911] 'provoke'... ✓
+  [597/911] 'public'... ✓
+  [598/911] 'punctual'... ✓
+  [599/911] 'puncture'... ✓
+  [600/911] 'purpose'... ✓
+
+  💾 Saving progress... (600/911 completed)
+  ✓ Progress saved!
+
+  [601/911] 'Quaint'... ✓
+  [602/911] 'queer'... ✓
+  [603/911] 'quell'... ✓
+  [604/911] 'quench'... ✓
+  [605/911] 'questions'... ✓
+  [606/911] 'queue'... ✓
+  [607/911] 'quiet'... ✓
+  [608/911] 'quite'... ✓
+  [609/911] 'Quiver'... ✓
+  [610/911] 'raiment'... ✓
+  [611/911] 'ramble'... ✓
+  [612/911] 'Rampant'... ✓
+  [613/911] 'rank'... ✓
+  [614/911] 'Rapid'... ⚠️  needs review
+  [615/911] 'rare'... ⚠️  needs review
+  [616/911] 'Ravenous'... ⚠️  needs review
+  [617/911] 'really'... ✓
+  [618/911] 'receive'... ✓
+  [619/911] 'recite'... ✓
+  [620/911] 'Reclusive'... ✓
+  [621/911] 'recommended'... ✓
+  [622/911] 'Recover'... ✓
+  [623/911] 'Recuperate'... ✓
+  [624/911] 'Redemption'... ✓
+  [625/911] 'Reflect'... ✓
+  [626/911] 'Reform'... ✓
+  [627/911] 'refuse'... ✓
+  [628/911] 'Refute'... ✓
+  [629/911] 'Reinforce'... ✓
+  [630/911] 'Reiterate'... ✓
+  [631/911] 'Rejuvenate'... ✓
+  [632/911] 'related'... ✓
+  [633/911] 'Relatively'... ✓
+  [634/911] 'release'... ✓
+  [635/911] 'released'... ✓
+  [636/911] 'Relentless'... ✓
+  [637/911] 'Reliable'... ✓
+  [638/911] 'Remorse'... ✓
+  [639/911] 'Renewable'... ✓
+  [640/911] 'Renowned'... ✓
+  [641/911] 'repent'... ✓
+  [642/911] 'Repercussion'... ✓
+  [643/911] 'reprimand'... ✓
+  [644/911] 'Repugnant'... ✓
+  [645/911] 'Repulsive'... ✓
+  [646/911] 'Rescind'... ✓
+  [647/911] 'reserve'... ✓
+  [648/911] 'reside'... ✓
+  [649/911] 'residence'... ✓
+  [650/911] 'resign'... ✓
+
+  💾 Saving progress... (650/911 completed)
+  ✓ Progress saved!
+
+  [651/911] 'Resilient'... ✓
+  [652/911] 'Resolute'... ✓
+  [653/911] 'resolve'... ✓
+  [654/911] 'Resonate'... ✓
+  [655/911] 'resort'... ✓
+  [656/911] 'Resourceful'... ✓
+  [657/911] 'resources'... ⚠️  needs review
+  [658/911] 'restaurant'... ⚠️  needs review
+  [659/911] 'Restlessness'... ⚠️  needs review
+  [660/911] 'restore'... ⚠️  needs review
+  [661/911] 'restrain'... ✓
+  [662/911] 'Resulting'... ✓
+  [663/911] 'retain'... ✓
+  [664/911] 'retreat'... ✓
+  [665/911] 'reveal'... ✓
+  [666/911] 'Revelation'... ✓
+  [667/911] 'revive'... ✓
+  [668/911] 'Revolution'... ✓
+  [669/911] 'Revolutionary'... ✓
+  [670/911] 'Rewarding'... ✓
+  [671/911] 'rhyme'... ✓
+  [672/911] 'Rhythm'... ✓
+  [673/911] 'ridiculous'... ✓
+  [674/911] 'Rife'... ✓
+  [675/911] 'right'... ✓
+  [676/911] 'Righteous'... ✓
+  [677/911] 'rigid'... ✓
+  [678/911] 'Rivalry'... ✓
+  [679/911] 'roam'... ✓
+  [680/911] 'Robust'... ✓
+  [681/911] 'rogue'... ✓
+  [682/911] 'Roots'... ✓
+  [683/911] 'rowdy'... ✓
+  [684/911] 'Rummage'... ✓
+  [685/911] 'Rupture'... ✓
+  [686/911] 'rural'... ✓
+  [687/911] 'Sabotage'... ✓
+  [688/911] 'sacred'... ✓
+  [689/911] 'sacrifice'... ✓
+  [690/911] 'sane'... ⚠️  needs review
+  [691/911] 'sanitary'... ⚠️  needs review
+  [692/911] 'Sarcasm'... ⚠️  needs review
+  [693/911] 'satin'... ✓
+  [694/911] 'Scald'... ✓
+  [695/911] 'scanty'... ✓
+  [696/911] 'schedule'... ✓
+  [697/911] 'Scholar'... ✓
+  [698/911] 'school'... ✓
+  [699/911] 'Scintillating'... ✓
+  [700/911] 'Scorching'... ✓
+
+  💾 Saving progress... (700/911 completed)
+  ✓ Progress saved!
+
+  [701/911] 'score'... ✓
+  [702/911] 'scripture'... ✓
+  [703/911] 'Scurry'... ✓
+  [704/911] 'searching'... ✓
+  [705/911] 'Secluded'... ✓
+  [706/911] 'section'... ✓
+  [707/911] 'secure'... ✓
+  [708/911] 'seize'... ✓
+  [709/911] 'seldom'... ✓
+  [710/911] 'Selfless'... ✓
+  [711/911] 'separate'... ✓
+  [712/911] 'Serene'... ✓
+  [713/911] 'sermon'... ✓
+  [714/911] 'Sharp'... ✓
+  [715/911] 'shoulder'... ✓
+  [716/911] 'Shrill'... ✓
+  [717/911] 'shrine'... ✓
+  [718/911] 'shrink'... ✓
+  [719/911] 'Shrug'... ✓
+  [720/911] 'Shun'... ✓
+  [721/911] 'Siege'... ✓
+  [722/911] 'signature'... ⚠️  needs review
+  [723/911] 'Silhouette'... ⚠️  needs review
+  [724/911] 'sincere'... ⚠️  needs review
+  [725/911] 'sincerely'... ⚠️  needs review
+  [726/911] 'site'... ✓
+  [727/911] 'Skilful'... ✓
+  [728/911] 'sleek'... ✓
+  [729/911] 'slope'... ✓
+  [730/911] 'Smirk'... ✓
+  [731/911] 'Snarl'... ✓
+  [732/911] 'sober'... ✓
+  [733/911] 'soldier'... ✓
+  [734/911] 'Sombre'... ✓
+  [735/911] 'Source'... ✓
+  [736/911] 'special'... ✓
+  [737/911] 'Spontaneous'... ✓
+  [738/911] 'Spotify'... ⚠️  needs review
+  [739/911] 'Squander'... ✓
+  [740/911] 'Stagger'... ✓
+  [741/911] 'Steadfast'... ✓
+  [742/911] 'stern'... ✓
+  [743/911] 'Stingy'... ✓
+  [744/911] 'stomach'... ✓
+  [745/911] 'stoop'... ✓
+  [746/911] 'stout'... ✓
+  [747/911] 'Strain'... ✓
+  [748/911] 'stress'... ✓
+  [749/911] 'stretched'... ✓
+  [750/911] 'Stringent'... ✓
+
+  💾 Saving progress... (750/911 completed)
+  ✓ Progress saved!
+
+  [751/911] 'Strive'... ✓
+  [752/911] 'Stroll'... ✓
+  [753/911] 'stubborn'... ⚠️  needs review
+  [754/911] 'Stumble'... ⚠️  needs review
+  [755/911] 'sturdy'... ⚠️  needs review
+  [756/911] 'subdued'... ⚠️  needs review
+  [757/911] 'submissive'... ✓
+  [758/911] 'submit'... ✓
+  [759/911] 'Subordinate'... ✓
+  [760/911] 'subscribe'... ✓
+  [761/911] 'Substance'... ✓
+  [762/911] 'Substantial'... ✓
+  [763/911] 'subterfuge'... ✓
+  [764/911] 'subterranean'... ✓
+  [765/911] 'subtropical'... ✓
+  [766/911] 'successful'... ✓
+  [767/911] 'Succumb'... ✓
+  [768/911] 'sufficient'... ✓
+  [769/911] 'suggest'... ✓
+  [770/911] 'Sullen'... ✓
+  [771/911] 'summit'... ✓
+  [772/911] 'super'... ✓
+  [773/911] 'superfluous'... ✓
+  [774/911] 'superior'... ✓
+  [775/911] 'Supersede'... ✓
+  [776/911] 'Supply'... ✓
+  [777/911] 'Support'... ✓
+  [778/911] 'supposed'... ✓
+  [779/911] 'Surge'... ✓
+  [780/911] 'Surpass'... ✓
+  [781/911] 'surprise'... ✓
+  [782/911] 'Susceptible'... ⚠️  needs review
+  [783/911] 'suspect'... ⚠️  needs review
+  [784/911] 'suspend'... ⚠️  needs review
+  [785/911] 'Sustainable'... ⚠️  needs review
+  [786/911] 'Sway'... ✓
+  [787/911] 'Sweltering'... ✓
+  [788/911] 'symbol'... ✓
+  [789/911] 'Symmetry'... ✓
+  [790/911] 'system'... ✓
+  [791/911] 'Taciturn'... ✓
+  [792/911] 'target'... ✓
+  [793/911] 'Taunt'... ✓
+  [794/911] 'teamkeen'... ⚠️  needs review
+  [795/911] 'temperate'... ✓
+  [796/911] 'Tempest'... ✓
+  [797/911] 'Tempestuous'... ✓
+  [798/911] 'temptation'... ✓
+  [799/911] 'Tenacious'... ✓
+  [800/911] 'Tense'... ✓
+
+  💾 Saving progress... (800/911 completed)
+  ✓ Progress saved!
+
+  [801/911] 'Tentative'... ✓
+  [802/911] 'test'... ✓
+  [803/911] 'Texture'... ✓
+  [804/911] 'theexamcoach'... ⚠️  needs review
+  [805/911] 'their'... ⚠️  needs review
+  [806/911] 'then'... ✓
+  [807/911] 'Theory'... ✓
+  [808/911] 'they'... ✓
+  [809/911] 'this'... ✓
+  [810/911] 'Thoughtful'... ✓
+  [811/911] 'Thrive'... ✓
+  [812/911] 'thrust'... ✓
+  [813/911] 'Thwart'... ✓
+  [814/911] 'Timid'... ✓
+  [815/911] 'Tireless'... ⚠️  needs review
+  [816/911] 'tomorrow'... ⚠️  needs review
+  [817/911] 'Tone'... ⚠️  needs review
+  [818/911] 'torment'... ⚠️  needs review
+  [819/911] 'traitor'... ✓
+  [820/911] 'tranquil'... ✓
+  [821/911] 'Transaction'... ✓
+  [822/911] 'Transformative'... ✓
+  [823/911] 'Transparent'... ✓
+  [824/911] 'Treachery'... ✓
+  [825/911] 'Treaty'... ✓
+  [826/911] 'Tremble'... ✓
+  [827/911] 'Trend'... ✓
+  [828/911] 'Tricky'... ✓
+  [829/911] 'tries'... ✓
+  [830/911] 'trifle'... ✓
+  [831/911] 'Trigger'... ✓
+  [832/911] 'Triumphantly'... ✓
+  [833/911] 'trivia'... ✓
+  [834/911] 'trivial'... ✓
+  [835/911] 'Truce'... ✓
+  [836/911] 'Trudge'... ✓
+  [837/911] 'tuition'... ✓
+  [838/911] 'tutors'... ✓
+  [839/911] 'twilight'... ✓
+  [840/911] 'tyrant'... ✓
+  [841/911] 'Ultimately'... ✓
+  [842/911] 'Uncanny'... ✓
+  [843/911] 'Underlying'... ✓
+  [844/911] 'Uneasy'... ✓
+  [845/911] 'Unfurl'... ✓
+  [846/911] 'uniform'... ⚠️  needs review
+  [847/911] 'union'... ⚠️  needs review
+  [848/911] 'unite'... ⚠️  needs review
+  [849/911] 'unnecessary'... ✓
+  [850/911] 'unorthodox'... ✓
+
+  💾 Saving progress... (850/911 completed)
+  ✓ Progress saved!
+
+  [851/911] 'Unravel'... ✓
+  [852/911] 'Unsteadiness'... ⚠️  needs review
+  [853/911] 'unsurpassed'... ✓
+  [854/911] 'until'... ✓
+  [855/911] 'Urbanisation'... ✓
+  [856/911] 'Utopian'... ✓
+  [857/911] 'vacant'... ✓
+  [858/911] 'Vacuous'... ✓
+  [859/911] 'Vague'... ✓
+  [860/911] 'vanished'... ✓
+  [861/911] 'Vantage'... ✓
+  [862/911] 'vapour'... ✓
+  [863/911] 'Various'... ✓
+  [864/911] 'vast'... ✓
+  [865/911] 'vehicle'... ✓
+  [866/911] 'veil'... ✓
+  [867/911] 'venerable'... ✓
+  [868/911] 'Vengeance'... ✓
+  [869/911] 'Venomous'... ✓
+  [870/911] 'ventilation'... ✓
+  [871/911] 'Verdant'... ✓
+  [872/911] 'Verify'... ✓
+  [873/911] 'vessel'... ✓
+  [874/911] 'vicarious'... ✓
+  [875/911] 'Vigorous'... ✓
+  [876/911] 'virtuous'... ✓
+  [877/911] 'Visionary'... ✓
+  [878/911] 'visit'... ⚠️  needs review
+  [879/911] 'Vital'... ⚠️  needs review
+  [880/911] 'Vocab'... ⚠️  needs review
+  [881/911] 'vocabulary'... ⚠️  needs review
+  [882/911] 'volatile'... ✓
+  [883/911] 'Vulgar'... ✓
+  [884/911] 'Wander'... ✓
+  [885/911] 'Want'... ✓
+  [886/911] 'Warm'... ✓
+  [887/911] 'wasteful'... ✓
+  [888/911] 'Waver'... ✓
+  [889/911] 'weary'... ✓
+  [890/911] 'weekly'... ✓
+  [891/911] 'weird'... ✓
+  [892/911] 'well'... ✓
+  [893/911] 'Wellness'... ✓
+  [894/911] 'which'... ✓
+  [895/911] 'Whimsical'... ✓
+  [896/911] 'wholesome'... ✓
+  [897/911] 'wholly'... ✓
+  [898/911] 'Wince'... ✓
+  [899/911] 'with'... ✓
+  [900/911] 'wither'... ✓
+
+  💾 Saving progress... (900/911 completed)
+  ✓ Progress saved!
+
+  [901/911] 'Withered'... ✓
+  [902/911] 'Workforce'... ✓
+  [903/911] 'workshop'... ✓
+  [904/911] 'worthy'... ✓
+  [905/911] 'wound'... ✓
+  [906/911] 'Wreckage'... ✓
+  [907/911] 'wretched'... ✓
+  [908/911] 'yield'... ✓
+  [909/911] 'your'... ⚠️  needs review
+  [910/911] 'YouTube'... ⚠️  needs review
+  [911/911] 'Zoom'... ⚠️  needs review
+Updated 911 entries with meanings
+
+⚠️  112 words need manual review:
+  - Biased
+  - bicycle
+  - Biodiversity
+  - Blossom
+  - Britain
+  - communicate
+  - community
+  - company
+  - completely
+  - Delude
+  ... and 102 more
+
+📝 Full list saved to words_need_review.txt
+
+Saving updated vocabulary data...
+✓ Saved to vocab_data.json
+
+Splitting vocabulary by letter...
+Created vocab_by_letter/A.json with 105 words
+Created vocab_by_letter/B.json with 53 words
+Created vocab_by_letter/C.json with 124 words
+Created vocab_by_letter/D.json with 98 words
+Created vocab_by_letter/E.json with 75 words
+Created vocab_by_letter/F.json with 53 words
+Created vocab_by_letter/G.json with 25 words
+Created vocab_by_letter/H.json with 30 words
+Created vocab_by_letter/I.json with 77 words
+Created vocab_by_letter/J.json with 7 words
+Created vocab_by_letter/K.json with 2 words
+Created vocab_by_letter/L.json with 30 words
+Created vocab_by_letter/M.json with 50 words
+Created vocab_by_letter/N.json with 13 words
+Created vocab_by_letter/O.json with 37 words
+Created vocab_by_letter/P.json with 90 words
+Created vocab_by_letter/Q.json with 9 words
+Created vocab_by_letter/R.json with 80 words
+Created vocab_by_letter/S.json with 106 words
+Created vocab_by_letter/T.json with 53 words
+Created vocab_by_letter/U.json with 17 words
+Created vocab_by_letter/V.json with 29 words
+Created vocab_by_letter/W.json with 25 words
+Created vocab_by_letter/Y.json with 3 words
+Created vocab_by_letter/Z.json with 2 words
+✓ Created individual letter files in vocab_by_letter/
+
+Creating index file...
+✓ Created vocab_by_letter/INDEX.md
+
+✅ Done!
