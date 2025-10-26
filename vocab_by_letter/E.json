@@ -1,0 +1,377 @@
+[
+  {
+    "word": "earnest",
+    "meaning": "sincere; serious",
+    "number": "396"
+  },
+  {
+    "word": "Echo",
+    "meaning": "reflected sound; repeat",
+    "number": "397"
+  },
+  {
+    "word": "economical",
+    "meaning": "thrifty; efficient",
+    "number": "399"
+  },
+  {
+    "word": "Ecosystem",
+    "meaning": "ecological system",
+    "number": "400"
+  },
+  {
+    "word": "Eerie",
+    "meaning": "strange; spooky",
+    "number": "401"
+  },
+  {
+    "word": "elect",
+    "meaning": "choose; select",
+    "number": "402"
+  },
+  {
+    "word": "Eloquent",
+    "meaning": "fluent",
+    "number": "403"
+  },
+  {
+    "word": "elude",
+    "meaning": "escape; avoid",
+    "number": "404"
+  },
+  {
+    "word": "Elusive",
+    "meaning": "hard to catch; evasive",
+    "number": "405"
+  },
+  {
+    "word": "email",
+    "meaning": "A system for transferring messages from one computer to another, usually through a network.",
+    "number": "406"
+  },
+  {
+    "word": "embarrass",
+    "meaning": "make uncomfortable; shame",
+    "number": "407"
+  },
+  {
+    "word": "Embellish",
+    "meaning": "decorate; enhance",
+    "number": "408"
+  },
+  {
+    "word": "Embrace",
+    "meaning": "hug; accept",
+    "number": "409"
+  },
+  {
+    "word": "emerge",
+    "meaning": "come out; appear",
+    "number": "410"
+  },
+  {
+    "word": "Empathetic",
+    "meaning": "Showing empathy for others, and recognizing their feelings; empathic",
+    "number": "411"
+  },
+  {
+    "word": "Emphasise",
+    "meaning": "To stress, give emphasis or extra weight to (something).",
+    "number": "412"
+  },
+  {
+    "word": "empire",
+    "meaning": "group of territories under one ruler",
+    "number": "413"
+  },
+  {
+    "word": "employ",
+    "meaning": "use; hire",
+    "number": "414"
+  },
+  {
+    "word": "Empower",
+    "meaning": "authorize; enable",
+    "number": "415"
+  },
+  {
+    "word": "Endeavour",
+    "meaning": "try hard",
+    "number": "416"
+  },
+  {
+    "word": "Endurance",
+    "meaning": "stamina; perseverance",
+    "number": "417"
+  },
+  {
+    "word": "endure",
+    "meaning": "bear; last",
+    "number": "418"
+  },
+  {
+    "word": "English",
+    "meaning": "Spinning or rotary motion given to a ball around the vertical axis, as in billiards or bowling.",
+    "number": "419"
+  },
+  {
+    "word": "Enigmatic",
+    "meaning": "Pertaining to an enigma.",
+    "number": "420"
+  },
+  {
+    "word": "Enrage",
+    "meaning": "anger; infuriate",
+    "number": "421"
+  },
+  {
+    "word": "enterprise",
+    "meaning": "A company, business, organization, or other purposeful endeavor.",
+    "number": "422"
+  },
+  {
+    "word": "Enthral",
+    "meaning": "To hold spellbound; to bewitch, charm or captivate.",
+    "number": "423"
+  },
+  {
+    "word": "entire",
+    "meaning": "whole; complete",
+    "number": "424"
+  },
+  {
+    "word": "entirely",
+    "meaning": "completely; wholly",
+    "number": "425"
+  },
+  {
+    "word": "entrance",
+    "meaning": "entry; captivate",
+    "number": "426"
+  },
+  {
+    "word": "Envelop",
+    "meaning": "wrap; surround",
+    "number": "427"
+  },
+  {
+    "word": "environment",
+    "meaning": "surroundings; conditions",
+    "number": "428"
+  },
+  {
+    "word": "episodes",
+    "meaning": "An incident, action, or time period standing out by itself, but more or less connected with a com...",
+    "number": "429"
+  },
+  {
+    "word": "Equality",
+    "meaning": "sameness; fairness",
+    "number": "430"
+  },
+  {
+    "word": "equip",
+    "meaning": "provide; supply",
+    "number": "431"
+  },
+  {
+    "word": "equipment",
+    "meaning": "supplies; gear",
+    "number": "432"
+  },
+  {
+    "word": "equipped",
+    "meaning": "To supply with something necessary in order to carry out a specific action or task; to provide wi...",
+    "number": "433"
+  },
+  {
+    "word": "Era",
+    "meaning": "age; period",
+    "number": "434"
+  },
+  {
+    "word": "erect",
+    "meaning": "upright; build",
+    "number": "435"
+  },
+  {
+    "word": "Erosion",
+    "meaning": "wearing away; corrosion",
+    "number": "436"
+  },
+  {
+    "word": "errand",
+    "meaning": "short trip; task",
+    "number": "437"
+  },
+  {
+    "word": "Erratic",
+    "meaning": "unpredictable; irregular",
+    "number": "438"
+  },
+  {
+    "word": "Escalate",
+    "meaning": "increase; intensify",
+    "number": "439"
+  },
+  {
+    "word": "especially",
+    "meaning": "particularly; specially",
+    "number": "440"
+  },
+  {
+    "word": "estimate",
+    "meaning": "approximate calculation; judge",
+    "number": "441"
+  },
+  {
+    "word": "Ethereal",
+    "meaning": "heavenly; delicate",
+    "number": "442"
+  },
+  {
+    "word": "evaluation",
+    "meaning": "assessment; judgment",
+    "number": "443"
+  },
+  {
+    "word": "every",
+    "meaning": "each; all",
+    "number": "444"
+  },
+  {
+    "word": "Evidence",
+    "meaning": "proof; indication",
+    "number": "445"
+  },
+  {
+    "word": "evident",
+    "meaning": "obvious; clear",
+    "number": "446"
+  },
+  {
+    "word": "Exaggerate",
+    "meaning": "overstate; overemphasize",
+    "number": "447"
+  },
+  {
+    "word": "Exam",
+    "meaning": "examination; test",
+    "number": "448"
+  },
+  {
+    "word": "Exasperated",
+    "meaning": "To tax the patience of, irk, frustrate, vex, provoke, annoy; to make angry.",
+    "number": "449"
+  },
+  {
+    "word": "excellent",
+    "meaning": "outstanding; superior",
+    "number": "450"
+  },
+  {
+    "word": "Exception",
+    "meaning": "exclusion; special case",
+    "number": "451"
+  },
+  {
+    "word": "excitement",
+    "meaning": "The state of being excited (emotionally aroused).",
+    "number": "452"
+  },
+  {
+    "word": "exciting",
+    "meaning": "thrilling; stimulating",
+    "number": "453"
+  },
+  {
+    "word": "exclaim",
+    "meaning": "cry out; shout",
+    "number": "454"
+  },
+  {
+    "word": "Excruciating",
+    "meaning": "agonizing; very painful",
+    "number": "455"
+  },
+  {
+    "word": "existence",
+    "meaning": "being; life",
+    "number": "456"
+  },
+  {
+    "word": "expand",
+    "meaning": "enlarge; increase",
+    "number": "457"
+  },
+  {
+    "word": "Expedite",
+    "meaning": "To accelerate the progress of.",
+    "number": "458"
+  },
+  {
+    "word": "Expedition",
+    "meaning": "The act of expediting something; prompt execution.",
+    "number": "459"
+  },
+  {
+    "word": "expel",
+    "meaning": "drive out; eject",
+    "number": "460"
+  },
+  {
+    "word": "expense",
+    "meaning": "cost; expenditure",
+    "number": "461"
+  },
+  {
+    "word": "explanation",
+    "meaning": "clarification; reason",
+    "number": "462"
+  },
+  {
+    "word": "Expressive",
+    "meaning": "showing feelings; meaningful",
+    "number": "463"
+  },
+  {
+    "word": "Exquisite",
+    "meaning": "beautiful; refined",
+    "number": "464"
+  },
+  {
+    "word": "extended",
+    "meaning": "stretched out; prolonged",
+    "number": "465"
+  },
+  {
+    "word": "exterior",
+    "meaning": "outer; outside",
+    "number": "466"
+  },
+  {
+    "word": "extinction",
+    "meaning": "dying out; end",
+    "number": "467"
+  },
+  {
+    "word": "extract",
+    "meaning": "remove; passage",
+    "number": "468"
+  },
+  {
+    "word": "extremely",
+    "meaning": "very; exceptionally",
+    "number": "469"
+  },
+  {
+    "word": "Exuberant",
+    "meaning": "lively",
+    "number": "470"
+  },
+  {
+    "word": "Exultant",
+    "meaning": "rejoicing; triumphant",
+    "number": "471"
+  }
+]

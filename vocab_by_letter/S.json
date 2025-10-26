@@ -1,0 +1,532 @@
+[
+  {
+    "word": "Sabotage",
+    "meaning": "A deliberate action aimed at weakening an enemy through subversion, obstruction, disruption, and/...",
+    "number": "986"
+  },
+  {
+    "word": "sacred",
+    "meaning": "Characterized by solemn religious ceremony or religious use, especially, in a positive sense; con...",
+    "number": "987"
+  },
+  {
+    "word": "sacrifice",
+    "meaning": "The offering of anything to a god; a consecratory rite.",
+    "number": "988"
+  },
+  {
+    "word": "sane",
+    "meaning": "[NEEDS REVIEW] sane",
+    "number": "989"
+  },
+  {
+    "word": "Sanguine",
+    "meaning": "optimistic",
+    "number": "990"
+  },
+  {
+    "word": "sanitary",
+    "meaning": "[NEEDS REVIEW] sanitary",
+    "number": "991"
+  },
+  {
+    "word": "Sarcasm",
+    "meaning": "[NEEDS REVIEW] sarcasm",
+    "number": "992"
+  },
+  {
+    "word": "satin",
+    "meaning": "A cloth woven from silk, nylon or polyester with a glossy surface and a dull back. (The same weav...",
+    "number": "993"
+  },
+  {
+    "word": "Scald",
+    "meaning": "A burn, or injury to the skin or flesh, by hot liquid or steam.",
+    "number": "994"
+  },
+  {
+    "word": "scanty",
+    "meaning": "Somewhat less than is needed in amplitude or extent.",
+    "number": "995"
+  },
+  {
+    "word": "schedule",
+    "meaning": "A slip of paper; a short note.",
+    "number": "996"
+  },
+  {
+    "word": "Scholar",
+    "meaning": "A student; one who studies at school or college, typically having a scholarship.",
+    "number": "997"
+  },
+  {
+    "word": "school",
+    "meaning": "(collective) A group of fish or a group of marine mammals such as porpoises, dolphins, or whales.",
+    "number": "998"
+  },
+  {
+    "word": "Scintillating",
+    "meaning": "To give off sparks; to shine as if emanating sparks; to twinkle or glow.",
+    "number": "999"
+  },
+  {
+    "word": "Scorching",
+    "meaning": "To burn the surface of something so as to discolour it",
+    "number": "1000"
+  },
+  {
+    "word": "score",
+    "meaning": "The total number of goals, points, runs, etc. earned by a participant in a game.",
+    "number": "1001"
+  },
+  {
+    "word": "scripture",
+    "meaning": "A sacred writing or holy book.",
+    "number": "1002"
+  },
+  {
+    "word": "Scurry",
+    "meaning": "A dash.",
+    "number": "1003"
+  },
+  {
+    "word": "searching",
+    "meaning": "To look in (a place) for something.",
+    "number": "1004"
+  },
+  {
+    "word": "Secluded",
+    "meaning": "To shut off or keep apart, as from company, society, etc.; withdraw (oneself) from society or int...",
+    "number": "1005"
+  },
+  {
+    "word": "section",
+    "meaning": "A cutting; a part cut out from the rest of something.",
+    "number": "1006"
+  },
+  {
+    "word": "secure",
+    "meaning": "To make safe; to relieve from apprehensions of, or exposure to, danger; to guard; to protect.",
+    "number": "1007"
+  },
+  {
+    "word": "seize",
+    "meaning": "To deliberately take hold of; to grab or capture.",
+    "number": "1008"
+  },
+  {
+    "word": "seldom",
+    "meaning": "Rare; infrequent.",
+    "number": "1009"
+  },
+  {
+    "word": "Selfless",
+    "meaning": "Having, exhibiting or motivated by no concern for oneself but for others; unselfish.",
+    "number": "1010"
+  },
+  {
+    "word": "separate",
+    "meaning": "(usually in the plural) Anything that is sold by itself, especially an article of clothing.",
+    "number": "1011"
+  },
+  {
+    "word": "Serene",
+    "meaning": "Serenity; clearness; calmness.",
+    "number": "1012"
+  },
+  {
+    "word": "sermon",
+    "meaning": "Religious discourse; a written or spoken address on a religious or moral matter.",
+    "number": "1013"
+  },
+  {
+    "word": "Sharp",
+    "meaning": "The symbol ♯, placed after the name of a note in the key signature or before a note on the staff ...",
+    "number": "1014"
+  },
+  {
+    "word": "shoulder",
+    "meaning": "The part of an animal's body between the base of the neck and forearm socket.",
+    "number": "1015"
+  },
+  {
+    "word": "Shrill",
+    "meaning": "A shrill sound.",
+    "number": "1016"
+  },
+  {
+    "word": "shrine",
+    "meaning": "A holy or sacred place dedicated to a specific deity, ancestor, hero, martyr, saint, or similar f...",
+    "number": "1017"
+  },
+  {
+    "word": "shrink",
+    "meaning": "Shrinkage; contraction; recoil.",
+    "number": "1018"
+  },
+  {
+    "word": "Shrug",
+    "meaning": "A lifting of the shoulders to signal indifference or a casual lack of knowledge.",
+    "number": "1019"
+  },
+  {
+    "word": "Shun",
+    "meaning": "To avoid, especially persistently.",
+    "number": "1020"
+  },
+  {
+    "word": "Siege",
+    "meaning": "(heading) Military action.",
+    "number": "1021"
+  },
+  {
+    "word": "signature",
+    "meaning": "[NEEDS REVIEW] signature",
+    "number": "1022"
+  },
+  {
+    "word": "Silhouette",
+    "meaning": "[NEEDS REVIEW] silhouette",
+    "number": "1023"
+  },
+  {
+    "word": "sincere",
+    "meaning": "[NEEDS REVIEW] sincere",
+    "number": "1024"
+  },
+  {
+    "word": "sincerely",
+    "meaning": "[NEEDS REVIEW] sincerely",
+    "number": "1025"
+  },
+  {
+    "word": "Sinister",
+    "meaning": "evil",
+    "number": "1026"
+  },
+  {
+    "word": "site",
+    "meaning": "Sorrow, grief.",
+    "number": "1027"
+  },
+  {
+    "word": "Skilful",
+    "meaning": "Possessing skill, skilled.",
+    "number": "1028"
+  },
+  {
+    "word": "sleek",
+    "meaning": "That which makes smooth; varnish.",
+    "number": "1029"
+  },
+  {
+    "word": "slope",
+    "meaning": "An area of ground that tends evenly upward or downward.",
+    "number": "1030"
+  },
+  {
+    "word": "Smirk",
+    "meaning": "An uneven, often crooked smile that is insolent, self-satisfied or scornful",
+    "number": "1032"
+  },
+  {
+    "word": "Snarl",
+    "meaning": "A knot or complication of hair, thread, or the like, difficult to disentangle.",
+    "number": "1033"
+  },
+  {
+    "word": "sober",
+    "meaning": "(often with up) To make or become sober.",
+    "number": "1034"
+  },
+  {
+    "word": "soldier",
+    "meaning": "A member of an army, of any rank.",
+    "number": "1035"
+  },
+  {
+    "word": "Sombre",
+    "meaning": "Gloom; obscurity; duskiness.",
+    "number": "1036"
+  },
+  {
+    "word": "Source",
+    "meaning": "The person, place or thing from which something (information, goods, etc.) comes or is acquired.",
+    "number": "1037"
+  },
+  {
+    "word": "special",
+    "meaning": "A reduction in consumer cost (usually for a limited time) for items or services rendered.",
+    "number": "1039"
+  },
+  {
+    "word": "Spontaneous",
+    "meaning": "Self-generated; happening without any apparent external cause.",
+    "number": "1040"
+  },
+  {
+    "word": "Spotify",
+    "meaning": "[NEEDS REVIEW] spotify",
+    "number": "1041"
+  },
+  {
+    "word": "Squander",
+    "meaning": "To waste, lavish, splurge; to spend lavishly or profusely; to dissipate.",
+    "number": "1042"
+  },
+  {
+    "word": "Stagger",
+    "meaning": "An unsteady movement of the body in walking or standing as if one were about to fall; a reeling m...",
+    "number": "1043"
+  },
+  {
+    "word": "Steadfast",
+    "meaning": "Fixed or unchanging; steady.",
+    "number": "1044"
+  },
+  {
+    "word": "stern",
+    "meaning": "Having a hardness and severity of nature or manner.",
+    "number": "1045"
+  },
+  {
+    "word": "Stingy",
+    "meaning": "Unwilling to spend, give, or share; ungenerous; mean",
+    "number": "1046"
+  },
+  {
+    "word": "stomach",
+    "meaning": "An organ in animals that stores food in the process of digestion.",
+    "number": "1047"
+  },
+  {
+    "word": "stoop",
+    "meaning": "The staircase and landing or porch leading to the entrance of a residence.",
+    "number": "1048"
+  },
+  {
+    "word": "stout",
+    "meaning": "A dark and strong malt brew made with toasted grain.",
+    "number": "1049"
+  },
+  {
+    "word": "Strain",
+    "meaning": "Treasure.",
+    "number": "1050"
+  },
+  {
+    "word": "stress",
+    "meaning": "(Cause of) discomfort.",
+    "number": "1051"
+  },
+  {
+    "word": "stretched",
+    "meaning": "To lengthen by pulling.",
+    "number": "1052"
+  },
+  {
+    "word": "Stringent",
+    "meaning": "Strict; binding strongly; making strict requirements; restrictive; rigid; severe",
+    "number": "1053"
+  },
+  {
+    "word": "Strive",
+    "meaning": "Striving; earnest endeavor; hard work.",
+    "number": "1054"
+  },
+  {
+    "word": "Stroll",
+    "meaning": "A wandering on foot; an idle and leisurely walk; a ramble.",
+    "number": "1055"
+  },
+  {
+    "word": "stubborn",
+    "meaning": "[NEEDS REVIEW] stubborn",
+    "number": "1056"
+  },
+  {
+    "word": "Stumble",
+    "meaning": "[NEEDS REVIEW] stumble",
+    "number": "1057"
+  },
+  {
+    "word": "sturdy",
+    "meaning": "[NEEDS REVIEW] sturdy",
+    "number": "1058"
+  },
+  {
+    "word": "subdued",
+    "meaning": "[NEEDS REVIEW] subdued",
+    "number": "1059"
+  },
+  {
+    "word": "submissive",
+    "meaning": "(BDSM) One who submits to a dominant partner in sexual practices.",
+    "number": "1060"
+  },
+  {
+    "word": "submit",
+    "meaning": "To yield or give way to another.",
+    "number": "1061"
+  },
+  {
+    "word": "Subordinate",
+    "meaning": "One who is subordinate.",
+    "number": "1062"
+  },
+  {
+    "word": "subscribe",
+    "meaning": "To sign up to have copies of a publication, such as a newspaper or a magazine, delivered for a pe...",
+    "number": "1063"
+  },
+  {
+    "word": "Substance",
+    "meaning": "Physical matter; material.",
+    "number": "1064"
+  },
+  {
+    "word": "Substantial",
+    "meaning": "Anything having substance; an essential part.",
+    "number": "1065"
+  },
+  {
+    "word": "subterfuge",
+    "meaning": "An indirect or deceptive device or stratagem; a blind. Refers especially to war and diplomatics.",
+    "number": "1066"
+  },
+  {
+    "word": "subterranean",
+    "meaning": "Below ground, under the earth, underground",
+    "number": "1067"
+  },
+  {
+    "word": "subtropical",
+    "meaning": "A subtropical plant.",
+    "number": "1068"
+  },
+  {
+    "word": "successful",
+    "meaning": "Resulting in success; assuring, or promoting, success; accomplishing what was proposed; having th...",
+    "number": "1069"
+  },
+  {
+    "word": "Succumb",
+    "meaning": "To yield to an overpowering force or overwhelming desire.",
+    "number": "1070"
+  },
+  {
+    "word": "sufficient",
+    "meaning": "Equal to the end proposed; adequate to what is needed; enough",
+    "number": "1071"
+  },
+  {
+    "word": "suggest",
+    "meaning": "To imply but stop short of saying explicitly.",
+    "number": "1072"
+  },
+  {
+    "word": "Sullen",
+    "meaning": "One who is solitary, or lives alone; a hermit.",
+    "number": "1073"
+  },
+  {
+    "word": "summit",
+    "meaning": "A peak; the topmost point or surface, as of a mountain.",
+    "number": "1074"
+  },
+  {
+    "word": "super",
+    "meaning": "Of excellent quality, superfine.",
+    "number": "1075"
+  },
+  {
+    "word": "superfluous",
+    "meaning": "In excess of what is required or sufficient.",
+    "number": "1076"
+  },
+  {
+    "word": "superior",
+    "meaning": "A person of higher rank or quality.",
+    "number": "1077"
+  },
+  {
+    "word": "Supersede",
+    "meaning": "An updated newsgroup post that supersedes an earlier version.",
+    "number": "1078"
+  },
+  {
+    "word": "Supply",
+    "meaning": "The act of supplying.",
+    "number": "1079"
+  },
+  {
+    "word": "Support",
+    "meaning": "(sometimes attributive) Something which supports.",
+    "number": "1080"
+  },
+  {
+    "word": "supposed",
+    "meaning": "To take for granted; to conclude, with less than absolute supporting data; to believe.",
+    "number": "1081"
+  },
+  {
+    "word": "Surge",
+    "meaning": "A sudden transient rush, flood or increase.",
+    "number": "1082"
+  },
+  {
+    "word": "Surpass",
+    "meaning": "To go beyond, especially in a metaphoric or technical manner; to exceed.",
+    "number": "1083"
+  },
+  {
+    "word": "surprise",
+    "meaning": "Something unexpected.",
+    "number": "1084"
+  },
+  {
+    "word": "Susceptible",
+    "meaning": "[NEEDS REVIEW] susceptible",
+    "number": "1085"
+  },
+  {
+    "word": "suspect",
+    "meaning": "[NEEDS REVIEW] suspect",
+    "number": "1086"
+  },
+  {
+    "word": "suspend",
+    "meaning": "[NEEDS REVIEW] suspend",
+    "number": "1087"
+  },
+  {
+    "word": "Sustainable",
+    "meaning": "[NEEDS REVIEW] sustainable",
+    "number": "1088"
+  },
+  {
+    "word": "Sway",
+    "meaning": "The act of swaying; a swaying motion; a swing or sweep of a weapon.",
+    "number": "1089"
+  },
+  {
+    "word": "Sweltering",
+    "meaning": "To suffer terribly from intense heat.",
+    "number": "1090"
+  },
+  {
+    "word": "symbol",
+    "meaning": "A character or glyph representing an idea, concept or object.",
+    "number": "1091"
+  },
+  {
+    "word": "Symmetry",
+    "meaning": "Exact correspondence on either side of a dividing line, plane, center or axis.",
+    "number": "1092"
+  },
+  {
+    "word": "system",
+    "meaning": "A collection of organized things; a whole composed of relationships among its members.",
+    "number": "1093"
+  }
+]

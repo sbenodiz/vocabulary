@@ -1,0 +1,527 @@
+[
+  {
+    "word": "abandon",
+    "meaning": "give up; leave behind",
+    "number": "1"
+  },
+  {
+    "word": "Abashed",
+    "meaning": "embarrassed",
+    "number": "2"
+  },
+  {
+    "word": "Abbreviate",
+    "meaning": "shorten",
+    "number": "3"
+  },
+  {
+    "word": "Abduct",
+    "meaning": "kidnap",
+    "number": "4"
+  },
+  {
+    "word": "Aberration",
+    "meaning": "deviation from normal",
+    "number": "5"
+  },
+  {
+    "word": "Abhor",
+    "meaning": "hate",
+    "number": "6"
+  },
+  {
+    "word": "Abhorrent",
+    "meaning": "disgusting; hateful",
+    "number": "7"
+  },
+  {
+    "word": "abode",
+    "meaning": "home; dwelling",
+    "number": "8"
+  },
+  {
+    "word": "Abrasive",
+    "meaning": "rough; harsh",
+    "number": "9"
+  },
+  {
+    "word": "absence",
+    "meaning": "being away",
+    "number": "10"
+  },
+  {
+    "word": "Absent",
+    "meaning": "not present",
+    "number": "11"
+  },
+  {
+    "word": "Abstract",
+    "meaning": "theoretical; not concrete",
+    "number": "12"
+  },
+  {
+    "word": "absurd",
+    "meaning": "ridiculous",
+    "number": "13"
+  },
+  {
+    "word": "Abundance",
+    "meaning": "plenty; large quantity",
+    "number": "14"
+  },
+  {
+    "word": "abundant",
+    "meaning": "plentiful",
+    "number": "15"
+  },
+  {
+    "word": "Abysmal",
+    "meaning": "extremely bad",
+    "number": "16"
+  },
+  {
+    "word": "Abyss",
+    "meaning": "deep pit",
+    "number": "17"
+  },
+  {
+    "word": "Acclaim",
+    "meaning": "praise",
+    "number": "18"
+  },
+  {
+    "word": "accuse",
+    "meaning": "blame",
+    "number": "19"
+  },
+  {
+    "word": "accustom",
+    "meaning": "make familiar",
+    "number": "20"
+  },
+  {
+    "word": "Acknowledge",
+    "meaning": "admit; recognize",
+    "number": "21"
+  },
+  {
+    "word": "acquainted",
+    "meaning": "familiar with",
+    "number": "22"
+  },
+  {
+    "word": "acquire",
+    "meaning": "to get or obtain something",
+    "number": "23"
+  },
+  {
+    "word": "across",
+    "meaning": "from one side to the other",
+    "number": "24"
+  },
+  {
+    "word": "Adamant",
+    "meaning": "firm",
+    "number": "25"
+  },
+  {
+    "word": "Adaptation",
+    "meaning": "changing to fit new conditions",
+    "number": "26"
+  },
+  {
+    "word": "address",
+    "meaning": "to speak to or deal with",
+    "number": "27"
+  },
+  {
+    "word": "Adhere",
+    "meaning": "stick to",
+    "number": "28"
+  },
+  {
+    "word": "Admirable",
+    "meaning": "Deserving of the highest esteem or admiration.",
+    "number": "29"
+  },
+  {
+    "word": "admission",
+    "meaning": "The act or practice of admitting.",
+    "number": "30"
+  },
+  {
+    "word": "adopt",
+    "meaning": "to take on or accept as your own",
+    "number": "31"
+  },
+  {
+    "word": "Adorn",
+    "meaning": "decorate",
+    "number": "32"
+  },
+  {
+    "word": "advance",
+    "meaning": "to move forward",
+    "number": "33"
+  },
+  {
+    "word": "Adventurous",
+    "meaning": "(of a person) Inclined to adventure; willing to incur risks; prone to embark in hazardous enterpr...",
+    "number": "34"
+  },
+  {
+    "word": "advice",
+    "meaning": "suggestions about what to do",
+    "number": "35"
+  },
+  {
+    "word": "Aeon",
+    "meaning": "(preferred spelling, with æon) A spirit being emanating from the Godhead.",
+    "number": "36"
+  },
+  {
+    "word": "affable",
+    "meaning": "friendly",
+    "number": "37"
+  },
+  {
+    "word": "affectionate",
+    "meaning": "(of a person) Having affection or warm regard; loving; fond.",
+    "number": "38"
+  },
+  {
+    "word": "Affluent",
+    "meaning": "wealthy",
+    "number": "39"
+  },
+  {
+    "word": "Affordable",
+    "meaning": "Able to be afforded; inexpensive or reasonably priced.",
+    "number": "40"
+  },
+  {
+    "word": "Agitated",
+    "meaning": "To disturb or excite; to perturb or stir up (a person).",
+    "number": "41"
+  },
+  {
+    "word": "Agonising",
+    "meaning": "To writhe with agony; to suffer violent anguish.",
+    "number": "42"
+  },
+  {
+    "word": "Ailment",
+    "meaning": "Something which ails one; a disease; sickness.",
+    "number": "44"
+  },
+  {
+    "word": "alert",
+    "meaning": "watchful",
+    "number": "45"
+  },
+  {
+    "word": "Alibi",
+    "meaning": "The plea or mode of defense under which a person on trial for a crime proves or attempts to prove...",
+    "number": "46"
+  },
+  {
+    "word": "Align",
+    "meaning": "To form a line; to fall into line.",
+    "number": "47"
+  },
+  {
+    "word": "Alliance",
+    "meaning": "a partnership or union",
+    "number": "49"
+  },
+  {
+    "word": "ally",
+    "meaning": "friend; supporter",
+    "number": "50"
+  },
+  {
+    "word": "Aloof",
+    "meaning": "distant",
+    "number": "51"
+  },
+  {
+    "word": "altitude",
+    "meaning": "height",
+    "number": "52"
+  },
+  {
+    "word": "Amazon",
+    "meaning": "A tall, strong, athletic woman.",
+    "number": "53"
+  },
+  {
+    "word": "Ambiguous",
+    "meaning": "unclear",
+    "number": "54"
+  },
+  {
+    "word": "ambition",
+    "meaning": "strong desire",
+    "number": "55"
+  },
+  {
+    "word": "Amicable",
+    "meaning": "friendly",
+    "number": "56"
+  },
+  {
+    "word": "amount",
+    "meaning": "how much there is",
+    "number": "57"
+  },
+  {
+    "word": "ample",
+    "meaning": "plenty",
+    "number": "58"
+  },
+  {
+    "word": "Amused",
+    "meaning": "To entertain or occupy in a pleasant manner; to stir with pleasing emotions.",
+    "number": "59"
+  },
+  {
+    "word": "Ancestral",
+    "meaning": "Of, pertaining to, derived from, or possessed by, an ancestor or ancestors",
+    "number": "61"
+  },
+  {
+    "word": "Anecdote",
+    "meaning": "short story",
+    "number": "63"
+  },
+  {
+    "word": "Anguish",
+    "meaning": "great suffering",
+    "number": "64"
+  },
+  {
+    "word": "Anomaly",
+    "meaning": "A deviation from a rule or from what is regarded as normal; an outlier.",
+    "number": "65"
+  },
+  {
+    "word": "answers",
+    "meaning": "A response or reply; something said or done in reaction to a statement or question.",
+    "number": "66"
+  },
+  {
+    "word": "Antagonize",
+    "meaning": "To work against; to oppose (especially to incite reaction)",
+    "number": "67"
+  },
+  {
+    "word": "antiquity",
+    "meaning": "Ancient times; faraway history; former ages",
+    "number": "68"
+  },
+  {
+    "word": "Anxious",
+    "meaning": "worried; nervous",
+    "number": "69"
+  },
+  {
+    "word": "Apex",
+    "meaning": "highest point",
+    "number": "71"
+  },
+  {
+    "word": "Apparition",
+    "meaning": "An act of becoming visible; appearance; visibility.",
+    "number": "72"
+  },
+  {
+    "word": "Appeal",
+    "meaning": "request; attract",
+    "number": "73"
+  },
+  {
+    "word": "appearance",
+    "meaning": "how something looks",
+    "number": "74"
+  },
+  {
+    "word": "Apple",
+    "meaning": "a round fruit",
+    "number": "75"
+  },
+  {
+    "word": "Apprehensive",
+    "meaning": "anxious",
+    "number": "76"
+  },
+  {
+    "word": "Apprentice",
+    "meaning": "trainee",
+    "number": "77"
+  },
+  {
+    "word": "approve",
+    "meaning": "accept",
+    "number": "78"
+  },
+  {
+    "word": "Apt",
+    "meaning": "suitable; likely",
+    "number": "79"
+  },
+  {
+    "word": "Archaic",
+    "meaning": "old-fashioned",
+    "number": "80"
+  },
+  {
+    "word": "arduous",
+    "meaning": "difficult",
+    "number": "81"
+  },
+  {
+    "word": "argument",
+    "meaning": "a disagreement; reasoning",
+    "number": "83"
+  },
+  {
+    "word": "Aroma",
+    "meaning": "A smell; especially a pleasant spicy or fragrant one.",
+    "number": "84"
+  },
+  {
+    "word": "arouse",
+    "meaning": "awaken",
+    "number": "85"
+  },
+  {
+    "word": "Array",
+    "meaning": "display",
+    "number": "86"
+  },
+  {
+    "word": "artful",
+    "meaning": "Cunning; tending toward indirect dealings; crafty.",
+    "number": "87"
+  },
+  {
+    "word": "article",
+    "meaning": "a piece of writing; an item",
+    "number": "88"
+  },
+  {
+    "word": "Articulate",
+    "meaning": "express clearly",
+    "number": "89"
+  },
+  {
+    "word": "Artificial",
+    "meaning": "man-made",
+    "number": "90"
+  },
+  {
+    "word": "Ascend",
+    "meaning": "rise",
+    "number": "92"
+  },
+  {
+    "word": "assemble",
+    "meaning": "gather",
+    "number": "93"
+  },
+  {
+    "word": "Asset",
+    "meaning": "valuable thing",
+    "number": "94"
+  },
+  {
+    "word": "assiduous",
+    "meaning": "Hard-working, diligent or regular (in attendance or work); industrious.",
+    "number": "95"
+  },
+  {
+    "word": "assistance",
+    "meaning": "help; support",
+    "number": "96"
+  },
+  {
+    "word": "Assumption",
+    "meaning": "The act of assuming, or taking to or upon oneself; the act of taking up or adopting.",
+    "number": "97"
+  },
+  {
+    "word": "Assured",
+    "meaning": "To make sure and secure.",
+    "number": "98"
+  },
+  {
+    "word": "Astute",
+    "meaning": "shrewd",
+    "number": "99"
+  },
+  {
+    "word": "asunder",
+    "meaning": "Into separate parts or pieces.",
+    "number": "100"
+  },
+  {
+    "word": "attached",
+    "meaning": "To fasten, to join to (literally and figuratively).",
+    "number": "102"
+  },
+  {
+    "word": "attempt",
+    "meaning": "try",
+    "number": "103"
+  },
+  {
+    "word": "Attribute",
+    "meaning": "quality",
+    "number": "104"
+  },
+  {
+    "word": "Authoritative",
+    "meaning": "Arising or originating from a figure of authority",
+    "number": "105"
+  },
+  {
+    "word": "available",
+    "meaning": "obtainable",
+    "number": "106"
+  },
+  {
+    "word": "Avenge",
+    "meaning": "take revenge",
+    "number": "107"
+  },
+  {
+    "word": "average",
+    "meaning": "typical; ordinary",
+    "number": "108"
+  },
+  {
+    "word": "avoid",
+    "meaning": "to stay away from",
+    "number": "109"
+  },
+  {
+    "word": "avowed",
+    "meaning": "To declare openly and boldly, as something believed to be right; to own, acknowledge or confess f...",
+    "number": "110"
+  },
+  {
+    "word": "Awareness",
+    "meaning": "The state or level of consciousness where sense data can be confirmed by an observer.",
+    "number": "111"
+  },
+  {
+    "word": "awkward",
+    "meaning": "clumsy; uncomfortable",
+    "number": "112"
+  },
+  {
+    "word": "Awry",
+    "meaning": "Turned or twisted toward one side; crooked, distorted, out of place; wry.",
+    "number": "113"
+  }
+]

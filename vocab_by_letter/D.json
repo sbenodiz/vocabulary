@@ -1,0 +1,492 @@
+[
+  {
+    "word": "Daily",
+    "meaning": "Something that is produced, consumed, used, or done every day.",
+    "number": "295"
+  },
+  {
+    "word": "Dart",
+    "meaning": "A pointed missile weapon, intended to be thrown by the hand, for example a short lance or javelin",
+    "number": "296"
+  },
+  {
+    "word": "debate",
+    "meaning": "An argument, or discussion, usually in an ordered or formal setting, often with more than two peo...",
+    "number": "298"
+  },
+  {
+    "word": "Debonair",
+    "meaning": "Debonaire behaviour; graciousness.",
+    "number": "299"
+  },
+  {
+    "word": "debrief",
+    "meaning": "To question someone after a military mission in order to obtain intelligence.",
+    "number": "300"
+  },
+  {
+    "word": "deceit",
+    "meaning": "An act or practice intended to deceive; a trick.",
+    "number": "301"
+  },
+  {
+    "word": "deceive",
+    "meaning": "To trick or mislead.",
+    "number": "302"
+  },
+  {
+    "word": "Decisive",
+    "meaning": "Having the power or quality of deciding a question or controversy; putting an end to contest or c...",
+    "number": "303"
+  },
+  {
+    "word": "declare",
+    "meaning": "To make clear, explain, interpret.",
+    "number": "304"
+  },
+  {
+    "word": "Decline",
+    "meaning": "Downward movement, fall.",
+    "number": "305"
+  },
+  {
+    "word": "Decree",
+    "meaning": "An edict or law.",
+    "number": "306"
+  },
+  {
+    "word": "Deduction",
+    "meaning": "That which is deducted; that which is subtracted or removed",
+    "number": "307"
+  },
+  {
+    "word": "Defeat",
+    "meaning": "To overcome in battle or contest.",
+    "number": "308"
+  },
+  {
+    "word": "Defiance",
+    "meaning": "The feeling, or spirit of being defiant.",
+    "number": "309"
+  },
+  {
+    "word": "Deficient",
+    "meaning": "Lacking something essential; often construed with in.",
+    "number": "310"
+  },
+  {
+    "word": "definite",
+    "meaning": "(grammar) A word or phrase that designates a specified or identified person or entity.",
+    "number": "311"
+  },
+  {
+    "word": "Delegate",
+    "meaning": "A person authorized to act as representative for another; a deputy",
+    "number": "312"
+  },
+  {
+    "word": "deliberate",
+    "meaning": "To consider carefully; to weigh well in the mind.",
+    "number": "313"
+  },
+  {
+    "word": "deliver",
+    "meaning": "To set free from restraint or danger.",
+    "number": "314"
+  },
+  {
+    "word": "Delude",
+    "meaning": "[NEEDS REVIEW] delude",
+    "number": "315"
+  },
+  {
+    "word": "demolished",
+    "meaning": "[NEEDS REVIEW] demolished",
+    "number": "316"
+  },
+  {
+    "word": "Demure",
+    "meaning": "[NEEDS REVIEW] demure",
+    "number": "317"
+  },
+  {
+    "word": "deny",
+    "meaning": "To disallow or reject.",
+    "number": "318"
+  },
+  {
+    "word": "Depict",
+    "meaning": "To render a representation of something, using words, sounds, images, or other means.",
+    "number": "319"
+  },
+  {
+    "word": "deposit",
+    "meaning": "Sediment or rock that is not native to its present location or is different from the surrounding ...",
+    "number": "320"
+  },
+  {
+    "word": "depot",
+    "meaning": "A storage facility, in particular, a warehouse.",
+    "number": "321"
+  },
+  {
+    "word": "depth",
+    "meaning": "The vertical distance below a surface; the degree to which something is deep",
+    "number": "322"
+  },
+  {
+    "word": "Deranged",
+    "meaning": "(chiefly passive) To cause (someone) to go insane or become deranged.",
+    "number": "323"
+  },
+  {
+    "word": "Derelict",
+    "meaning": "Property abandoned by its former owner, especially a ship abandoned at sea.",
+    "number": "324"
+  },
+  {
+    "word": "description",
+    "meaning": "A sketch or account of anything in words; a portraiture or representation in language; an enumera...",
+    "number": "325"
+  },
+  {
+    "word": "Desolate",
+    "meaning": "To deprive of inhabitants.",
+    "number": "326"
+  },
+  {
+    "word": "despair",
+    "meaning": "Loss of hope; utter hopelessness; complete despondency.",
+    "number": "327"
+  },
+  {
+    "word": "desperately",
+    "meaning": "In a desperate manner; without regard to danger or safety; recklessly.",
+    "number": "328"
+  },
+  {
+    "word": "despise",
+    "meaning": "To regard with contempt or scorn.",
+    "number": "329"
+  },
+  {
+    "word": "Destination",
+    "meaning": "The act of destining or appointing.",
+    "number": "330"
+  },
+  {
+    "word": "Destitute",
+    "meaning": "(followed by the preposition \"of\") Lacking something; devoid",
+    "number": "331"
+  },
+  {
+    "word": "Deteriorate",
+    "meaning": "To make worse; to make inferior in quality or value; to impair.",
+    "number": "332"
+  },
+  {
+    "word": "determine",
+    "meaning": "To set the boundaries or limits of.",
+    "number": "333"
+  },
+  {
+    "word": "Determined",
+    "meaning": "To set the boundaries or limits of.",
+    "number": "334"
+  },
+  {
+    "word": "Deterrent",
+    "meaning": "Something that deters.",
+    "number": "335"
+  },
+  {
+    "word": "Detrimental",
+    "meaning": "Causing damage or harm.",
+    "number": "336"
+  },
+  {
+    "word": "Devastation",
+    "meaning": "The act of devastating, or the state of being devastated; a laying waste.",
+    "number": "337"
+  },
+  {
+    "word": "develop",
+    "meaning": "To change with a specific direction, progress.",
+    "number": "338"
+  },
+  {
+    "word": "development",
+    "meaning": "The process of developing; growth, directed change.",
+    "number": "339"
+  },
+  {
+    "word": "device",
+    "meaning": "Any piece of equipment made for a particular purpose, especially a mechanical or electrical one.",
+    "number": "340"
+  },
+  {
+    "word": "Devious",
+    "meaning": "Cunning or deceiving, not straightforward or honest, not frank",
+    "number": "341"
+  },
+  {
+    "word": "devote",
+    "meaning": "To give one's time, focus one's efforts, commit oneself, etc. entirely for, on, or to a certain m...",
+    "number": "342"
+  },
+  {
+    "word": "Devoted",
+    "meaning": "To give one's time, focus one's efforts, commit oneself, etc. entirely for, on, or to a certain m...",
+    "number": "343"
+  },
+  {
+    "word": "Diametrically",
+    "meaning": "Separated by a diameter, on exactly the opposite side.",
+    "number": "344"
+  },
+  {
+    "word": "dictionary",
+    "meaning": "[NEEDS REVIEW] dictionary",
+    "number": "345"
+  },
+  {
+    "word": "digest",
+    "meaning": "[NEEDS REVIEW] digest",
+    "number": "346"
+  },
+  {
+    "word": "dilapidated",
+    "meaning": "[NEEDS REVIEW] dilapidated",
+    "number": "347"
+  },
+  {
+    "word": "Diligent",
+    "meaning": "Performing with industrious concentration; hard-working and focused.",
+    "number": "348"
+  },
+  {
+    "word": "diluted",
+    "meaning": "To make thinner by adding solvent to a solution, especially by adding water.",
+    "number": "349"
+  },
+  {
+    "word": "Diminish",
+    "meaning": "To make smaller.",
+    "number": "350"
+  },
+  {
+    "word": "Diplomatic",
+    "meaning": "The science of diplomas, or the art of deciphering ancient writings and determining their age, au...",
+    "number": "353"
+  },
+  {
+    "word": "disappear",
+    "meaning": "To vanish.",
+    "number": "354"
+  },
+  {
+    "word": "disappointed",
+    "meaning": "To sadden or displease (someone) by underperforming, or by not delivering something promised or h...",
+    "number": "355"
+  },
+  {
+    "word": "disarray",
+    "meaning": "Lack of array or regular order; disorder; confusion.",
+    "number": "356"
+  },
+  {
+    "word": "disastrous",
+    "meaning": "Of the nature of a disaster; calamitous.",
+    "number": "357"
+  },
+  {
+    "word": "Discern",
+    "meaning": "To detect with the senses, especially with the eyes.",
+    "number": "358"
+  },
+  {
+    "word": "disclose",
+    "meaning": "A disclosure.",
+    "number": "359"
+  },
+  {
+    "word": "discontent",
+    "meaning": "Dissatisfaction.",
+    "number": "360"
+  },
+  {
+    "word": "Discourage",
+    "meaning": "Lack of courage",
+    "number": "361"
+  },
+  {
+    "word": "Discreet",
+    "meaning": "Respectful of privacy or secrecy; exercising caution in order to avoid causing embarrassment; qui...",
+    "number": "362"
+  },
+  {
+    "word": "Disembark",
+    "meaning": "To remove from on board a vessel; to put on shore",
+    "number": "363"
+  },
+  {
+    "word": "dishevelled",
+    "meaning": "To throw into disorder; upheave.",
+    "number": "364"
+  },
+  {
+    "word": "Disloyal",
+    "meaning": "Not loyal, without loyalty.",
+    "number": "365"
+  },
+  {
+    "word": "dismal",
+    "meaning": "Disappointingly inadequate.",
+    "number": "366"
+  },
+  {
+    "word": "Dismayed",
+    "meaning": "To cause to feel apprehension; great sadness, or fear; to deprive of energy",
+    "number": "367"
+  },
+  {
+    "word": "Dismiss",
+    "meaning": "To discharge; to end the employment or service of.",
+    "number": "368"
+  },
+  {
+    "word": "Disobedient",
+    "meaning": "One who disobeys.",
+    "number": "369"
+  },
+  {
+    "word": "disperse",
+    "meaning": "To scatter in different directions",
+    "number": "370"
+  },
+  {
+    "word": "dispute",
+    "meaning": "An argument or disagreement, a failure to agree.",
+    "number": "371"
+  },
+  {
+    "word": "Dissent",
+    "meaning": "Disagreement with the ideas, doctrines, decrees, etc. of a political party, government or religion.",
+    "number": "372"
+  },
+  {
+    "word": "distasteful",
+    "meaning": "Having a bad or foul taste.",
+    "number": "373"
+  },
+  {
+    "word": "distinct",
+    "meaning": "Capable of being perceived very clearly.",
+    "number": "374"
+  },
+  {
+    "word": "distinguished",
+    "meaning": "To recognize someone or something as different from others based on its characteristics.",
+    "number": "375"
+  },
+  {
+    "word": "Distort",
+    "meaning": "To bring something out of shape, to misshape.",
+    "number": "376"
+  },
+  {
+    "word": "Distress",
+    "meaning": "(Cause of) discomfort.",
+    "number": "377"
+  },
+  {
+    "word": "Diverse",
+    "meaning": "Consisting of many different elements; various.",
+    "number": "378"
+  },
+  {
+    "word": "divine",
+    "meaning": "[NEEDS REVIEW] divine",
+    "number": "379"
+  },
+  {
+    "word": "divinity",
+    "meaning": "[NEEDS REVIEW] divinity",
+    "number": "380"
+  },
+  {
+    "word": "domestic",
+    "meaning": "[NEEDS REVIEW] domestic",
+    "number": "381"
+  },
+  {
+    "word": "Dormant",
+    "meaning": "[NEEDS REVIEW] dormant",
+    "number": "382"
+  },
+  {
+    "word": "dose",
+    "meaning": "[NEEDS REVIEW] dose",
+    "number": "383"
+  },
+  {
+    "word": "Dramatic",
+    "meaning": "Of or relating to the drama.",
+    "number": "384"
+  },
+  {
+    "word": "Dread",
+    "meaning": "Great fear in view of impending evil; fearful apprehension of danger; anticipatory terror.",
+    "number": "385"
+  },
+  {
+    "word": "Drift",
+    "meaning": "(physical) Movement; that which moves or is moved.",
+    "number": "386"
+  },
+  {
+    "word": "Driven",
+    "meaning": "To provide an impetus for motion or other physical change, to move an object by means of the prov...",
+    "number": "387"
+  },
+  {
+    "word": "Drizzle",
+    "meaning": "Light rain.",
+    "number": "388"
+  },
+  {
+    "word": "drought",
+    "meaning": "A period of unusually low rainfall, longer and more severe than a dry spell.",
+    "number": "389"
+  },
+  {
+    "word": "Dubious",
+    "meaning": "doubtful",
+    "number": "390"
+  },
+  {
+    "word": "dumb",
+    "meaning": "Unable to speak; lacking power of speech (kept in \"deaf, dumb, and blind\").",
+    "number": "391"
+  },
+  {
+    "word": "Durable",
+    "meaning": "A durable thing, one useful over more than one period, especially a year.",
+    "number": "392"
+  },
+  {
+    "word": "dwelling",
+    "meaning": "A house or place in which a person lives; a habitation, a home.",
+    "number": "393"
+  },
+  {
+    "word": "Dwindle",
+    "meaning": "To decrease, shrink, diminish, reduce in size or intensity.",
+    "number": "394"
+  },
+  {
+    "word": "Dynasty",
+    "meaning": "A series of rulers or dynasts from one family.",
+    "number": "395"
+  }
+]

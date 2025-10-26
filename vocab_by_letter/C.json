@@ -1,0 +1,622 @@
+[
+  {
+    "word": "Cacophony",
+    "meaning": "harsh noise",
+    "number": "169"
+  },
+  {
+    "word": "calamity",
+    "meaning": "disaster",
+    "number": "170"
+  },
+  {
+    "word": "Callous",
+    "meaning": "insensitive",
+    "number": "171"
+  },
+  {
+    "word": "Camouflage",
+    "meaning": "disguise",
+    "number": "172"
+  },
+  {
+    "word": "Campaign",
+    "meaning": "A series of operations undertaken to achieve a set goal.",
+    "number": "173"
+  },
+  {
+    "word": "candidate",
+    "meaning": "A person who is running in an election.",
+    "number": "175"
+  },
+  {
+    "word": "Canopy",
+    "meaning": "A high cover providing shelter, such as a cloth supported above an object, particularly over a bed.",
+    "number": "176"
+  },
+  {
+    "word": "Capacious",
+    "meaning": "Having a lot of space inside; roomy.",
+    "number": "177"
+  },
+  {
+    "word": "careering",
+    "meaning": "To move rapidly straight ahead, especially in an uncontrolled way.",
+    "number": "178"
+  },
+  {
+    "word": "Cascade",
+    "meaning": "waterfall",
+    "number": "179"
+  },
+  {
+    "word": "Catastrophe",
+    "meaning": "disaster",
+    "number": "180"
+  },
+  {
+    "word": "category",
+    "meaning": "A group, often named or numbered, to which items are assigned based on similarity or defined crit...",
+    "number": "181"
+  },
+  {
+    "word": "caulking",
+    "meaning": "To drive oakum into the seams of a ship's wooden deck or hull to make it watertight.",
+    "number": "182"
+  },
+  {
+    "word": "caution",
+    "meaning": "warning",
+    "number": "183"
+  },
+  {
+    "word": "cease",
+    "meaning": "stop",
+    "number": "184"
+  },
+  {
+    "word": "cemetery",
+    "meaning": "graveyard",
+    "number": "185"
+  },
+  {
+    "word": "Challenge",
+    "meaning": "test",
+    "number": "186"
+  },
+  {
+    "word": "Champion",
+    "meaning": "winner",
+    "number": "187"
+  },
+  {
+    "word": "chaos",
+    "meaning": "disorder",
+    "number": "188"
+  },
+  {
+    "word": "Charismatic",
+    "meaning": "A member of the Charismatic Movement.",
+    "number": "189"
+  },
+  {
+    "word": "Charred",
+    "meaning": "burnt",
+    "number": "190"
+  },
+  {
+    "word": "check",
+    "meaning": "A situation in which the king is directly threatened by an opposing piece.",
+    "number": "191"
+  },
+  {
+    "word": "child",
+    "meaning": "A person who has not yet reached adulthood, whether natural (puberty), cultural (initiation), or ...",
+    "number": "192"
+  },
+  {
+    "word": "Chilly",
+    "meaning": "Cold enough to cause discomfort.",
+    "number": "193"
+  },
+  {
+    "word": "Chivalrous",
+    "meaning": "courteous",
+    "number": "194"
+  },
+  {
+    "word": "choreographer",
+    "meaning": "A person who choreographs.",
+    "number": "195"
+  },
+  {
+    "word": "Chortle",
+    "meaning": "A joyful, somewhat muffled laugh, rather like a snorting chuckle.",
+    "number": "196"
+  },
+  {
+    "word": "Chronology",
+    "meaning": "The science of determining the order in which events occurred.",
+    "number": "197"
+  },
+  {
+    "word": "Civilisation",
+    "meaning": "An organized culture encompassing many communities, often on the scale of a nation or a people; a...",
+    "number": "198"
+  },
+  {
+    "word": "Clamber",
+    "meaning": "climb awkwardly",
+    "number": "199"
+  },
+  {
+    "word": "clemency",
+    "meaning": "The gentle or kind exercise of power; leniency, mercy; compassion in judging or punishing.",
+    "number": "200"
+  },
+  {
+    "word": "Clench",
+    "meaning": "grip tightly",
+    "number": "201"
+  },
+  {
+    "word": "Close",
+    "meaning": "An end or conclusion.",
+    "number": "202"
+  },
+  {
+    "word": "Coach",
+    "meaning": "A wheeled vehicle, generally drawn by horse power.",
+    "number": "203"
+  },
+  {
+    "word": "coarse",
+    "meaning": "rough",
+    "number": "204"
+  },
+  {
+    "word": "Coax",
+    "meaning": "persuade gently",
+    "number": "205"
+  },
+  {
+    "word": "Coincidence",
+    "meaning": "chance occurrence",
+    "number": "206"
+  },
+  {
+    "word": "Collapse",
+    "meaning": "fall down",
+    "number": "207"
+  },
+  {
+    "word": "Collectively",
+    "meaning": "In a collective manner; viewed together as a whole; to be treated as a single unit, rather than t...",
+    "number": "208"
+  },
+  {
+    "word": "college",
+    "meaning": "A corporate group; a group of colleagues.",
+    "number": "209"
+  },
+  {
+    "word": "colour",
+    "meaning": "The spectral composition of visible light",
+    "number": "210"
+  },
+  {
+    "word": "combination",
+    "meaning": "The act of combining, the state of being combined or the result of combining.",
+    "number": "212"
+  },
+  {
+    "word": "Comfort",
+    "meaning": "ease",
+    "number": "213"
+  },
+  {
+    "word": "Commanding",
+    "meaning": "To order, give orders; to compel or direct with authority.",
+    "number": "214"
+  },
+  {
+    "word": "Commemorate",
+    "meaning": "remember",
+    "number": "215"
+  },
+  {
+    "word": "Commence",
+    "meaning": "begin",
+    "number": "216"
+  },
+  {
+    "word": "commit",
+    "meaning": "The act of committing (e.g. a database transaction or source code into a source control repositor...",
+    "number": "217"
+  },
+  {
+    "word": "committee",
+    "meaning": "A body of one or more persons convened for the accomplishment of some specific purpose, typically...",
+    "number": "218"
+  },
+  {
+    "word": "communicate",
+    "meaning": "[NEEDS REVIEW] communicate",
+    "number": "219"
+  },
+  {
+    "word": "community",
+    "meaning": "[NEEDS REVIEW] community",
+    "number": "220"
+  },
+  {
+    "word": "companion",
+    "meaning": "friend",
+    "number": "221"
+  },
+  {
+    "word": "company",
+    "meaning": "[NEEDS REVIEW] company",
+    "number": "222"
+  },
+  {
+    "word": "Compassion",
+    "meaning": "sympathy",
+    "number": "223"
+  },
+  {
+    "word": "Compel",
+    "meaning": "force",
+    "number": "224"
+  },
+  {
+    "word": "competition",
+    "meaning": "contest",
+    "number": "225"
+  },
+  {
+    "word": "completely",
+    "meaning": "[NEEDS REVIEW] completely",
+    "number": "226"
+  },
+  {
+    "word": "complex",
+    "meaning": "complicated",
+    "number": "227"
+  },
+  {
+    "word": "Complicit",
+    "meaning": "Associated with or participating in an activity, especially one of a questionable nature.",
+    "number": "228"
+  },
+  {
+    "word": "Compliment",
+    "meaning": "praise",
+    "number": "229"
+  },
+  {
+    "word": "Compose",
+    "meaning": "create",
+    "number": "230"
+  },
+  {
+    "word": "composition",
+    "meaning": "The act of putting together; assembly.",
+    "number": "231"
+  },
+  {
+    "word": "Compost",
+    "meaning": "The decayed remains of organic matter that has rotted into a natural fertilizer.",
+    "number": "232"
+  },
+  {
+    "word": "comprehend",
+    "meaning": "understand",
+    "number": "233"
+  },
+  {
+    "word": "Compromise",
+    "meaning": "agreement",
+    "number": "234"
+  },
+  {
+    "word": "comrade",
+    "meaning": "companion",
+    "number": "235"
+  },
+  {
+    "word": "Conceal",
+    "meaning": "hide",
+    "number": "236"
+  },
+  {
+    "word": "Concede",
+    "meaning": "admit",
+    "number": "237"
+  },
+  {
+    "word": "conceited",
+    "meaning": "vain",
+    "number": "238"
+  },
+  {
+    "word": "concentrated",
+    "meaning": "To bring to, or direct toward, a common center; to unite more closely; to gather into one body, m...",
+    "number": "239"
+  },
+  {
+    "word": "conclude",
+    "meaning": "end",
+    "number": "240"
+  },
+  {
+    "word": "conclusion",
+    "meaning": "end",
+    "number": "241"
+  },
+  {
+    "word": "condemn",
+    "meaning": "criticize",
+    "number": "242"
+  },
+  {
+    "word": "conferred",
+    "meaning": "To grant as a possession; to bestow.",
+    "number": "243"
+  },
+  {
+    "word": "Confide",
+    "meaning": "tell secretly",
+    "number": "244"
+  },
+  {
+    "word": "confine",
+    "meaning": "restrict",
+    "number": "245"
+  },
+  {
+    "word": "Conquer",
+    "meaning": "defeat",
+    "number": "246"
+  },
+  {
+    "word": "conscience",
+    "meaning": "moral sense",
+    "number": "247"
+  },
+  {
+    "word": "conscious",
+    "meaning": "aware",
+    "number": "248"
+  },
+  {
+    "word": "consent",
+    "meaning": "agree",
+    "number": "249"
+  },
+  {
+    "word": "Conservation",
+    "meaning": "The act of preserving, guarding, or protecting; the keeping (of a thing) in a safe or entire stat...",
+    "number": "250"
+  },
+  {
+    "word": "conserve",
+    "meaning": "Wilderness where human development is prohibited.",
+    "number": "251"
+  },
+  {
+    "word": "Considerate",
+    "meaning": "thoughtful",
+    "number": "252"
+  },
+  {
+    "word": "consideration",
+    "meaning": "thought",
+    "number": "253"
+  },
+  {
+    "word": "consist",
+    "meaning": "be composed of",
+    "number": "254"
+  },
+  {
+    "word": "Consistent",
+    "meaning": "unchanging",
+    "number": "255"
+  },
+  {
+    "word": "conspire",
+    "meaning": "plot",
+    "number": "256"
+  },
+  {
+    "word": "constant",
+    "meaning": "unchanging",
+    "number": "257"
+  },
+  {
+    "word": "consume",
+    "meaning": "eat",
+    "number": "258"
+  },
+  {
+    "word": "Consumer",
+    "meaning": "buyer",
+    "number": "259"
+  },
+  {
+    "word": "Contemplate",
+    "meaning": "think about",
+    "number": "260"
+  },
+  {
+    "word": "contemporary",
+    "meaning": "modern",
+    "number": "261"
+  },
+  {
+    "word": "Contempt",
+    "meaning": "scorn",
+    "number": "262"
+  },
+  {
+    "word": "content",
+    "meaning": "satisfied",
+    "number": "263"
+  },
+  {
+    "word": "contest",
+    "meaning": "competition",
+    "number": "264"
+  },
+  {
+    "word": "Continuous",
+    "meaning": "Without stopping; without a break, cessation, or interruption",
+    "number": "265"
+  },
+  {
+    "word": "contract",
+    "meaning": "agreement",
+    "number": "266"
+  },
+  {
+    "word": "Contradict",
+    "meaning": "deny",
+    "number": "267"
+  },
+  {
+    "word": "Contrast",
+    "meaning": "difference",
+    "number": "268"
+  },
+  {
+    "word": "contribute",
+    "meaning": "give",
+    "number": "269"
+  },
+  {
+    "word": "Conundrum",
+    "meaning": "puzzle",
+    "number": "270"
+  },
+  {
+    "word": "conventional",
+    "meaning": "traditional",
+    "number": "271"
+  },
+  {
+    "word": "convert",
+    "meaning": "change",
+    "number": "272"
+  },
+  {
+    "word": "convey",
+    "meaning": "transport",
+    "number": "273"
+  },
+  {
+    "word": "convict",
+    "meaning": "A person convicted of a crime by a judicial body.",
+    "number": "274"
+  },
+  {
+    "word": "Convince",
+    "meaning": "persuade",
+    "number": "275"
+  },
+  {
+    "word": "Cooperative",
+    "meaning": "helpful",
+    "number": "276"
+  },
+  {
+    "word": "Cordial",
+    "meaning": "warm and friendly",
+    "number": "277"
+  },
+  {
+    "word": "correct",
+    "meaning": "right",
+    "number": "278"
+  },
+  {
+    "word": "Counterargument",
+    "meaning": "An argument that is opposed to another argument.",
+    "number": "279"
+  },
+  {
+    "word": "Courage",
+    "meaning": "bravery",
+    "number": "280"
+  },
+  {
+    "word": "course",
+    "meaning": "path",
+    "number": "281"
+  },
+  {
+    "word": "courses",
+    "meaning": "A sequence of events.",
+    "number": "282"
+  },
+  {
+    "word": "covert",
+    "meaning": "secret",
+    "number": "283"
+  },
+  {
+    "word": "covet",
+    "meaning": "desire",
+    "number": "284"
+  },
+  {
+    "word": "coy",
+    "meaning": "shy",
+    "number": "285"
+  },
+  {
+    "word": "credit",
+    "meaning": "trust",
+    "number": "286"
+  },
+  {
+    "word": "Creep",
+    "meaning": "crawl",
+    "number": "287"
+  },
+  {
+    "word": "Criticise",
+    "meaning": "To find fault (with something).",
+    "number": "288"
+  },
+  {
+    "word": "cultivate",
+    "meaning": "grow",
+    "number": "289"
+  },
+  {
+    "word": "cunning",
+    "meaning": "crafty",
+    "number": "290"
+  },
+  {
+    "word": "curb",
+    "meaning": "restrain",
+    "number": "291"
+  },
+  {
+    "word": "curious",
+    "meaning": "inquisitive",
+    "number": "292"
+  },
+  {
+    "word": "curt",
+    "meaning": "brief",
+    "number": "293"
+  },
+  {
+    "word": "custom",
+    "meaning": "tradition",
+    "number": "294"
+  }
+]
