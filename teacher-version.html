@@ -236,7 +236,7 @@
         <table class="vocab-table">
             <thead>
                 <tr>
-                    <th>Known</th>
+                    <th>Attempt Level</th>
                     <th>No.</th>
                     <th>Word</th>
                     <th>Meaning / Synonyms</th>
@@ -1466,41 +1466,71 @@
 
         // Load known words from localStorage
         let knownWords = new Set();
+        let wordAttempts = {};
+
         function loadKnownWords() {
             const saved = localStorage.getItem('knownWords');
             if (saved) {
                 knownWords = new Set(JSON.parse(saved));
+            }
+
+            const savedAttempts = localStorage.getItem('wordAttempts');
+            if (savedAttempts) {
+                wordAttempts = JSON.parse(savedAttempts);
             }
         }
 
         // Save known words to localStorage
         function saveKnownWords() {
             localStorage.setItem('knownWords', JSON.stringify([...knownWords]));
+            localStorage.setItem('wordAttempts', JSON.stringify(wordAttempts));
         }
 
-        // Toggle word known status
-        function toggleWordKnown(word, checkbox) {
-            if (checkbox.checked) {
-                knownWords.add(word);
-            } else {
+        // Set word attempt level
+        function setWordAttempt(word, level) {
+            if (level === 'not-known') {
+                delete wordAttempts[word];
                 knownWords.delete(word);
+            } else {
+                wordAttempts[word] = level;
+                knownWords.add(word);
             }
             saveKnownWords();
             updateStats();
         }
 
+        // Get word attempt level
+        function getWordAttempt(word) {
+            return wordAttempts[word] || 'not-known';
+        }
+
         // Update statistics
         function updateStats() {
             const totalWords = vocabData.length;
-            const knownCount = knownWords.size;
+
+            // Count by attempt level
+            const attemptCounts = {
+                'first': 0,
+                'second': 0,
+                'third': 0,
+                'not-known': totalWords
+            };
+
+            Object.values(wordAttempts).forEach(level => {
+                attemptCounts[level]++;
+                attemptCounts['not-known']--;
+            });
+
+            const knownCount = attemptCounts.first + attemptCounts.second + attemptCounts.third;
             const percentage = Math.round((knownCount / totalWords) * 100);
 
             document.getElementById('totalWords').textContent = totalWords;
 
-            // Add known words stat if it doesn't exist
+            // Add stats if they don't exist
             let knownWordsStatDiv = document.getElementById('knownWordsStat');
             if (!knownWordsStatDiv) {
                 const statGrid = document.querySelector('.stat-grid');
+
                 knownWordsStatDiv = document.createElement('div');
                 knownWordsStatDiv.className = 'stat-item';
                 knownWordsStatDiv.id = 'knownWordsStat';
@@ -1518,10 +1548,26 @@
                     <div class="stat-label">Progress</div>
                 `;
                 statGrid.appendChild(percentageStatDiv);
+
+                // Add attempt breakdown stats
+                ['first', 'second', 'third'].forEach(level => {
+                    const statDiv = document.createElement('div');
+                    statDiv.className = 'stat-item';
+                    statDiv.style.background = level === 'first' ? '#28a745' : level === 'second' ? '#ffc107' : '#fd7e14';
+                    statDiv.style.color = 'white';
+                    statDiv.innerHTML = `
+                        <div class="stat-number" id="${level}AttemptCount">0</div>
+                        <div class="stat-label">${level === 'first' ? '1st' : level === 'second' ? '2nd' : '3rd'} Attempt</div>
+                    `;
+                    statGrid.appendChild(statDiv);
+                });
             }
 
             document.getElementById('knownWordsCount').textContent = knownCount;
             document.getElementById('percentageCount').textContent = percentage + '%';
+            document.getElementById('firstAttemptCount').textContent = attemptCounts.first;
+            document.getElementById('secondAttemptCount').textContent = attemptCounts.second;
+            document.getElementById('thirdAttemptCount').textContent = attemptCounts.third;
         }
 
         function renderVocabTable(data) {
@@ -1530,23 +1576,40 @@
 
             data.forEach(item => {
                 const row = document.createElement('tr');
-                const isKnown = knownWords.has(item.word);
+                const attemptLevel = getWordAttempt(item.word);
+
+                // Escape single quotes in word for JavaScript string
+                const escapedWord = item.word.replace(/'/g, "\\'");
 
                 row.innerHTML = `
-                    <td style="text-align: center;">
-                        <input type="checkbox"
-                               ${isKnown ? 'checked' : ''}
-                               onchange="toggleWordKnown('${item.word.replace(/'/g, "\\'")}', this)"
-                               style="width: 20px; height: 20px; cursor: pointer;">
+                    <td style="text-align: center; padding: 10px;">
+                        <select onchange="setWordAttempt('${escapedWord}', this.value)"
+                                style="padding: 8px; border: 2px solid #667eea; border-radius: 8px; font-size: 14px; cursor: pointer; background: white;">
+                            <option value="not-known" ${attemptLevel === 'not-known' ? 'selected' : ''}>Not Known</option>
+                            <option value="first" ${attemptLevel === 'first' ? 'selected' : ''}>✓ 1st Attempt</option>
+                            <option value="second" ${attemptLevel === 'second' ? 'selected' : ''}>✓ 2nd Attempt</option>
+                            <option value="third" ${attemptLevel === 'third' ? 'selected' : ''}>✓ 3rd Attempt</option>
+                        </select>
                     </td>
                     <td class="number-cell">${item.number}</td>
-                    <td class="word-cell">${item.word}</td>
+                    <td class="word-cell" style="background: ${getAttemptColor(attemptLevel)};">${item.word}</td>
                     <td class="meaning-cell">${item.meaning}</td>
                 `;
                 tbody.appendChild(row);
             });
 
             document.getElementById('displayCount').textContent = data.length;
+        }
+
+        // Get color for attempt level
+        function getAttemptColor(level) {
+            const colors = {
+                'first': 'rgba(40, 167, 69, 0.1)',
+                'second': 'rgba(255, 193, 7, 0.1)',
+                'third': 'rgba(253, 126, 20, 0.1)',
+                'not-known': 'transparent'
+            };
+            return colors[level] || 'transparent';
         }
 
         function searchVocab() {

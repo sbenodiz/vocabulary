@@ -469,7 +469,29 @@
             <div class="button-group">
                 <button class="btn btn-primary" onclick="shuffleCards()">Shuffle Cards</button>
                 <button class="btn btn-secondary" onclick="resetProgress()">Reset Progress</button>
-                <button class="btn btn-success" onclick="markAsKnown()">Mark as Known</button>
+            </div>
+
+            <div style="margin-top: 20px; padding: 20px; background: rgba(255,255,255,0.95); border-radius: 15px;">
+                <h4 style="text-align: center; color: #667eea; margin-bottom: 15px;">Mark Attempt Level:</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+                    <button class="btn" id="attempt-first" onclick="setWordAttempt(vocabData[currentIndex].word, 'first')"
+                            style="background: #28a745; color: white; padding: 12px;">
+                        ✓ 1st Attempt
+                    </button>
+                    <button class="btn" id="attempt-second" onclick="setWordAttempt(vocabData[currentIndex].word, 'second')"
+                            style="background: #ffc107; color: white; padding: 12px;">
+                        ✓ 2nd Attempt
+                    </button>
+                    <button class="btn" id="attempt-third" onclick="setWordAttempt(vocabData[currentIndex].word, 'third')"
+                            style="background: #fd7e14; color: white; padding: 12px;">
+                        ✓ 3rd Attempt
+                    </button>
+                    <button class="btn" id="attempt-not-known" onclick="setWordAttempt(vocabData[currentIndex].word, 'not-known')"
+                            style="background: #6c757d; color: white; padding: 12px;">
+                        ✗ Not Known
+                    </button>
+                </div>
+                <div id="currentAttemptDisplay" style="text-align: center; margin-top: 15px; font-weight: bold; color: #667eea;"></div>
             </div>
         </div>
 
@@ -1762,10 +1784,11 @@
         let quizTotal = 0;
         let currentMode = 'flashcard';
         let teacherIndex = 0;
-        let knownWords = new Set();
+        let knownWords = new Set(); // Legacy: kept for backwards compatibility
         let learningIndex = 0; // Words from 0 to learningIndex are considered "learned"
         let quizMode = 'all'; // 'all' or 'learned'
         let progressHistory = {}; // {date: count} for tracking daily progress
+        let wordAttempts = {}; // {word: 'first'|'second'|'third'|'not-known'} - tracks attempt level
 
         // Load known words from localStorage
         function loadKnownWords() {
@@ -1785,6 +1808,11 @@
                 progressHistory = JSON.parse(savedHistory);
             }
 
+            const savedAttempts = localStorage.getItem('wordAttempts');
+            if (savedAttempts) {
+                wordAttempts = JSON.parse(savedAttempts);
+            }
+
             // Update progress history with today's count
             updateProgressHistory();
         }
@@ -1792,7 +1820,26 @@
         // Save known words to localStorage
         function saveKnownWords() {
             localStorage.setItem('knownWords', JSON.stringify([...knownWords]));
+            localStorage.setItem('wordAttempts', JSON.stringify(wordAttempts));
             updateProgressHistory();
+        }
+
+        // Set word attempt level
+        function setWordAttempt(word, level) {
+            if (level === 'not-known') {
+                delete wordAttempts[word];
+                knownWords.delete(word);
+            } else {
+                wordAttempts[word] = level;
+                knownWords.add(word); // Keep for backwards compatibility
+            }
+            saveKnownWords();
+            updateCard();
+        }
+
+        // Get word attempt level
+        function getWordAttempt(word) {
+            return wordAttempts[word] || 'not-known';
         }
 
         // Set learning index (words 1 to learningIndex are considered learned)
@@ -1808,7 +1855,16 @@
             learningIndex = value;
             localStorage.setItem('learningIndex', learningIndex);
             updateLearningIndexDisplay();
-            showNotification('Learning progress set to word ' + learningIndex);
+
+            // Jump to the learning index position in flashcard mode
+            if (learningIndex > 0) {
+                currentIndex = learningIndex - 1; // -1 because array is 0-indexed
+                if (isFlipped) flipCard();
+                updateCard();
+                showNotification('Learning progress set to word ' + learningIndex + '. Flashcard moved to this position.');
+            } else {
+                showNotification('Learning progress set to word ' + learningIndex);
+            }
         }
 
         // Update learning index display
@@ -1852,25 +1908,55 @@
             reviewedCards.add(currentIndex);
             document.getElementById('reviewedCards').textContent = knownWords.size;
 
-            // Update mark as known button appearance
-            updateMarkAsKnownButton();
+            // Update attempt buttons appearance
+            updateAttemptButtons();
 
             updateProgress();
             updateNavButtons();
         }
 
-        function updateMarkAsKnownButton() {
-            const markBtn = document.querySelector('.btn-success');
-            if (markBtn) {
-                if (isCurrentWordKnown()) {
-                    markBtn.textContent = '✓ Known';
-                    markBtn.style.background = '#28a745';
-                } else {
-                    markBtn.textContent = 'Mark as Known';
-                    markBtn.style.background = '#6c757d';
-                }
+        function updateAttemptButtons() {
+            const currentWord = vocabData[currentIndex].word;
+            const attemptLevel = getWordAttempt(currentWord);
+
+            // Reset all buttons to default style
+            const buttons = {
+                'first': document.getElementById('attempt-first'),
+                'second': document.getElementById('attempt-second'),
+                'third': document.getElementById('attempt-third'),
+                'not-known': document.getElementById('attempt-not-known')
+            };
+
+            // Reset all buttons
+            buttons['first'].style.opacity = '0.5';
+            buttons['first'].style.transform = 'scale(1)';
+            buttons['second'].style.opacity = '0.5';
+            buttons['second'].style.transform = 'scale(1)';
+            buttons['third'].style.opacity = '0.5';
+            buttons['third'].style.transform = 'scale(1)';
+            buttons['not-known'].style.opacity = '0.5';
+            buttons['not-known'].style.transform = 'scale(1)';
+
+            // Highlight the active button
+            if (attemptLevel !== 'not-known' && buttons[attemptLevel]) {
+                buttons[attemptLevel].style.opacity = '1';
+                buttons[attemptLevel].style.transform = 'scale(1.05)';
+            } else if (attemptLevel === 'not-known') {
+                buttons['not-known'].style.opacity = '1';
             }
+
+            // Update display text
+            const display = document.getElementById('currentAttemptDisplay');
+            const attemptText = {
+                'first': 'Known on 1st Attempt ✓',
+                'second': 'Known on 2nd Attempt ✓',
+                'third': 'Known on 3rd Attempt ✓',
+                'not-known': 'Not Known Yet'
+            };
+            display.textContent = attemptText[attemptLevel] || 'Not marked yet';
+            display.style.color = attemptLevel === 'not-known' ? '#6c757d' : '#28a745';
         }
+
 
         function updateProgress() {
             const progress = (reviewedCards.size / vocabData.length) * 100;
@@ -1931,24 +2017,6 @@
             }
         }
 
-        function markAsKnown() {
-            const word = vocabData[currentIndex].word;
-
-            if (knownWords.has(word)) {
-                // Unmark as known
-                knownWords.delete(word);
-                saveKnownWords();
-                showNotification('Unmarked!');
-                updateMarkAsKnownButton();
-                document.getElementById('reviewedCards').textContent = knownWords.size;
-            } else {
-                // Mark as known
-                knownWords.add(word);
-                saveKnownWords();
-                showNotification('Marked as known!');
-                nextCard();
-            }
-        }
 
         function switchMode(mode) {
             currentMode = mode;
@@ -2118,17 +2186,68 @@
 
         // Update statistics display and chart
         function updateStatistics() {
-            // Update summary stats
-            const totalKnown = knownWords.size;
-            const remaining = vocabData.length - totalKnown;
+            // Count by attempt level
+            const attemptCounts = {
+                'first': 0,
+                'second': 0,
+                'third': 0,
+                'not-known': vocabData.length
+            };
+
+            Object.values(wordAttempts).forEach(level => {
+                attemptCounts[level]++;
+                attemptCounts['not-known']--;
+            });
+
+            const totalKnown = attemptCounts.first + attemptCounts.second + attemptCounts.third;
+            const remaining = attemptCounts['not-known'];
             const percentage = Math.round((totalKnown / vocabData.length) * 100);
 
             document.getElementById('statTotalKnown').textContent = totalKnown;
             document.getElementById('statRemaining').textContent = remaining;
             document.getElementById('statPercentage').textContent = percentage + '%';
 
+            // Update attempt breakdown display
+            updateAttemptBreakdown(attemptCounts);
+
             // Draw progress chart
             drawProgressChart();
+        }
+
+        // Update attempt breakdown display
+        function updateAttemptBreakdown(counts) {
+            let breakdownDiv = document.getElementById('attemptBreakdown');
+            if (!breakdownDiv) {
+                const statsSection = document.querySelector('#statisticsMode > div');
+                const breakdownContainer = document.createElement('div');
+                breakdownContainer.id = 'attemptBreakdownContainer';
+                breakdownContainer.innerHTML = `
+                    <h3 style="text-align: center; color: #667eea; margin: 30px 0 20px 0;">Breakdown by Attempt Level</h3>
+                    <div id="attemptBreakdown" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 30px;">
+                    </div>
+                `;
+                statsSection.insertBefore(breakdownContainer, statsSection.querySelector('h3'));
+                breakdownDiv = document.getElementById('attemptBreakdown');
+            }
+
+            breakdownDiv.innerHTML = `
+                <div style="text-align: center; padding: 20px; background: #28a745; color: white; border-radius: 15px;">
+                    <div style="font-size: 2.5em; font-weight: bold;">${counts.first}</div>
+                    <div style="font-size: 1em; opacity: 0.9;">1st Attempt</div>
+                </div>
+                <div style="text-align: center; padding: 20px; background: #ffc107; color: white; border-radius: 15px;">
+                    <div style="font-size: 2.5em; font-weight: bold;">${counts.second}</div>
+                    <div style="font-size: 1em; opacity: 0.9;">2nd Attempt</div>
+                </div>
+                <div style="text-align: center; padding: 20px; background: #fd7e14; color: white; border-radius: 15px;">
+                    <div style="font-size: 2.5em; font-weight: bold;">${counts.third}</div>
+                    <div style="font-size: 1em; opacity: 0.9;">3rd Attempt</div>
+                </div>
+                <div style="text-align: center; padding: 20px; background: #6c757d; color: white; border-radius: 15px;">
+                    <div style="font-size: 2.5em; font-weight: bold;">${counts['not-known']}</div>
+                    <div style="font-size: 1em; opacity: 0.9;">Not Known</div>
+                </div>
+            `;
         }
 
         // Draw progress chart using canvas
@@ -2251,6 +2370,12 @@
 
         // Initialize the app
         loadKnownWords();
+
+        // Start from learning index if set
+        if (learningIndex > 0 && learningIndex <= vocabData.length) {
+            currentIndex = learningIndex - 1; // -1 because array is 0-indexed
+        }
+
         updateCard();
     </script>
 </body>
