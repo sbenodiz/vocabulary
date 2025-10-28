@@ -236,6 +236,7 @@
         <table class="vocab-table">
             <thead>
                 <tr>
+                    <th>Known</th>
                     <th>No.</th>
                     <th>Word</th>
                     <th>Meaning / Synonyms</th>
@@ -1463,13 +1464,81 @@
         
         ];
 
+        // Load known words from localStorage
+        let knownWords = new Set();
+        function loadKnownWords() {
+            const saved = localStorage.getItem('knownWords');
+            if (saved) {
+                knownWords = new Set(JSON.parse(saved));
+            }
+        }
+
+        // Save known words to localStorage
+        function saveKnownWords() {
+            localStorage.setItem('knownWords', JSON.stringify([...knownWords]));
+        }
+
+        // Toggle word known status
+        function toggleWordKnown(word, checkbox) {
+            if (checkbox.checked) {
+                knownWords.add(word);
+            } else {
+                knownWords.delete(word);
+            }
+            saveKnownWords();
+            updateStats();
+        }
+
+        // Update statistics
+        function updateStats() {
+            const totalWords = vocabData.length;
+            const knownCount = knownWords.size;
+            const percentage = Math.round((knownCount / totalWords) * 100);
+
+            document.getElementById('totalWords').textContent = totalWords;
+
+            // Add known words stat if it doesn't exist
+            let knownWordsStatDiv = document.getElementById('knownWordsStat');
+            if (!knownWordsStatDiv) {
+                const statGrid = document.querySelector('.stat-grid');
+                knownWordsStatDiv = document.createElement('div');
+                knownWordsStatDiv.className = 'stat-item';
+                knownWordsStatDiv.id = 'knownWordsStat';
+                knownWordsStatDiv.innerHTML = `
+                    <div class="stat-number" id="knownWordsCount">0</div>
+                    <div class="stat-label">Known Words</div>
+                `;
+                statGrid.appendChild(knownWordsStatDiv);
+
+                const percentageStatDiv = document.createElement('div');
+                percentageStatDiv.className = 'stat-item';
+                percentageStatDiv.id = 'percentageStat';
+                percentageStatDiv.innerHTML = `
+                    <div class="stat-number" id="percentageCount">0%</div>
+                    <div class="stat-label">Progress</div>
+                `;
+                statGrid.appendChild(percentageStatDiv);
+            }
+
+            document.getElementById('knownWordsCount').textContent = knownCount;
+            document.getElementById('percentageCount').textContent = percentage + '%';
+        }
+
         function renderVocabTable(data) {
             const tbody = document.getElementById('vocabTableBody');
             tbody.innerHTML = '';
 
             data.forEach(item => {
                 const row = document.createElement('tr');
+                const isKnown = knownWords.has(item.word);
+
                 row.innerHTML = `
+                    <td style="text-align: center;">
+                        <input type="checkbox"
+                               ${isKnown ? 'checked' : ''}
+                               onchange="toggleWordKnown('${item.word.replace(/'/g, "\\'")}', this)"
+                               style="width: 20px; height: 20px; cursor: pointer;">
+                    </td>
                     <td class="number-cell">${item.number}</td>
                     <td class="word-cell">${item.word}</td>
                     <td class="meaning-cell">${item.meaning}</td>
@@ -1491,7 +1560,10 @@
 
         document.getElementById('searchInput').addEventListener('input', searchVocab);
 
+        // Initialize
+        loadKnownWords();
         renderVocabTable(vocabData);
+        updateStats();
     </script>
 </body>
 </html>
