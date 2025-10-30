@@ -526,11 +526,33 @@
                     <option value="learned">Learned Words Only</option>
                 </select>
             </div>
+
+            <!-- Quiz Statistics Panel -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.95); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div style="text-align: center; padding: 15px; background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; border-radius: 10px;">
+                    <div style="font-size: 2em; font-weight: bold;" id="quizCorrectCount">0</div>
+                    <div style="font-size: 0.9em; opacity: 0.95; margin-top: 5px;">Correct</div>
+                </div>
+                <div style="text-align: center; padding: 15px; background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%); color: white; border-radius: 10px;">
+                    <div style="font-size: 2em; font-weight: bold;" id="quizIncorrectCount">0</div>
+                    <div style="font-size: 0.9em; opacity: 0.95; margin-top: 5px;">Incorrect</div>
+                </div>
+                <div style="text-align: center; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;">
+                    <div style="font-size: 2em; font-weight: bold;" id="quizTotalCount">0</div>
+                    <div style="font-size: 0.9em; opacity: 0.95; margin-top: 5px;">Total</div>
+                </div>
+                <div style="text-align: center; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;">
+                    <div style="font-size: 2em; font-weight: bold;" id="quizPercentage">0%</div>
+                    <div style="font-size: 0.9em; opacity: 0.95; margin-top: 5px;">Accuracy</div>
+                </div>
+            </div>
+
             <h2 style="text-align: center; color: #667eea; margin-bottom: 20px;" id="quizWord">Word</h2>
             <p style="text-align: center; color: #6c757d; margin-bottom: 30px;">Select the correct meaning:</p>
             <div class="quiz-options" id="quizOptions"></div>
             <div class="button-group" style="margin-top: 30px;">
                 <button class="btn btn-primary" onclick="nextQuiz()">Next Question</button>
+                <button class="btn btn-secondary" onclick="resetQuizStats()" style="background: #ffc107; border-color: #ffc107;">Reset Stats</button>
                 <button class="btn btn-secondary" onclick="switchMode('flashcard')">Back to Flashcards</button>
             </div>
         </div>
@@ -2013,6 +2035,10 @@
                 if (isFlipped) flipCard();
                 updateCard();
                 document.getElementById('quizScore').textContent = '0%';
+                document.getElementById('quizCorrectCount').textContent = '0';
+                document.getElementById('quizIncorrectCount').textContent = '0';
+                document.getElementById('quizTotalCount').textContent = '0';
+                document.getElementById('quizPercentage').textContent = '0%';
                 showNotification('Progress reset!');
             }
         }
@@ -2123,8 +2149,15 @@
                 });
             }
 
+            // Update all quiz statistics
             const score = Math.round((quizCorrect / quizTotal) * 100);
+            const incorrect = quizTotal - quizCorrect;
+
             document.getElementById('quizScore').textContent = score + '%';
+            document.getElementById('quizCorrectCount').textContent = quizCorrect;
+            document.getElementById('quizIncorrectCount').textContent = incorrect;
+            document.getElementById('quizTotalCount').textContent = quizTotal;
+            document.getElementById('quizPercentage').textContent = score + '%';
 
             document.querySelectorAll('.quiz-option').forEach(opt => {
                 opt.style.pointerEvents = 'none';
@@ -2132,6 +2165,18 @@
         }
 
         function nextQuiz() {
+            loadQuiz();
+        }
+
+        function resetQuizStats() {
+            quizCorrect = 0;
+            quizTotal = 0;
+            document.getElementById('quizScore').textContent = '0%';
+            document.getElementById('quizCorrectCount').textContent = '0';
+            document.getElementById('quizIncorrectCount').textContent = '0';
+            document.getElementById('quizTotalCount').textContent = '0';
+            document.getElementById('quizPercentage').textContent = '0%';
+            showNotification('Quiz statistics reset!');
             loadQuiz();
         }
 
@@ -2216,36 +2261,101 @@
 
         // Update attempt breakdown display
         function updateAttemptBreakdown(counts) {
-            let breakdownDiv = document.getElementById('attemptBreakdown');
-            if (!breakdownDiv) {
+            const total = vocabData.length;
+            const percentFirst = Math.round((counts.first / total) * 100);
+            const percentSecond = Math.round((counts.second / total) * 100);
+            const percentThird = Math.round((counts.third / total) * 100);
+            const percentNotKnown = Math.round((counts['not-known'] / total) * 100);
+
+            let breakdownContainer = document.getElementById('attemptBreakdownContainer');
+            if (!breakdownContainer) {
                 const statsSection = document.querySelector('#statisticsMode > div');
-                const breakdownContainer = document.createElement('div');
+                breakdownContainer = document.createElement('div');
                 breakdownContainer.id = 'attemptBreakdownContainer';
-                breakdownContainer.innerHTML = `
-                    <h3 style="text-align: center; color: #667eea; margin: 30px 0 20px 0;">Breakdown by Attempt Level</h3>
-                    <div id="attemptBreakdown" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 30px;">
-                    </div>
-                `;
                 statsSection.insertBefore(breakdownContainer, statsSection.querySelector('h3'));
-                breakdownDiv = document.getElementById('attemptBreakdown');
             }
 
-            breakdownDiv.innerHTML = `
-                <div style="text-align: center; padding: 20px; background: #28a745; color: white; border-radius: 15px;">
-                    <div style="font-size: 2.5em; font-weight: bold;">${counts.first}</div>
-                    <div style="font-size: 1em; opacity: 0.9;">1st Attempt</div>
+            breakdownContainer.innerHTML = `
+                <h3 style="text-align: center; color: #667eea; margin: 30px 0 20px 0;">Breakdown by Attempt Level</h3>
+
+                <!-- Card Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 30px;">
+                    <div style="text-align: center; padding: 20px; background: #28a745; color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);">
+                        <div style="font-size: 2.5em; font-weight: bold;">${counts.first}</div>
+                        <div style="font-size: 1em; opacity: 0.9; margin-bottom: 8px;">1st Attempt</div>
+                        <div style="font-size: 1.3em; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px;">${percentFirst}%</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px; background: #ffc107; color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);">
+                        <div style="font-size: 2.5em; font-weight: bold;">${counts.second}</div>
+                        <div style="font-size: 1em; opacity: 0.9; margin-bottom: 8px;">2nd Attempt</div>
+                        <div style="font-size: 1.3em; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px;">${percentSecond}%</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px; background: #fd7e14; color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(253, 126, 20, 0.3);">
+                        <div style="font-size: 2.5em; font-weight: bold;">${counts.third}</div>
+                        <div style="font-size: 1em; opacity: 0.9; margin-bottom: 8px;">3rd Attempt</div>
+                        <div style="font-size: 1.3em; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px;">${percentThird}%</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px; background: #6c757d; color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);">
+                        <div style="font-size: 2.5em; font-weight: bold;">${counts['not-known']}</div>
+                        <div style="font-size: 1em; opacity: 0.9; margin-bottom: 8px;">Not Known</div>
+                        <div style="font-size: 1.3em; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px;">${percentNotKnown}%</div>
+                    </div>
                 </div>
-                <div style="text-align: center; padding: 20px; background: #ffc107; color: white; border-radius: 15px;">
-                    <div style="font-size: 2.5em; font-weight: bold;">${counts.second}</div>
-                    <div style="font-size: 1em; opacity: 0.9;">2nd Attempt</div>
-                </div>
-                <div style="text-align: center; padding: 20px; background: #fd7e14; color: white; border-radius: 15px;">
-                    <div style="font-size: 2.5em; font-weight: bold;">${counts.third}</div>
-                    <div style="font-size: 1em; opacity: 0.9;">3rd Attempt</div>
-                </div>
-                <div style="text-align: center; padding: 20px; background: #6c757d; color: white; border-radius: 15px;">
-                    <div style="font-size: 2.5em; font-weight: bold;">${counts['not-known']}</div>
-                    <div style="font-size: 1em; opacity: 0.9;">Not Known</div>
+
+                <!-- Detailed Progress Bars -->
+                <h3 style="text-align: center; color: #667eea; margin: 30px 0 20px 0;">Detailed Progress</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 15px;">
+                    <!-- First Attempt -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: bold; color: #28a745;">✓ 1st Attempt</span>
+                            <span style="font-weight: bold; color: #28a745;">${counts.first} words (${percentFirst}%)</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 25px; border-radius: 12px; overflow: hidden;">
+                            <div style="background: #28a745; height: 100%; width: ${percentFirst}%; transition: width 0.5s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85em; font-weight: bold;">
+                                ${percentFirst > 5 ? percentFirst + '%' : ''}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Attempt -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: bold; color: #d39e00;">✓ 2nd Attempt</span>
+                            <span style="font-weight: bold; color: #d39e00;">${counts.second} words (${percentSecond}%)</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 25px; border-radius: 12px; overflow: hidden;">
+                            <div style="background: #ffc107; height: 100%; width: ${percentSecond}%; transition: width 0.5s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85em; font-weight: bold;">
+                                ${percentSecond > 5 ? percentSecond + '%' : ''}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Attempt -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: bold; color: #fd7e14;">✓ 3rd Attempt</span>
+                            <span style="font-weight: bold; color: #fd7e14;">${counts.third} words (${percentThird}%)</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 25px; border-radius: 12px; overflow: hidden;">
+                            <div style="background: #fd7e14; height: 100%; width: ${percentThird}%; transition: width 0.5s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85em; font-weight: bold;">
+                                ${percentThird > 5 ? percentThird + '%' : ''}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Not Known -->
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: bold; color: #6c757d;">✗ Not Known</span>
+                            <span style="font-weight: bold; color: #6c757d;">${counts['not-known']} words (${percentNotKnown}%)</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 25px; border-radius: 12px; overflow: hidden;">
+                            <div style="background: #6c757d; height: 100%; width: ${percentNotKnown}%; transition: width 0.5s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85em; font-weight: bold;">
+                                ${percentNotKnown > 5 ? percentNotKnown + '%' : ''}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             `;
         }

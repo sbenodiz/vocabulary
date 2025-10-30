@@ -205,6 +205,74 @@
             }
         }
 
+        .filter-tabs {
+            display: flex;
+            gap: 8px;
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-tab {
+            padding: 12px 24px;
+            border: 2px solid #e9ecef;
+            background: white;
+            color: #6c757d;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95em;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .filter-tab:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .filter-tab.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102,126,234,0.3);
+        }
+
+        .filter-tab .count {
+            background: rgba(0,0,0,0.1);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .filter-tab.active .count {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .filter-tab.all { border-color: #667eea; color: #667eea; }
+        .filter-tab.all.active { background: #667eea; color: white; }
+
+        .filter-tab.first { border-color: #28a745; color: #28a745; }
+        .filter-tab.first.active { background: #28a745; border-color: #28a745; color: white; }
+
+        .filter-tab.second { border-color: #ffc107; color: #d39e00; }
+        .filter-tab.second.active { background: #ffc107; border-color: #ffc107; color: #333; }
+        .filter-tab.second.active .count { background: rgba(0,0,0,0.15); }
+
+        .filter-tab.third { border-color: #fd7e14; color: #fd7e14; }
+        .filter-tab.third.active { background: #fd7e14; border-color: #fd7e14; color: white; }
+
+        .filter-tab.not-known { border-color: #6c757d; color: #6c757d; }
+        .filter-tab.not-known.active { background: #6c757d; border-color: #6c757d; color: white; }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2em;
@@ -215,6 +283,20 @@
             .search-box {
                 width: 100%;
             }
+            .filter-tabs {
+                padding: 15px;
+                gap: 6px;
+            }
+            .filter-tab {
+                padding: 10px 16px;
+                font-size: 0.85em;
+            }
+        }
+
+        @media print {
+            .filter-tabs {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -224,6 +306,29 @@
             <h1>11+ Vocabulary Flashcards</h1>
             <p>Teacher's Complete Reference Guide</p>
             <div class="badge">1193 Essential Words</div>
+        </div>
+
+        <div class="filter-tabs" id="filterTabs">
+            <button class="filter-tab all active" onclick="setFilter('all')">
+                <span>All Words</span>
+                <span class="count" id="count-all">1193</span>
+            </button>
+            <button class="filter-tab first" onclick="setFilter('first')">
+                <span>✓ 1st Attempt</span>
+                <span class="count" id="count-first">0</span>
+            </button>
+            <button class="filter-tab second" onclick="setFilter('second')">
+                <span>✓ 2nd Attempt</span>
+                <span class="count" id="count-second">0</span>
+            </button>
+            <button class="filter-tab third" onclick="setFilter('third')">
+                <span>✓ 3rd Attempt</span>
+                <span class="count" id="count-third">0</span>
+            </button>
+            <button class="filter-tab not-known" onclick="setFilter('not-known')">
+                <span>Not Known</span>
+                <span class="count" id="count-not-known">1193</span>
+            </button>
         </div>
 
         <div class="controls">
@@ -251,11 +356,11 @@
             <h3>Vocabulary Statistics</h3>
             <div class="stat-grid">
                 <div class="stat-card">
-                    <div class="number">300</div>
+                    <div class="number" id="totalWords">1193</div>
                     <div class="label">Total Words</div>
                 </div>
                 <div class="stat-card">
-                    <div class="number" id="displayCount">300</div>
+                    <div class="number" id="displayCount">1193</div>
                     <div class="label">Currently Showing</div>
                 </div>
                 <div class="stat-card">
@@ -263,6 +368,9 @@
                     <div class="label">Target Age</div>
                 </div>
             </div>
+
+            <!-- Attempt Level Breakdown -->
+            <div id="attemptBreakdownSection" style="margin-top: 40px;"></div>
         </div>
     </div>
 
@@ -1467,6 +1575,7 @@
         // Load known words from localStorage
         let knownWords = new Set();
         let wordAttempts = {};
+        let currentFilter = 'all'; // Current filter: 'all', 'first', 'second', 'third', 'not-known'
 
         function loadKnownWords() {
             const saved = localStorage.getItem('knownWords');
@@ -1497,11 +1606,75 @@
             }
             saveKnownWords();
             updateStats();
+            updateFilterCounts();
+            // Re-render table if filtering is active
+            applyCurrentFilter();
         }
 
         // Get word attempt level
         function getWordAttempt(word) {
             return wordAttempts[word] || 'not-known';
+        }
+
+        // Update filter counts
+        function updateFilterCounts() {
+            const counts = {
+                'all': vocabData.length,
+                'first': 0,
+                'second': 0,
+                'third': 0,
+                'not-known': 0
+            };
+
+            vocabData.forEach(item => {
+                const attempt = getWordAttempt(item.word);
+                counts[attempt]++;
+            });
+
+            // Update the UI
+            document.getElementById('count-all').textContent = counts['all'];
+            document.getElementById('count-first').textContent = counts['first'];
+            document.getElementById('count-second').textContent = counts['second'];
+            document.getElementById('count-third').textContent = counts['third'];
+            document.getElementById('count-not-known').textContent = counts['not-known'];
+        }
+
+        // Set filter
+        function setFilter(filter) {
+            currentFilter = filter;
+
+            // Update active tab
+            document.querySelectorAll('.filter-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`.filter-tab.${filter}`).classList.add('active');
+
+            // Apply the filter
+            applyCurrentFilter();
+        }
+
+        // Apply current filter and search
+        function applyCurrentFilter() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+            // First apply filter
+            let filtered = vocabData;
+            if (currentFilter !== 'all') {
+                filtered = vocabData.filter(item => {
+                    const attempt = getWordAttempt(item.word);
+                    return attempt === currentFilter;
+                });
+            }
+
+            // Then apply search
+            if (searchTerm) {
+                filtered = filtered.filter(item =>
+                    item.word.toLowerCase().includes(searchTerm) ||
+                    item.meaning.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            renderVocabTable(filtered);
         }
 
         // Update statistics
@@ -1568,6 +1741,103 @@
             document.getElementById('firstAttemptCount').textContent = attemptCounts.first;
             document.getElementById('secondAttemptCount').textContent = attemptCounts.second;
             document.getElementById('thirdAttemptCount').textContent = attemptCounts.third;
+
+            // Update detailed breakdown
+            updateAttemptBreakdown(attemptCounts);
+        }
+
+        // Update attempt breakdown display with progress bars
+        function updateAttemptBreakdown(counts) {
+            const total = vocabData.length;
+            const percentFirst = Math.round((counts.first / total) * 100);
+            const percentSecond = Math.round((counts.second / total) * 100);
+            const percentThird = Math.round((counts.third / total) * 100);
+            const percentNotKnown = Math.round((counts['not-known'] / total) * 100);
+
+            const breakdownSection = document.getElementById('attemptBreakdownSection');
+            breakdownSection.innerHTML = `
+                <h3 style="color: #495057; margin-bottom: 20px;">Breakdown by Attempt Level</h3>
+
+                <!-- Card Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 30px;">
+                    <div style="text-align: center; padding: 20px; background: #28a745; color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);">
+                        <div style="font-size: 2.5em; font-weight: bold;">${counts.first}</div>
+                        <div style="font-size: 1em; opacity: 0.9; margin-bottom: 8px;">1st Attempt</div>
+                        <div style="font-size: 1.3em; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px;">${percentFirst}%</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px; background: #ffc107; color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);">
+                        <div style="font-size: 2.5em; font-weight: bold;">${counts.second}</div>
+                        <div style="font-size: 1em; opacity: 0.9; margin-bottom: 8px;">2nd Attempt</div>
+                        <div style="font-size: 1.3em; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px;">${percentSecond}%</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px; background: #fd7e14; color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(253, 126, 20, 0.3);">
+                        <div style="font-size: 2.5em; font-weight: bold;">${counts.third}</div>
+                        <div style="font-size: 1em; opacity: 0.9; margin-bottom: 8px;">3rd Attempt</div>
+                        <div style="font-size: 1.3em; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px;">${percentThird}%</div>
+                    </div>
+                    <div style="text-align: center; padding: 20px; background: #6c757d; color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);">
+                        <div style="font-size: 2.5em; font-weight: bold;">${counts['not-known']}</div>
+                        <div style="font-size: 1em; opacity: 0.9; margin-bottom: 8px;">Not Known</div>
+                        <div style="font-size: 1.3em; font-weight: bold; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 8px;">${percentNotKnown}%</div>
+                    </div>
+                </div>
+
+                <!-- Detailed Progress Bars -->
+                <h3 style="color: #495057; margin: 30px 0 20px 0;">Detailed Progress</h3>
+                <div style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <!-- First Attempt -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: bold; color: #28a745;">✓ 1st Attempt</span>
+                            <span style="font-weight: bold; color: #28a745;">${counts.first} words (${percentFirst}%)</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 25px; border-radius: 12px; overflow: hidden;">
+                            <div style="background: #28a745; height: 100%; width: ${percentFirst}%; transition: width 0.5s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85em; font-weight: bold;">
+                                ${percentFirst > 5 ? percentFirst + '%' : ''}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Attempt -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: bold; color: #d39e00;">✓ 2nd Attempt</span>
+                            <span style="font-weight: bold; color: #d39e00;">${counts.second} words (${percentSecond}%)</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 25px; border-radius: 12px; overflow: hidden;">
+                            <div style="background: #ffc107; height: 100%; width: ${percentSecond}%; transition: width 0.5s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85em; font-weight: bold;">
+                                ${percentSecond > 5 ? percentSecond + '%' : ''}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Attempt -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: bold; color: #fd7e14;">✓ 3rd Attempt</span>
+                            <span style="font-weight: bold; color: #fd7e14;">${counts.third} words (${percentThird}%)</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 25px; border-radius: 12px; overflow: hidden;">
+                            <div style="background: #fd7e14; height: 100%; width: ${percentThird}%; transition: width 0.5s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85em; font-weight: bold;">
+                                ${percentThird > 5 ? percentThird + '%' : ''}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Not Known -->
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: bold; color: #6c757d;">✗ Not Known</span>
+                            <span style="font-weight: bold; color: #6c757d;">${counts['not-known']} words (${percentNotKnown}%)</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 25px; border-radius: 12px; overflow: hidden;">
+                            <div style="background: #6c757d; height: 100%; width: ${percentNotKnown}%; transition: width 0.5s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.85em; font-weight: bold;">
+                                ${percentNotKnown > 5 ? percentNotKnown + '%' : ''}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
         }
 
         function renderVocabTable(data) {
@@ -1613,18 +1883,14 @@
         }
 
         function searchVocab() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const filtered = vocabData.filter(item =>
-                item.word.toLowerCase().includes(searchTerm) ||
-                item.meaning.toLowerCase().includes(searchTerm)
-            );
-            renderVocabTable(filtered);
+            applyCurrentFilter();
         }
 
         document.getElementById('searchInput').addEventListener('input', searchVocab);
 
         // Initialize
         loadKnownWords();
+        updateFilterCounts();
         renderVocabTable(vocabData);
         updateStats();
     </script>
