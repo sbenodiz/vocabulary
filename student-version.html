@@ -345,6 +345,68 @@
             border-color: #dc3545;
         }
 
+        .quiz-filter-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 15px;
+            border: 2px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .quiz-filter-controls label {
+            font-weight: 600;
+            color: #495057;
+            font-size: 14px;
+        }
+
+        .quiz-filter-controls input,
+        .quiz-filter-controls select {
+            padding: 8px 12px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .quiz-filter-controls input {
+            width: 100px;
+        }
+
+        .quiz-filter-controls input:focus,
+        .quiz-filter-controls select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+        }
+
+        .quiz-filter-controls button {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .quiz-filter-controls button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(102,126,234,0.3);
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -525,6 +587,66 @@
                     <option value="all">All Words</option>
                     <option value="learned">Learned Words Only</option>
                 </select>
+            </div>
+
+            <!-- Quiz Filter Controls -->
+            <div class="quiz-filter-controls">
+                <div style="font-weight: bold; color: #667eea; margin-right: 10px;">Filter Quiz Words:</div>
+
+                <div class="filter-group">
+                    <label>Filter Type:</label>
+                    <select id="quizFilterType" onchange="toggleQuizFilterInputs()">
+                        <option value="none">No Filter</option>
+                        <option value="index">By Index Range</option>
+                        <option value="letter">By Starting Letter</option>
+                    </select>
+                </div>
+
+                <!-- Index Range Filter -->
+                <div id="indexFilterInputs" class="filter-group" style="display: none;">
+                    <label>From #:</label>
+                    <input type="number" id="quizIndexFrom" min="1" max="1193" placeholder="1">
+                    <label>To #:</label>
+                    <input type="number" id="quizIndexTo" min="1" max="1193" placeholder="100">
+                </div>
+
+                <!-- Letter Filter -->
+                <div id="letterFilterInputs" class="filter-group" style="display: none;">
+                    <label>Letter:</label>
+                    <select id="quizLetter">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                        <option value="U">U</option>
+                        <option value="V">V</option>
+                        <option value="W">W</option>
+                        <option value="X">X</option>
+                        <option value="Y">Y</option>
+                        <option value="Z">Z</option>
+                    </select>
+                </div>
+
+                <button onclick="applyQuizFilter()">Apply Filter</button>
+                <button onclick="clearQuizFilter()" style="background: #6c757d;">Clear</button>
+
+                <div id="quizFilterStatus" style="font-size: 13px; color: #667eea; font-weight: bold;"></div>
             </div>
 
             <!-- Quiz Statistics Panel -->
@@ -1812,6 +1934,11 @@
         let progressHistory = {}; // {date: count} for tracking daily progress
         let wordAttempts = {}; // {word: 'first'|'second'|'third'|'not-known'} - tracks attempt level
 
+        // Quiz filter variables
+        let quizFilterActive = false;
+        let quizFilteredWords = [];
+        let quizFilterType = 'none'; // 'none', 'index', 'letter'
+
         // Load known words from localStorage
         function loadKnownWords() {
             const saved = localStorage.getItem('knownWords');
@@ -1910,6 +2037,101 @@
         function updateQuizMode() {
             quizMode = document.getElementById('quizModeSelector').value;
             loadQuiz(); // Reload quiz with new mode
+        }
+
+        // Toggle visibility of quiz filter inputs based on selected filter type
+        function toggleQuizFilterInputs() {
+            const filterType = document.getElementById('quizFilterType').value;
+            const indexInputs = document.getElementById('indexFilterInputs');
+            const letterInputs = document.getElementById('letterFilterInputs');
+
+            // Hide all inputs first
+            indexInputs.style.display = 'none';
+            letterInputs.style.display = 'none';
+
+            // Show relevant inputs based on filter type
+            if (filterType === 'index') {
+                indexInputs.style.display = 'flex';
+            } else if (filterType === 'letter') {
+                letterInputs.style.display = 'flex';
+            }
+        }
+
+        // Apply quiz filter based on user selection
+        function applyQuizFilter() {
+            const filterType = document.getElementById('quizFilterType').value;
+
+            if (filterType === 'none') {
+                clearQuizFilter();
+                return;
+            }
+
+            if (filterType === 'index') {
+                // Filter by index range
+                const fromIndex = parseInt(document.getElementById('quizIndexFrom').value);
+                const toIndex = parseInt(document.getElementById('quizIndexTo').value);
+
+                if (!fromIndex || !toIndex || fromIndex < 1 || toIndex > vocabData.length) {
+                    showNotification(`Please enter valid indices between 1 and ${vocabData.length}`);
+                    return;
+                }
+
+                if (fromIndex > toIndex) {
+                    showNotification('The "from" index must be less than or equal to the "to" index');
+                    return;
+                }
+
+                // Filter words by index range
+                quizFilteredWords = vocabData.filter(item => {
+                    const wordIndex = parseInt(item.number);
+                    return wordIndex >= fromIndex && wordIndex <= toIndex;
+                });
+
+                quizFilterActive = true;
+                quizFilterType = 'index';
+
+                // Update status
+                document.getElementById('quizFilterStatus').textContent =
+                    `Active: Words #${fromIndex}-${toIndex} (${quizFilteredWords.length} words)`;
+
+                showNotification(`Filter applied: ${quizFilteredWords.length} words from #${fromIndex} to #${toIndex}`);
+
+            } else if (filterType === 'letter') {
+                // Filter by starting letter
+                const letter = document.getElementById('quizLetter').value.toUpperCase();
+
+                quizFilteredWords = vocabData.filter(item => {
+                    return item.word.toUpperCase().startsWith(letter);
+                });
+
+                quizFilterActive = true;
+                quizFilterType = 'letter';
+
+                // Update status
+                document.getElementById('quizFilterStatus').textContent =
+                    `Active: Words starting with "${letter}" (${quizFilteredWords.length} words)`;
+
+                showNotification(`Filter applied: ${quizFilteredWords.length} words starting with "${letter}"`);
+            }
+
+            // Reload quiz with new filter
+            loadQuiz();
+        }
+
+        // Clear quiz filter
+        function clearQuizFilter() {
+            quizFilterActive = false;
+            quizFilteredWords = [];
+            quizFilterType = 'none';
+
+            // Reset UI
+            document.getElementById('quizFilterType').value = 'none';
+            document.getElementById('quizFilterStatus').textContent = '';
+            toggleQuizFilterInputs();
+
+            // Reload quiz without filter
+            loadQuiz();
+            showNotification('Filter cleared');
         }
 
         // Check if current word is known
@@ -2079,11 +2301,12 @@
         }
 
         function loadQuiz() {
-            // Get available words based on quiz mode
+            // Get available words based on quiz mode and filters
             let availableWords;
 
-            console.log('Quiz Mode:', quizMode, 'Learning Index:', learningIndex);
+            console.log('Quiz Mode:', quizMode, 'Learning Index:', learningIndex, 'Filter Active:', quizFilterActive);
 
+            // Start with base words based on quiz mode
             if (quizMode === 'learned') {
                 if (learningIndex > 0) {
                     availableWords = vocabData.slice(0, learningIndex);
@@ -2098,6 +2321,19 @@
             } else {
                 availableWords = vocabData;
                 console.log('Using all words:', availableWords.length, 'words');
+            }
+
+            // Apply quiz filter if active
+            if (quizFilterActive && quizFilteredWords.length > 0) {
+                // Intersect available words with filtered words
+                const filteredSet = new Set(quizFilteredWords.map(w => w.word));
+                availableWords = availableWords.filter(w => filteredSet.has(w.word));
+                console.log('After filter:', availableWords.length, 'words');
+
+                if (availableWords.length === 0) {
+                    showNotification('No words match the current filter and quiz mode!');
+                    return;
+                }
             }
 
             const quizCard = availableWords[Math.floor(Math.random() * availableWords.length)];
@@ -2124,13 +2360,17 @@
                 quizOptions.appendChild(optionDiv);
             });
 
-            // Update quiz description to show current mode
+            // Update quiz description to show current mode and filter status
             const quizDescription = document.querySelector('#quizMode p');
-            if (quizMode === 'learned') {
-                quizDescription.textContent = `Select the correct meaning: (Testing ${availableWords.length} learned words)`;
+            let descText = 'Select the correct meaning: ';
+            if (quizFilterActive) {
+                descText += `(Testing ${availableWords.length} filtered words)`;
+            } else if (quizMode === 'learned') {
+                descText += `(Testing ${availableWords.length} learned words)`;
             } else {
-                quizDescription.textContent = 'Select the correct meaning: (Testing all 1,193 words)';
+                descText += '(Testing all 1,193 words)';
             }
+            quizDescription.textContent = descText;
         }
 
         function checkQuizAnswer(selected, correct, element) {

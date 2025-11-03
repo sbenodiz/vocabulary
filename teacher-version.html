@@ -103,6 +103,67 @@
             box-shadow: 0 5px 15px rgba(102,126,234,0.3);
         }
 
+        .jump-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .jump-controls label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .jump-controls input {
+            padding: 10px 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 16px;
+            width: 120px;
+            transition: all 0.3s;
+        }
+
+        .jump-controls input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+        }
+
+        .jump-controls button {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .jump-controls button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(102,126,234,0.3);
+        }
+
+        .jump-controls select {
+            padding: 10px 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            background: white;
+            transition: all 0.3s;
+        }
+
+        .jump-controls select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+        }
+
         .vocab-table {
             width: 100%;
             border-collapse: collapse;
@@ -334,6 +395,24 @@
         <div class="controls">
             <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Search for any word or meaning...">
+            </div>
+            <div class="jump-controls">
+                <label for="jumpToIndex">Jump to #:</label>
+                <input type="number" id="jumpToIndex" min="1" max="1193" placeholder="e.g., 20">
+                <button onclick="jumpToWord()">Go</button>
+            </div>
+            <div class="jump-controls">
+                <label for="setProgressFrom">Set progress from #:</label>
+                <input type="number" id="setProgressFrom" min="1" max="1193" placeholder="e.g., 1">
+                <label for="setProgressTo">to #:</label>
+                <input type="number" id="setProgressTo" min="1" max="1193" placeholder="e.g., 50">
+                <select id="progressLevel">
+                    <option value="not-known">Not Known</option>
+                    <option value="first">1st Attempt</option>
+                    <option value="second">2nd Attempt</option>
+                    <option value="third">3rd Attempt</option>
+                </select>
+                <button onclick="setProgressRange()">Set Range</button>
             </div>
             <button class="print-btn" onclick="window.print()">Print Reference Guide</button>
         </div>
@@ -1885,6 +1964,114 @@
         function searchVocab() {
             applyCurrentFilter();
         }
+
+        // Jump to a specific word by index number
+        function jumpToWord() {
+            const indexInput = document.getElementById('jumpToIndex');
+            const index = parseInt(indexInput.value);
+
+            if (!index || index < 1 || index > vocabData.length) {
+                alert(`Please enter a valid index between 1 and ${vocabData.length}`);
+                return;
+            }
+
+            // Find the word with this index
+            const word = vocabData.find(item => parseInt(item.number) === index);
+
+            if (!word) {
+                alert(`Word with index ${index} not found`);
+                return;
+            }
+
+            // Clear search filter
+            document.getElementById('searchInput').value = '';
+
+            // Reset filter to show all words
+            currentFilter = 'all';
+            applyCurrentFilter();
+
+            // Wait for table to render, then scroll to the word
+            setTimeout(() => {
+                const rows = document.querySelectorAll('#vocabTableBody tr');
+                let targetRow = null;
+
+                rows.forEach(row => {
+                    const numberCell = row.querySelector('.number-cell');
+                    if (numberCell && parseInt(numberCell.textContent) === index) {
+                        targetRow = row;
+                    }
+                });
+
+                if (targetRow) {
+                    // Highlight the row temporarily
+                    targetRow.style.background = '#fff3cd';
+                    targetRow.style.transition = 'background 0.5s ease';
+
+                    // Scroll to the row
+                    targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                    // Remove highlight after 2 seconds
+                    setTimeout(() => {
+                        targetRow.style.background = '';
+                    }, 2000);
+                }
+            }, 100);
+        }
+
+        // Set progress for a range of words by index
+        function setProgressRange() {
+            const fromInput = document.getElementById('setProgressFrom');
+            const toInput = document.getElementById('setProgressTo');
+            const levelSelect = document.getElementById('progressLevel');
+
+            const fromIndex = parseInt(fromInput.value);
+            const toIndex = parseInt(toInput.value);
+            const level = levelSelect.value;
+
+            if (!fromIndex || !toIndex || fromIndex < 1 || toIndex > vocabData.length) {
+                alert(`Please enter valid indices between 1 and ${vocabData.length}`);
+                return;
+            }
+
+            if (fromIndex > toIndex) {
+                alert('The "from" index must be less than or equal to the "to" index');
+                return;
+            }
+
+            // Confirm the action
+            const wordCount = toIndex - fromIndex + 1;
+            const levelText = level === 'not-known' ? 'Not Known' :
+                             level === 'first' ? '1st Attempt' :
+                             level === 'second' ? '2nd Attempt' : '3rd Attempt';
+
+            if (!confirm(`Set ${wordCount} words (from #${fromIndex} to #${toIndex}) as "${levelText}"?`)) {
+                return;
+            }
+
+            // Update progress for all words in the range
+            let updatedCount = 0;
+            vocabData.forEach(item => {
+                const wordIndex = parseInt(item.number);
+                if (wordIndex >= fromIndex && wordIndex <= toIndex) {
+                    setWordAttempt(item.word, level);
+                    updatedCount++;
+                }
+            });
+
+            // Refresh the display
+            applyCurrentFilter();
+            updateStats();
+            updateFilterCounts();
+
+            alert(`Successfully updated ${updatedCount} words!`);
+        }
+
+        // Allow Enter key to trigger jump
+        document.getElementById('jumpToIndex').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                jumpToWord();
+            }
+        });
 
         document.getElementById('searchInput').addEventListener('input', searchVocab);
 
